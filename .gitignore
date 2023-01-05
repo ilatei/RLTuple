@@ -1,0 +1,6 @@
+*.o
+*.txt
+*.exe
+rules_traces/
+.vscode/
+result/
