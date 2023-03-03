@@ -12,7 +12,8 @@ class tupleSimEnv(Env):
         self.UNIT_DIM = 6
         self.STATE_DIM = self.NUM_TUPLE * self.UNIT_DIM
         self.ACTION_DIM = 2 * (32 + 32 + 10)
-
+        
+        self.importantField = []
         self.low_property = np.zeros((self.UNIT_DIM,))
         self.high_property = np.array([32, 32])
         
@@ -61,11 +62,16 @@ class tupleSimEnv(Env):
         res = self.socket.recv(1024)
         res = res.decode("gbk").split("_")
         obs = [int(i) for i in res[0:-1]]
-        return obs
+        if self.importantField.__len__() == 0:
+            self.importantField.extend(obs[90:])
+        return obs[0:90]
     
     def getMask(self, state):
         if state[1] == 0:
-            return [0] * 74 + [1] * 74
+            ret = [0] * 74 + [0] * 74
+            for field in self.importantField:
+                ret[74 + field] = 1
+            return ret
         if state[3] != 0:
             return [1] * 74 + [0] * 74
 

@@ -17,14 +17,14 @@ _dl_dst = {'01:80:c2': 1, '01:00:0c': 4, '00:e0:2b': 3, 'fa:16:3e': 12534, 'ff:f
 
 
 rule_distributions = {
-    5:{"nw_src" : 0.7, "nw_dst" : 0.7, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1},
-    6:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.1},
-    7:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.1, "dl_src": 0.2},
-    8:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.1, "dl_src": 0.2, "dl_dst": 0.8},
-    9:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.1, "dl_src": 0.2, "dl_dst": 0.8, "eth_type" : 0.3},
-    10:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.1, "dl_src": 0.2, "dl_dst": 0.8, "eth_type" : 0.3, "dl_vlan": 0.5},
-    11:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.1, "dl_src": 0.2, "dl_dst": 0.8, "eth_type" : 0.3, "dl_vlan": 0.5, "dl_vlan_pcp": 0},
-    12:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.1, "dl_src": 0.2, "dl_dst": 0.8, "eth_type" : 0.3, "dl_vlan": 0.5, "dl_vlan_pcp": 0, "nw_tos" : 0}}
+    5:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1},
+    6:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.3},
+    7:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.3, "dl_src": 0.2},
+    8:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.3, "dl_src": 0.2, "dl_dst": 0.8},
+    9:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.3, "dl_src": 0.2, "dl_dst": 0.8, "in_port" : 0.1},
+    10:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.3, "dl_src": 0.2, "dl_dst": 0.8, "in_port" : 0.1, "dl_vlan": 0.5},
+    11:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.3, "dl_src": 0.2, "dl_dst": 0.8, "in_port" : 0.1, "dl_vlan": 0.5, "dl_vlan_pcp": 0.05},
+    12:{"nw_src" : 1, "nw_dst" : 1, "tp_src" : 1, "tp_dst" : 1, "nw_proto" : 1, "eth_type" : 0.3, "dl_src": 0.2, "dl_dst": 0.8, "in_port" : 0.1, "dl_vlan": 0.5, "dl_vlan_pcp": 0.05, "nw_tos" : 0.05}}
 
 # fields_num = {"5","6(in_port)",7,8,9,10,11,12}
 # {"dl_dst" : 15734 / 16431; 12470 / 13778}

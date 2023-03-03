@@ -147,14 +147,23 @@ void RlTuple::SortTuples() {
 
 
 int RlTuple::InsertRule(Rule *rule) {
+    vector <pair<int, Tuple*>> tuples2insert;
     Tuple *tuple2insert = NULL;
+    Tuple *default_tuple = NULL;
     if(id2tuple.find(rule->priority) != id2tuple.end()){
         tuple2insert = id2tuple[rule->priority];
+        tuple2insert->InsertRuleRL(rule);
+        ++rules_num;
+        if (rule->priority == tuple2insert->max_priority)
+            SortTuples();
+        max_priority = max(max_priority, rule->priority);
+    
+        return 0;
     }
     else{
-        int distance = 9999;
+        int collide_thresh = 15;
         for (int tuple_index = 0; tuple_index < tuples_num; ++tuple_index) {
-            int now_dis = 0;
+            int available_bits = 0;
             Tuple *tuple = tuples_arr[tuple_index];
         
             int field_index = 0;
@@ -163,30 +172,47 @@ int RlTuple::InsertRule(Rule *rule) {
                 if(rule->prefix_len[usedF] < tuple->prefix_len[field_index]){
                     break;
                 }
-                now_dis += (rule->prefix_len[usedF] - tuple->prefix_len[field_index]);
+
+                available_bits += rule->prefix_len[usedF] - tuple->prefix_len[field_index];
+                // if(tuple->prefix_len[field_index] == 48){
+                //     available_bits += 24;
+                // }
+                // else{
+                //     available_bits += tuple->prefix_len[field_index];
+                // }
                 field_index ++;
             }
             if(field_index == tuple->prefix_len.size()){
-                now_dis = now_dis / field_index;
-                if(distance > now_dis){
-                    distance = now_dis;
-                    tuple2insert = tuple;
+                tuples2insert.push_back(make_pair(available_bits / tuple->prefix_len.size(), tuple));
+                if(tuple->prefix_len[0] == 0){
+                    default_tuple = tuple;
                 }
+            }
+        }
+        sort(tuples2insert.begin(), tuples2insert.end(), 
+                    [](pair<int, Tuple*> tuple1, pair<int, Tuple*> tuple2){return tuple1.first < tuple2.first;});
+        for(auto t : tuples2insert){
+            auto flag = t.second->InsertRuleRLWithCollide(rule, collide_thresh);
+            if(flag == 0){
+                tuple2insert = t.second;
+                break;
             }
         }
     }
 
     //unlikely
     if(tuple2insert == NULL){
-        vector<uint32_t> used_field = {0};
-        vector<uint32_t> used_field_lenth = {0};
-        tuple2insert = new Tuple(used_field, used_field_lenth, use_port_hash_table);
-        InsertTuple(tuple2insert);
-        // tuples_map[prefix_pair] = tuple;
+        if(default_tuple == NULL){
+            vector<uint32_t> used_field = {0};
+            vector<uint32_t> used_field_lenth = {0};
+            default_tuple = new Tuple(used_field, used_field_lenth, use_port_hash_table);
+            InsertTuple(default_tuple);
+        }
+        if (default_tuple->InsertRuleRL(rule) > 0)
+            return 1;
+        tuple2insert = default_tuple;
     }
 
-    if (tuple2insert->InsertRuleRL(rule) > 0)
-        return 1;
     ++rules_num;
     if (rule->priority == tuple2insert->max_priority)
         SortTuples();
@@ -194,6 +220,56 @@ int RlTuple::InsertRule(Rule *rule) {
     id2tuple[rule->priority] = tuple2insert;
     return 0;
 }
+
+
+// int RlTuple::InsertRule(Rule *rule) {
+//     Tuple *tuple2insert = NULL;
+//     if(id2tuple.find(rule->priority) != id2tuple.end()){
+//         tuple2insert = id2tuple[rule->priority];
+//     }
+//     else{
+//         int distance = 9999;
+//         for (int tuple_index = 0; tuple_index < tuples_num; ++tuple_index) {
+//             int now_dis = 0;
+//             Tuple *tuple = tuples_arr[tuple_index];
+        
+//             int field_index = 0;
+//             for(; field_index < tuple->prefix_len.size();){
+//                 int usedF = tuple->used_field[field_index];
+//                 if(rule->prefix_len[usedF] < tuple->prefix_len[field_index]){
+//                     break;
+//                 }
+//                 now_dis += (rule->prefix_len[usedF] - tuple->prefix_len[field_index]);
+//                 field_index ++;
+//             }
+//             if(field_index == tuple->prefix_len.size()){
+//                 now_dis = now_dis / field_index;
+//                 if(distance > now_dis){
+//                     distance = now_dis;
+//                     tuple2insert = tuple;
+//                 }
+//             }
+//         }
+//     }
+
+//     //unlikely
+//     if(tuple2insert == NULL){
+//         vector<uint32_t> used_field = {0};
+//         vector<uint32_t> used_field_lenth = {0};
+//         tuple2insert = new Tuple(used_field, used_field_lenth, use_port_hash_table);
+//         InsertTuple(tuple2insert);
+//         // tuples_map[prefix_pair] = tuple;
+//     }
+
+//     if (tuple2insert->InsertRuleRL(rule) > 0)
+//         return 1;
+//     ++rules_num;
+//     if (rule->priority == tuple2insert->max_priority)
+//         SortTuples();
+//     max_priority = max(max_priority, rule->priority);
+//     id2tuple[rule->priority] = tuple2insert;
+//     return 0;
+// }
 
 vector<int> RlTuple::getObs(int N, pair<vector<uint32_t>, vector<uint32_t>> current){
     vector<int> obs;
@@ -293,6 +369,9 @@ int RlTuple::InsertRuleTuple(Rule *rule, Tuple* tuple) {
 }
 
 int RlTuple::DeleteRule(Rule *rule) {
+    // for(auto keys: id2tuple){
+    //     printf("%d %d", keys.first, keys.second->max_priority);
+    // }
     auto tuple = id2tuple[rule->priority];
     if (tuple == NULL)
         return 1;
@@ -377,13 +456,30 @@ vector<int> RlTuple::evaluateByaccess(){
     return std::vector<int>{N_tuple, N_group_inner, int(N_group_outer), N_rule_inner};
 }
 
-unordered_map<double, int> RlTuple::evaluateWithWeight(unordered_map<int,int> &weights, string F){
+unordered_map<double, int> RlTuple::evaluateWithWeightEmpty(unordered_map<int,int> &weights, vector<Rule*> rules){
     unordered_map<double, int> lookup_distribution;
     uint64_t check_hash_cost = 5;
     uint64_t check_group_cost = 2;
     uint64_t check_rule_cost = 3;
-    // uint64_t N_tuple = 0, N_rule = 0;
-    // double N_group = 0;
+    for(int i=1; i<=rules.size(); i++){
+        double lookup_time;
+        lookup_time = 1 * check_hash_cost + 1 * check_group_cost + i * check_rule_cost;
+        if(lookup_distribution.find(lookup_time) != lookup_distribution.end()){
+            lookup_distribution[lookup_time] += weights[rules[i-1]->priority];
+        }
+        else{
+            lookup_distribution[lookup_time] = weights[rules[i-1]->priority];
+        }
+    }
+    return lookup_distribution;
+}
+
+
+unordered_map<double, int> RlTuple::evaluateWithWeight(unordered_map<int,int> &weights, double trade_off){
+    unordered_map<double, int> lookup_distribution;
+    uint64_t check_hash_cost = 5;
+    uint64_t check_group_cost = 2;
+    uint64_t check_rule_cost = 3;
     double N_group_L = 0;
     vector<double> N_group_LL, occupation;
     for (int tuple_index = 0; tuple_index < tuples_num; ++tuple_index) {
@@ -435,18 +531,16 @@ unordered_map<double, int> RlTuple::evaluateWithWeight(unordered_map<int,int> &w
                     // N_group += (N_group_LL[tuple_index1 - 1] - occupation[tuple_index]);  // outer_group
                     // N_group += level_group ; // inner_group
                     // N_rule += level_rule; // inner_rule
-                    double lookup_time;
-                    if(F == "throughput"){
-                        lookup_time = tuple_index1 * check_hash_cost +\
-                                        (N_group_LL[tuple_index1 - 1] - occupation[tuple_index] + level_group) * check_group_cost + \
-                                        (level_rule + N_group_LL[tuple_index1 - 1] - occupation[tuple_index]) * check_rule_cost;
-                    }
-                    else if(F == "update"){
-                        lookup_time = check_hash_cost +\
-                                         level_group * check_group_cost + \
-                                        level_rule * check_rule_cost;
-                    }
-                        
+                    double lookup_time_0,lookup_time_1;
+                    lookup_time_0 = tuple_index1 * check_hash_cost +\
+                                    (N_group_LL[tuple_index1 - 1] - occupation[tuple_index] + level_group) * check_group_cost + \
+                                    (level_rule + N_group_LL[tuple_index1 - 1] - occupation[tuple_index]) * check_rule_cost;
+                   
+                    lookup_time_1 = check_hash_cost +\
+                                    level_group * check_group_cost + \
+                                level_rule * check_rule_cost;
+                    
+                    double lookup_time = (1-trade_off) * lookup_time_0 + trade_off * lookup_time_1;
                     
                     if(lookup_distribution.find(lookup_time) != lookup_distribution.end()){
                         lookup_distribution[lookup_time] += weight;
@@ -681,6 +775,9 @@ int RlTuple::Lookup(Trace *trace, int priority) {
         }
     }
     // if(priority == 0){
+    //     for(auto keys: id2tuple){
+    //         printf("%d %d\n", keys.first, keys.second->max_priority);
+    //     }
     //     auto hash_table = id2tuple[trace->rule_id]->hash_table;
     //     auto hash_node_arr = hash_table.hash_node_arr;
     //     for(int group_index=0; group_index<= hash_table.mask; ++group_index){
@@ -743,6 +840,47 @@ int RlTuple::LookupAccess(Trace *trace, int priority, Rule *ans_rule, ProgramSta
     }
     program_state->AccessCal();
 	
+    return priority;
+}
+
+int RlTuple::LookupAccessWithClock(Trace *trace, int priority) {
+    int n_tuple = 0, n_group = 0, n_rule = 0;
+    for (int i = 0; i < tuples_num; ++i) {
+        Tuple *tuple = tuples_arr[i];
+        if (priority >= tuple->max_priority)
+            break;
+        n_tuple ++;
+        
+        uint64_t key = trace->key[tuple->used_field[0]] >> tuple->prefix_len_zero[0];
+        uint32_t hash = key;
+        for (int j = 1; j < tuple->used_field.size(); j++){
+            auto val2calhash = trace->key[tuple->used_field[j]] >> tuple->prefix_len_zero[j];
+            hash = Hash32_2(hash, val2calhash);
+            key = (key << tuple->prefix_len[j]) | val2calhash;
+        }
+
+        HashNode *hash_node = tuple->hash_table.hash_node_arr[hash & tuple->hash_table.mask];
+        while (hash_node) {
+            if (priority >= hash_node->max_priority)
+                break;
+            n_group ++;
+            if (hash_node->key == key) {
+                RuleNode *rule_node = hash_node->rule_node;
+                while (rule_node) {
+                    if (priority >= rule_node->rule->priority)
+                        break;
+                    n_rule ++;
+                    if (MatchRuleTrace(rule_node->rule, trace)) {
+                        priority = rule_node->priority;
+                        break;
+                    }
+                    rule_node = rule_node->next;  
+                };
+                break;
+            }
+            hash_node = hash_node->next;
+        }
+    }	
     return priority;
 }
 

@@ -15,11 +15,13 @@ public:
     int InsertRuleTuple(Rule *rule, Tuple* tuple);
     int DeleteRule(Rule *rule);
     double evaluate();
-    unordered_map<double, int> evaluateWithWeight(unordered_map<int,int>& weight, string F = "throughput");
+    unordered_map<double, int> evaluateWithWeight(unordered_map<int,int>& weight, double trade_off);
+    unordered_map<double, int> evaluateWithWeightEmpty(unordered_map<int,int>& weight, vector<Rule*> rules);
     vector<int> evaluateByaccess();
     int Lookup(Trace *trace, int priority);
     vector<int> LookupACcnt(Trace *trace, int priority);
     int LookupAccess(Trace *trace, int priority, Rule *ans_rule, ProgramState *program_state);
+    int LookupAccessWithClock(Trace *trace, int priority);
     void step(vector<Rule*> &rules);
     void addTuple(vector<uint32_t> _used_field, vector<uint32_t> _used_field_lenth);
     vector<int> getObs(int N, pair<vector<uint32_t>, vector<uint32_t>> current);
@@ -40,7 +42,6 @@ public:
     Tuple **tuples_arr;
 	map<uint32_t, Tuple*> tuples_map;
     unordered_map<uint32_t, Tuple*> id2tuple;
-    unordered_map<Rule*, Tuple*> rule2tuple;
     int tuples_num;
     int max_tuples_num;
     int rules_num;

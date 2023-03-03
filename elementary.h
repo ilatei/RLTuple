@@ -111,6 +111,7 @@ struct ProgramState {
 };
 
 const int RULE_FILED_MAXLENTH[12] = {32, 32, 16, 16, 8, 32, 48, 48, 16, 12, 3, 8};
+const int RULE_FILED_AVAILABLE[12] = {32, 32, 16, 16, 8, 32, 32, 32, 16, 12, 3, 8};
 //nw_src 32
 //nw_dst 32
 //tp_src 16

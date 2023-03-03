@@ -59,6 +59,55 @@ void PrintRule(Rule *rule) {
 	printf("priority %d\n", rule->priority);
 }
 
+vector<int> getImportantFiled(vector<Rule*> rules, int N){
+    vector<set<pair<uint64_t, uint64_t>>> importantFiled;
+    for(int field_index = 0; field_index <=1; field_index++){
+        for(int prefix = 1; prefix<=32; prefix++){
+            importantFiled.push_back(set<pair<uint64_t,uint64_t>>());
+        }
+    }
+    for(int field_index = 2; field_index < RULE_FIELD_NUM; field_index++){
+        importantFiled.push_back(set<pair<uint64_t,uint64_t>>());
+    }
+
+    for(auto r : rules){
+        for(int field_index = 0; field_index <=1; field_index++){
+            for(int prefix = 1; prefix<=32; prefix++){
+                if(r->prefix_len[field_index] >= prefix){
+                    importantFiled[field_index * 32 + prefix - 1].insert(
+                        make_pair(r->range[field_index][0] >> (32- prefix), r->range[field_index][1] >> (32- prefix)));
+                }
+            }
+        }
+        for(int field_index = 2; field_index < RULE_FIELD_NUM; field_index++){
+            importantFiled[64 + field_index - 2].insert(make_pair(r->range[field_index][0], r->range[field_index][1]));
+        }
+    }
+    vector<pair<int, int>> ret;
+    for(int i = 0; i< importantFiled.size(); i++){
+        ret.push_back(make_pair(i, importantFiled[i].size()));
+    }
+    sort(ret.begin(), ret.end(), [](pair<int,int>p1, pair<int,int>p2){return p1.second > p2.second;});
+    vector<int> ret1;
+    int th1 = N /2 -1;
+    int th2 = N /2 -1;
+    for(int i=0; i< N *2 && i < ret.size(); i++){
+        if(ret[i].first <= 31 && th1 --){
+            ret1.push_back(ret[i].first);
+        }
+        else if(ret[i].first <= 63 && th2 --){
+            ret1.push_back(ret[i].first);
+        }
+        else{
+            ret1.push_back(ret[i].first);
+        }
+        if(ret1.size() >= N){
+            break;
+        }
+    }
+    return ret1;
+}
+
 vector<Rule*> ReadRules(string rules_file, int rules_shuffle) {
     vector<Rule*> rules;
 	int rules_num = 0;

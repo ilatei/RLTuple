@@ -5,7 +5,6 @@
 using namespace std;
 
 int DynamicTuple::Create(vector<Rule*> &rules, bool insert) {
-    use_port_hash_table = true;
     pthread_mutex_init(&lookup_mutex, NULL);
     pthread_mutex_init(&update_mutex, NULL);
     // tuple_ranges

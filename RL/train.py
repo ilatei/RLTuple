@@ -91,7 +91,9 @@ def loop_d3qn(env):
 
             agent.replay()
         end_time = time.time()
-        if end_time - begin_time >= 600:
+        if end_time - begin_time >= 60:
+            print(decay_step)
+            print(episode)
             exit()
  
         # if PERIOD_SAVE_MODEL and episode%20 == 0:

@@ -18,5 +18,6 @@ vector<int> PerformOnlyPacketClassification(PacketClassifier& classifier, vector
 double lookuptimes2delay(vector<double>& lookup_times, map<double, int>& trace_interval, double bandwith=0);
 double distribution2delay(unordered_map<double, int> &distribution, map<double, int>& trace_interval);
 double distribution2delay1(unordered_map<double, int> &distribution);
+void cdfLookup(vector<double> lookup_distribution);
 
 #endif

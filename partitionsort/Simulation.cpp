@@ -2,6 +2,15 @@
 
 using namespace std;
 
+void cdfLookup(vector<double> lookup_distribution){
+	sort(lookup_distribution.begin(), lookup_distribution.end());
+	for(int i = 1; i<= 100; i++){
+		printf("%lf ", lookup_distribution[(lookup_distribution.size() - 1) * i / 100]);
+	}
+	printf("\n");
+}
+
+
 double lookuptimes2delay(vector<double>& lookup_times, map<double, int>& trace_interval, double cyclePerPacket){
 	vector<double> interval_times;
 	double interval_sum;
@@ -76,9 +85,14 @@ double distribution2delay1(unordered_map<double, int> &distribution){
 	}
 	priority_queue<double, vector<double>, greater<double>> max_delays;
 	for(auto look_uptime: lookup_times){
-		max_delays.push(look_uptime);
 		if(max_delays.size() > (1 - 0.95) * lookup_times.size()){
-			max_delays.pop();
+			if(look_uptime > max_delays.top()){
+				max_delays.pop();
+				max_delays.push(look_uptime);
+			}
+		}
+		else{
+			max_delays.push(look_uptime);
 		}
 	}
 	return max_delays.top();
@@ -153,7 +167,8 @@ vector<int> PerformOnlyPacketClassification(PacketClassifier& classifier, vector
 	// 	#endif
 	// 	lookup_times.push_back(double(e_tsc - s_tsc) / lookup_tsc);
 	// }
-	// auto tail_delay = lookuptimes2delay(lookup_times, trace_interval);
+	// cdfLookup(lookup_times);
+	// auto tail_delay = lookuptimes2delay(lookup_times, trace_interval, 3000);
 
 	// printf("\tTail delay: %f cycles\n", tail_delay);
 	// summary["Tail delay(cycles)"] = std::to_string(tail_delay);

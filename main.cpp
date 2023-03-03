@@ -56,6 +56,7 @@ string float2str(float Num)
 	return str;
 }
 
+
 double distribution2throughput(unordered_map<double, int>& distribution){
 	int sum_weight = 0;
 	double sum_cost = 0;
@@ -159,7 +160,8 @@ map<string, string> runUpdate(Classifier* classifier, vector<Rule*>& rules, vect
 			#endif
 			lookup_times.push_back(double(e_tsc - s_tsc) / lookup_tsc);
 		}
-		auto tail_delay = lookuptimes2delay(lookup_times,trace_interval, 1000);
+		cdfLookup(lookup_times);
+		auto tail_delay = lookuptimes2delay(lookup_times,trace_interval, 3000);
 
 		if(Flag & 0x80)
 			printf("\tTail delay: %f cycles\n", tail_delay);
@@ -168,17 +170,21 @@ map<string, string> runUpdate(Classifier* classifier, vector<Rule*>& rules, vect
 
 	if(Flag & 0x20){
 		std::chrono::duration<double> sum_time(0);
+		vector<int> insert_delete;
+		for(int i=0; i<100000; i++){
+			insert_delete.push_back((rand() * rand()) % rules.size());
+		}
 		for (int t = 0; t < trials; t++) {
 			start = std::chrono::steady_clock::now();
-			for (auto const &r : rules) {
-				classifier->DeleteRule(r);
-				classifier->InsertRule(r);
+			for (auto r_index : insert_delete) {
+				classifier->DeleteRule(rules[r_index]);
+				classifier->InsertRule(rules[r_index]);
 			}
 			end = std::chrono::steady_clock::now();
 			elapsed_seconds = end - start;
 			sum_time += elapsed_seconds; 
 		}
-		auto throughput = 1 / (sum_time.count() / trials) * rules.size() * 2 / (1000 * 1000);
+		auto throughput = 1 / (sum_time.count() / trials) * 2 / (1000 * 1000 / 100000);
 		if(Flag & 0x80)
 			printf("\tUpdate Throughput: %f Mups\n", throughput);
 		summary["Update Throughput(Mups)"] = std::to_string(throughput);
@@ -211,7 +217,7 @@ map<string, string> runUpdate(Classifier* classifier, vector<Rule*>& rules, vect
 
 
 void RunRL(unordered_map<string, string> rlArgs, vector<Rule*>& rules, vector<Trace*> traces, int trials, 
-			unordered_map<int,int> weights, map<double,int> trace_interval) {
+			unordered_map<int,int> weights, map<double,int> trace_interval, vector<int> importantField) {
 	
 	SOCKET server_ = INVALID_SOCKET;
  
@@ -288,7 +294,24 @@ void RunRL(unordered_map<string, string> rlArgs, vector<Rule*>& rules, vector<Tr
 			classifier->Free(true);
 			classifier = new RlTuple();
 			classifier->Create(empty, true);
-			last_evaluate = 9999;
+
+			if(rlArgs["distribution"] == "no" && step == 0){
+				weights.clear();
+				auto weight = int(stoi(rlArgs["trace_num"]) / rules.size());
+				for(auto r : rules){
+					weights[r->priority] = weight;
+				}
+			}
+
+
+			auto distribution = classifier->evaluateWithWeightEmpty(weights, rules);
+			if(rlArgs["aim"] == "throughput"){ // 估计的平均lookup时间和尾时延
+				last_evaluate = distribution2throughput(distribution);
+			}
+			else if(rlArgs["aim"] == "delay"){
+				// last_evaluate = distribution2delay(distribution, trace_interval);
+				last_evaluate = distribution2delay1(distribution) + distribution2throughput(distribution);
+			}
 
 			string buff;
 			char temp_buf[30];
@@ -302,6 +325,13 @@ void RunRL(unordered_map<string, string> rlArgs, vector<Rule*>& rules, vector<Tr
 				// printf("%d ", info);
 				itoa(info, temp_buf, 10);
 				buff.append(temp_buf);
+				buff += "_";
+			}
+			for(auto field : importantField){
+				memset(temp_buf, 0, sizeof(temp_buf));
+				// printf("%d ", info);
+				itoa(field, temp_buf, 10);
+				buff += temp_buf;
 				buff += "_";
 			}
 			send(socketConn, buff.c_str(), buff.length(), 0);
@@ -333,62 +363,56 @@ void RunRL(unordered_map<string, string> rlArgs, vector<Rule*>& rules, vector<Tr
 			classifier->step(rules);
 
 			double now_evaluate;
-			if(rlArgs["distribution"] == "no" && step == 1){
-				weights.clear();
-				auto weight = int(stoi(rlArgs["trace_num"]) / rules.size());
-				for(auto r : rules){
-					weights[r->priority] = weight;
-				}
-			}
-			auto distribution = classifier->evaluateWithWeight(weights);
+			auto distribution = classifier->evaluateWithWeight(weights, stod(rlArgs["trade_off"]));
 			if(rlArgs["aim"] == "throughput"){ // 估计的平均lookup时间和尾时延
 				now_evaluate = distribution2throughput(distribution);
 			}
 			else if(rlArgs["aim"] == "delay"){
-				now_evaluate = distribution2delay(distribution, trace_interval);
-				// now_evaluate = distribution2delay1(distribution);
+				// now_evaluate = distribution2delay(distribution, trace_interval);
+				now_evaluate = distribution2delay1(distribution) + distribution2throughput(distribution);
 			}
 	
-			if(step % 100 == 0){
-				best_evaluate *= 2;
-			}
-			if(now_evaluate < best_evaluate){
-				if(evaluate_results.size() <= evaluate_results_size){
-					evaluate_results.push_back(now_evaluate);
-				}
-				else if(evaluate_results[0] >= now_evaluate / pow(1.01, actual_evaluate_interval)){
-					evaluate_results[evaluate_results_size - 1] = now_evaluate;
-					sort(evaluate_results.begin(), evaluate_results.end());
-					actual_evaluate_interval = 0;		
-
-					if(rlArgs["aim"] == "throughput"){
-						ProgramState *program_state = new ProgramState();
-						auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xEF); //计算实际的吞吐,尾时延
-						free(program_state);
-						auto now_actual = stod(summary["Lookup Throughput(Mpps)"]);
-						// auto now_actual = stod(summary["Update Throughput(Mups)"]);
-						if(now_actual > best_actual){
-							dumpPolicy(classifier);
-							best_actual = now_actual;
-							best_evaluate = now_evaluate;
-						}
-					}
-					else if(rlArgs["aim"] == "delay"){
-						ProgramState *program_state = new ProgramState();
-						auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xFF);
-						free(program_state);
-						auto now_actual = stoi(summary["Tail delay(cycles)"]);
-						if(now_actual < best_actual){
-							dumpPolicy(classifier);
-							best_actual = now_actual;
-							best_evaluate = now_evaluate;
-						}
-					}
-				}
-				else{
-					actual_evaluate_interval ++;
-				}
-			}
+			// if(step % 100 == 0){
+			// 	best_evaluate *= 2;
+			// }
+			// if(now_evaluate < best_evaluate and step >= 1000){
+			// 	if(evaluate_results.size() <= evaluate_results_size){
+			// 		evaluate_results.push_back(now_evaluate);
+			// 		sort(evaluate_results.begin(), evaluate_results.end());
+			// 	}
+			// 	else if(evaluate_results[0] >= now_evaluate / pow(1.01, actual_evaluate_interval)){
+			// 		evaluate_results[evaluate_results_size - 1] = now_evaluate;
+			// 		actual_evaluate_interval = 0;		
+			// 		sort(evaluate_results.begin(), evaluate_results.end());
+			// 		if(rlArgs["aim"] == "throughput"){
+			// 			ProgramState *program_state = new ProgramState();
+			// 			auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xEF); //计算实际的吞吐,尾时延
+			// 			free(program_state);
+			// 			auto now_actual_lookup = stod(summary["Lookup Throughput(Mpps)"]);
+			// 			auto now_actual_update = stod(summary["Update Throughput(Mups)"]);
+			// 			auto now_actual = (1- stod(rlArgs["trade_off"])) * now_actual_lookup + stod(rlArgs["trade_off"]) * now_actual_update;
+			// 			if(now_actual > best_actual){
+			// 				dumpPolicy(classifier);
+			// 				best_actual = now_actual;
+			// 				best_evaluate = now_evaluate;
+			// 			}
+			// 		}
+			// 		else if(rlArgs["aim"] == "delay"){
+			// 			ProgramState *program_state = new ProgramState();
+			// 			auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xFF);
+			// 			free(program_state);
+			// 			auto now_actual = stoi(summary["Tail delay(cycles)"]);
+			// 			if(now_actual < best_actual){
+			// 				dumpPolicy(classifier);
+			// 				best_actual = now_actual;
+			// 				best_evaluate = now_evaluate;
+			// 			}
+			// 		}
+			// 	}
+			// 	else{
+			// 		actual_evaluate_interval ++;
+			// 	}
+			// }
 
 			string buff;
 			char temp_buf[30];
@@ -445,6 +469,7 @@ int main(int argc, char* argv[]) {
 	// }
 
 	vector<Rule*> rules = ReadRules(filterFile, false);
+	auto importanField = getImportantFiled(rules, 10);
 	trace_num = trace_num > rules.size() ? trace_num :  rules.size();
 
 	vector<Trace*> traces;
@@ -505,7 +530,8 @@ int main(int argc, char* argv[]) {
 			rlArgs["aim"] = GetOrElse(args, "a", "throughput");
 			rlArgs["distribution"] = GetOrElse(args, "d", "no");
 			rlArgs["trace_num"] = to_string(trace_num);
-			RunRL(rlArgs, rules, traces, trials, rule_distribution, trace_interval);
+			rlArgs["trade_off"] = GetOrElse(args, "to", "0.0");
+			RunRL(rlArgs, rules, traces, trials, rule_distribution, trace_interval, importanField);
 		}
 		free(program_state);
 	}

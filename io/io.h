@@ -10,6 +10,7 @@
 #include "trie.h"
 #include <unordered_map>
 #include <random>
+#include <set>
 
 using namespace std;
 
@@ -47,5 +48,6 @@ void Split(const string &s, char delim, vector<string>& tokens);
 
 int GetPortMaskSimple(int port_start, int port_end);
 map<double, int> getWeibullInterval(int size);
+vector<int> getImportantFiled(vector<Rule*> rules, int N);
 
 #endif
