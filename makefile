@@ -5,16 +5,17 @@ RLPATH= rltuple/
 TSS = partitionsort/OVS/
 TM = partitionsort/TupleMerge/
 PS = partitionsort/PartitionSort/
+HYBRIDTSS = partitionsort/HybridTSS/
 PSCONVERT = partitionsort/
 IOPATH=io/
 STRUCTURE=tuplestructure/
 Util = partitionsort/Utilities/
 
 
-VPATH = $(IOPATH) $(DYNAMICPATH) $(STRUCTURE) $(RLPATH) $(TSS) $(TM) $(PS) $(Util) $(PSCONVERT)
+VPATH = $(IOPATH) $(DYNAMICPATH) $(STRUCTURE) $(RLPATH) $(TSS) $(TM) $(PS) $(HYBRIDTSS) $(Util) $(PSCONVERT)
 
 CXX = g++
-CXXFLAGS = -O2 -std=c++14 -fpermissive
+CXXFLAGS = -O3 -std=c++14 -fpermissive
 
 # Targets needed to bring the executable up to date
 
@@ -23,6 +24,7 @@ main: main.o dynamictuple.o rltuple.o dynamictuple-ranges.o \
   		hashnode.o io.o trie.o cmap.o TupleSpaceSearch.o \
 		classification-main-ps.o ElementaryClasses.o ps-io.o Simulation.o\
 		SlottedTable.o TupleMergeOnline.o \
+		HybridTSS.o SubHybridTSS.o\
 		misc.o OptimizedMITree.o PartitionSort.o red_black_tree.o SortableRulesetPartitioner.o stack.o IntervalUtilities.o
 	
 	$(CXX) $(CXXFLAGS) -o main *.o $(LIBS) -lwsock32
@@ -99,6 +101,13 @@ stack.o : stack.h
 
 PartitionSort.o : PartitionSort.h
 	$(CXX) $(CXXFLAGS) -c $(PS)PartitionSort.cpp
+
+# HYBRIDTSS
+SubHybridTSS.o : SubHybridTSS.h
+	$(CXX) $(CXXFLAGS) -c $(HYBRIDTSS)SubHybridTSS.cpp
+
+HybridTSS.o : HybridTSS.h
+	$(CXX) $(CXXFLAGS) -c $(HYBRIDTSS)HybridTSS.cpp
 
 # Util
 IntervalUtilities.o : IntervalUtilities.h

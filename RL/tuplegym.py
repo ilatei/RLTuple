@@ -43,10 +43,8 @@ class tupleSimEnv(Env):
         #     reward = -reward
         # reward = cost_old - cost_new / 200
         
-        reward = abs((cost_old - cost_new) / cost_old)
-        if reward > 1:
-            reward = 1
-        elif reward <= 0.5:
+        reward = abs((cost_old - cost_new) / max(cost_old, cost_new))
+        if reward <= 0.5:
             reward = 0.5 - 2 * (0.5 - reward) * (0.5 - reward)
         elif reward > 0.5:
             reward = 0.5 + 2 * (reward - 0.5) * (reward - 0.5)
@@ -66,14 +64,18 @@ class tupleSimEnv(Env):
             self.importantField.extend(obs[90:])
         return obs[0:90]
     
-    def getMask(self, state):
+    def getMask(self, state, fieldNum=12):
         if state[1] == 0:
             ret = [0] * 74 + [0] * 74
             for field in self.importantField:
                 ret[74 + field] = 1
             return ret
         if state[3] != 0:
-            return [1] * 74 + [0] * 74
+            ret = [1] * 74 + [0] * 74
+            for i in range(fieldNum, 12):
+                ret[64 + i - 2] = 0
+                ret[64 + 74 + i - 2] = 0
+            return ret
 
         mask = [1] * 148
         used_field = []
@@ -110,6 +112,10 @@ class tupleSimEnv(Env):
                     mask[32 + l1 - 1] = 0
                 else:
                     mask[64 + f1 - 2] = 0 
+
+        for i in range(fieldNum, 12):
+            mask[64 + i - 2] = 0
+            mask[64 + 74 + i - 2] = 0
 
         return mask
     

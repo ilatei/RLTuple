@@ -7,6 +7,7 @@
 #include "OVS/TupleSpaceSearch.h"
 #include "PartitionSort/PartitionSort.h"
 #include "TupleMerge/TupleMergeOnline.h"
+#include "HybridTSS/HybridTSS.h"
 
 using namespace std;
 

@@ -16,6 +16,16 @@
 
 #include "../elementary.h"
 
+#define RULE_SIZE 16
+#define NODE_SIZE 32
+#define LEAF_NODE_SIZE 4
+#define TREE_NODE_SIZE 8
+#define Null -1
+#define PTR_SIZE 4
+#define HEADER_SIZE 4
+#define RULESIZE 4.5
+
+
 #define FieldSA 0
 #define FieldDA 1
 #define FieldSP 2

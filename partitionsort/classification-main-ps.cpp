@@ -23,6 +23,10 @@ int ClassificationMainPS(CommandStruct command, ProgramState *program_state, vec
         unordered_map<std::string, std::string> args;
         TupleMergeOnline tuplemerge(args);
         PerformOnlyPacketClassification(tuplemerge, ps_rules, packets, trace_interval, trials, program_state);
-    }
+    } else if (command.method_name == "HybridTSS") {
+        unordered_map<std::string, std::string> args;
+        HybridTSS hybridtss;
+        PerformOnlyPacketClassification(hybridtss, ps_rules, packets, trace_interval, trials, program_state);
+    } 
     return 0;
 }

@@ -39,7 +39,7 @@ def OurModel(input_shape, action_space, dueling):
         # Output Layer with # of actions: 2 nodes (left, right)
         X = Dense(action_space, activation="linear", kernel_initializer='he_uniform')(X)
 
-    model = Model(inputs = X_input, outputs = X, name='CartPole Dueling DDQN model')
+    model = Model(inputs = X_input, outputs = X, name='Dueling DDQN model')
     # model.compile(loss="mean_squared_error", optimizer=RMSprop(lr=0.00025, rho=0.95, epsilon=0.01), metrics=["accuracy"])
     model.compile(loss="mean_squared_error", optimizer=Adam(lr=0.0003), metrics=["accuracy"])
 
@@ -48,15 +48,6 @@ def OurModel(input_shape, action_space, dueling):
 
 class DQNAgent:
     def __init__(self, s_dim, a_dim):
-        # self.env_name = env_name       
-        # self.env = gym.make(env_name)
-        # self.env.seed(0)  
-        # by default, CartPole-v1 has max episode steps = 500
-        # self.env._max_episode_steps = 4000
-        # self.state_size = self.env.observation_space.shape[0]
-        # self.action_size = self.env.action_space.n
-        # self.sess = tf.Session()
-        # self.sess.run(tf.global_variables_initializer())
         self.state_size = s_dim
         self.action_size = a_dim
 
@@ -67,7 +58,7 @@ class DQNAgent:
 
         # EXPLORATION HYPERPARAMETERS for epsilon and epsilon greedy strategy
         self.epsilon = 1.0 # exploration probability at start
-        self.epsilon_min = 0.01 # minimum exploration probability
+        self.epsilon_min = 0 # minimum exploration probability
         self.epsilon_decay = 0.0005 # exponential decay rate for exploration prob
         
         self.batch_size = 32
@@ -212,30 +203,6 @@ class DQNAgent:
 
     def save(self, name):
         self.model.save(name)
-
-    # pylab.figure(figsize=(18, 9))
-    # def PlotModel(self, score, episode):
-    #     self.scores.append(score)
-    #     self.episodes.append(episode)
-    #     self.average.append(sum(self.scores[-50:]) / len(self.scores[-50:]))
-    #     pylab.plot(self.episodes, self.average, 'r')
-    #     pylab.plot(self.episodes, self.scores, 'b')
-    #     pylab.ylabel('Score', fontsize=18)
-    #     pylab.xlabel('Steps', fontsize=18)
-    #     dqn = 'DQN_'
-    #     softupdate = ''
-    #     dueling = ''
-    #     greedy = ''
-    #     if self.ddqn: dqn = 'DDQN_'
-    #     if self.Soft_Update: softupdate = '_soft'
-    #     if self.dueling: dueling = '_Dueling'
-    #     if self.epsilon_greedy: greedy = '_Greedy'
-    #     try:
-    #         pylab.savefig(dqn+self.env_name+softupdate+dueling+greedy+".png")
-    #     except OSError:
-    #         pass
-
-    #     return str(self.average[-1])[:5]
     
     def run(self):
         decay_step = 0
@@ -278,9 +245,3 @@ class DQNAgent:
                 if done:
                     print("episode: {}/{}, score: {}".format(e, self.EPISODES, i))
                     break
-
-if __name__ == "__main__":
-    env_name = 'CartPole-v1'
-    agent = DQNAgent(env_name)
-    agent.run()
-    #agent.test()

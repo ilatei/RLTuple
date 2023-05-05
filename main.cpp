@@ -70,6 +70,9 @@ double distribution2throughput(unordered_map<double, int>& distribution){
 void dumpPolicy(RlTuple* classifier){
 	for (int i = 0; i < classifier->tuples_num; ++i) {
         Tuple *tuple = classifier->tuples_arr[i];
+		if (tuple->max_priority == 0){
+			continue;
+		}
 		printf("field : ");
 		for(auto field : tuple->used_field){
 			printf("%d ", field);
@@ -255,10 +258,9 @@ void RunRL(unordered_map<string, string> rlArgs, vector<Rule*>& rules, vector<Tr
 	int actual_evaluate_interval = 0;
 	int step = 0;
 	int ep_step = 0;
+	int performance_drop_cnt = 0;
 
 	while(true){
-		int performance_drop_cnt = 0;
-
 		char recvBuff[1024];
 		memset(recvBuff, 0, sizeof(recvBuff));
 		
@@ -372,47 +374,50 @@ void RunRL(unordered_map<string, string> rlArgs, vector<Rule*>& rules, vector<Tr
 				now_evaluate = distribution2delay1(distribution) + distribution2throughput(distribution);
 			}
 	
-			// if(step % 100 == 0){
-			// 	best_evaluate *= 2;
-			// }
-			// if(now_evaluate < best_evaluate and step >= 1000){
-			// 	if(evaluate_results.size() <= evaluate_results_size){
-			// 		evaluate_results.push_back(now_evaluate);
-			// 		sort(evaluate_results.begin(), evaluate_results.end());
-			// 	}
-			// 	else if(evaluate_results[0] >= now_evaluate / pow(1.01, actual_evaluate_interval)){
-			// 		evaluate_results[evaluate_results_size - 1] = now_evaluate;
-			// 		actual_evaluate_interval = 0;		
-			// 		sort(evaluate_results.begin(), evaluate_results.end());
-			// 		if(rlArgs["aim"] == "throughput"){
-			// 			ProgramState *program_state = new ProgramState();
-			// 			auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xEF); //计算实际的吞吐,尾时延
-			// 			free(program_state);
-			// 			auto now_actual_lookup = stod(summary["Lookup Throughput(Mpps)"]);
-			// 			auto now_actual_update = stod(summary["Update Throughput(Mups)"]);
-			// 			auto now_actual = (1- stod(rlArgs["trade_off"])) * now_actual_lookup + stod(rlArgs["trade_off"]) * now_actual_update;
-			// 			if(now_actual > best_actual){
-			// 				dumpPolicy(classifier);
-			// 				best_actual = now_actual;
-			// 				best_evaluate = now_evaluate;
-			// 			}
-			// 		}
-			// 		else if(rlArgs["aim"] == "delay"){
-			// 			ProgramState *program_state = new ProgramState();
-			// 			auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xFF);
-			// 			free(program_state);
-			// 			auto now_actual = stoi(summary["Tail delay(cycles)"]);
-			// 			if(now_actual < best_actual){
-			// 				dumpPolicy(classifier);
-			// 				best_actual = now_actual;
-			// 				best_evaluate = now_evaluate;
-			// 			}
-			// 		}
-			// 	}
-			// 	else{
-			// 		actual_evaluate_interval ++;
-			// 	}
-			// }
+			if(step % 100 == 0){
+				best_evaluate *= 2;
+			}
+			if(now_evaluate < best_evaluate and step >= 1000){
+				if(evaluate_results.size() <= evaluate_results_size){
+					evaluate_results.push_back(now_evaluate);
+					sort(evaluate_results.begin(), evaluate_results.end());
+				}
+				else if(evaluate_results[0] >= now_evaluate / pow(1.01, actual_evaluate_interval)){
+					evaluate_results[evaluate_results_size - 1] = now_evaluate;
+					actual_evaluate_interval = 0;		
+					sort(evaluate_results.begin(), evaluate_results.end());
+					if(rlArgs["aim"] == "throughput"){
+						ProgramState *program_state = new ProgramState();
+						auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0x6F); //计算实际的吞吐,尾时延
+						free(program_state);
+						auto now_actual_lookup = stod(summary["Lookup Throughput(Mpps)"]);
+						auto now_actual_update = stod(summary["Update Throughput(Mups)"]);
+						auto now_actual = (1- stod(rlArgs["trade_off"])) * now_actual_lookup + stod(rlArgs["trade_off"]) * now_actual_update;
+						if(now_actual > best_actual){
+							dumpPolicy(classifier);
+							best_actual = now_actual;
+							best_evaluate = now_evaluate;
+							ProgramState *program_state = new ProgramState();
+							auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xEF); //计算实际的吞吐,尾时延
+							free(program_state);
+						}
+					}
+					else if(rlArgs["aim"] == "delay"){
+						ProgramState *program_state = new ProgramState();
+						auto summary = runUpdate(classifier, rules, traces, trace_interval, trials, program_state, 0xFF);
+						free(program_state);
+						auto now_actual = stoi(summary["Tail delay(cycles)"]);
+						if(now_actual < best_actual){
+							dumpPolicy(classifier);
+							best_actual = now_actual;
+							best_evaluate = now_evaluate;
+						}
+					}
+				}
+				else{
+					actual_evaluate_interval ++;
+				}
+			}
 
 			string buff;
 			char temp_buf[30];
@@ -440,7 +445,7 @@ void RunRL(unordered_map<string, string> rlArgs, vector<Rule*>& rules, vector<Tr
 			// printf("last_evaluate:%lf, now_evaluate:%lf, best_evaluate:%lf\n", last_evaluate, now_evaluate, best_evaluate);
 			last_evaluate = now_evaluate;
 
-			if(classifier->tuples_num >= 20 || performance_drop_cnt >= 5 || ep_step >= 40){
+			if(classifier->tuples_num >= 20 || performance_drop_cnt >= 4 || ep_step >= 30){
 				buff += "_1";
 			}
 			else{
@@ -512,7 +517,7 @@ int main(int argc, char* argv[]) {
 		ProgramState *program_state = new ProgramState();
 		vector<int> ans;
 		printf("\nalgo:%s\n", algo.c_str());
-		if(algo == "PSTSS" || algo == "TupleMerge" || algo == "PartitionSort"){
+		if(algo == "PSTSS" || algo == "TupleMerge" || algo == "PartitionSort" || algo == "HybridTSS"){
 			cc.method_name = algo;
 			ClassificationMainPS(cc, program_state, rules, traces, trace_interval, ans, trials);
 		}

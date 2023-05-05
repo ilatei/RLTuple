@@ -1,0 +1,943 @@
+nw_src=136.203.122.104/32, nw_dst=4.214.217.188/32, tp_src=4000:4000, tp_dst=1024:65535, nw_proto=17, dl_vlan=3486, eth_type=0x916a, dl_dst=fa:16:3e:d7:25:b1
+nw_src=246.58.80.102/32, nw_dst=4.214.217.188/32, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:6f:23:72, eth_type=0x95bc, dl_dst=fa:16:3e:52:cc:3d
+nw_src=136.193.232.165/32, nw_dst=4.214.217.188/32, tp_dst=23:23, nw_proto=6, dl_src=fa:16:3e:3a:88:91, dl_dst=fa:16:3e:cd:3c:41
+nw_src=121.6.102.64/32, nw_dst=245.219.53.88/32, tp_dst=514:514, nw_proto=17, dl_vlan=1313, dl_dst=fa:16:3e:9e:52:c
+nw_src=120.50.205.171/32, nw_dst=241.234.63.26/32, tp_dst=3106:3106, nw_proto=6, dl_src=fa:16:3e:61:7:ab, dl_dst=fa:16:3e:9d:42:30
+nw_src=120.50.209.250/32, nw_dst=241.232.28.58/32, tp_dst=8080:8080, nw_proto=6, dl_vlan=3635, dl_dst=fa:16:3e:e6:fe:7f
+nw_src=120.50.209.250/32, nw_dst=242.39.132.115/32, tp_dst=754:754, nw_proto=17, eth_type=0x7277
+nw_src=120.50.209.250/32, nw_dst=242.39.132.115/32, tp_dst=514:514, nw_proto=6, dl_src=fa:16:3e:d1:64:3, dl_vlan=729, dl_dst=fa:16:3e:2a:49:a4
+nw_src=120.50.209.252/32, nw_dst=242.39.132.115/32, tp_dst=123:123, nw_proto=6, eth_type=0xae8f, dl_dst=fa:16:3e:4f:1c:23
+nw_src=120.50.209.252/32, nw_dst=242.39.154.61/32, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:49:4f:fb, dl_vlan=2382, dl_dst=fa:16:3e:25:8c:e
+nw_src=120.50.209.252/32, nw_dst=242.39.154.61/32, tp_dst=3106:3106, nw_proto=6, dl_src=fa:16:3e:4e:8d:15, dl_vlan=1682, dl_dst=fa:16:3e:aa:c2:7d
+nw_src=120.50.209.252/32, nw_dst=242.39.154.5/32, tp_dst=5190:5190, nw_proto=17, dl_vlan=2135
+nw_src=120.50.209.252/32, nw_dst=242.39.154.5/32, tp_dst=5020:5020, nw_proto=6
+nw_src=127.71.212.149/32, nw_dst=242.39.154.5/32, tp_dst=162:162, nw_proto=6, dl_src=fa:16:3e:ed:9b:ec, dl_dst=fa:16:3e:c5:19:6
+nw_src=127.124.110.102/32, nw_dst=172.180.12.122/32, tp_dst=514:514, nw_proto=6, dl_vlan=1682, dl_dst=fa:16:3e:a6:e3:4d
+nw_src=127.120.243.2/32, nw_dst=172.180.12.236/32, tp_dst=5190:5190, nw_proto=6, dl_dst=fa:16:3e:99:1c:cb
+nw_src=127.120.243.2/32, nw_dst=172.180.13.20/32, tp_dst=20555:20555, nw_proto=17, dl_vlan=1916, dl_dst=fa:16:3e:6:bf:11
+nw_src=127.120.235.248/32, nw_dst=172.180.13.20/32, tp_dst=23:23, nw_proto=6, dl_dst=fa:16:3e:f4:7e:76
+nw_src=127.120.217.158/32, nw_dst=172.180.13.20/32, tp_dst=139:139, nw_proto=6, dl_src=fa:16:3e:f:ab:a1, dl_vlan=2556, dl_dst=fa:16:3e:2:d6:a3
+nw_src=127.120.212.45/32, nw_dst=172.180.13.20/32, tp_dst=53:53, nw_proto=17, dl_vlan=168, dl_dst=fa:16:3e:b0:aa:96
+nw_src=124.32.27.44/32, nw_dst=172.180.13.19/32, tp_dst=7426:7426, nw_proto=6, dl_vlan=3816
+nw_src=124.32.27.44/32, nw_dst=172.180.13.19/32, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:82:10:cf
+nw_src=124.32.29.140/32, nw_dst=172.180.13.19/32, tp_dst=9993:9993, nw_proto=6, dl_vlan=672, dl_dst=fa:16:3e:d4:88:c4
+nw_src=124.32.28.197/32, nw_dst=172.180.13.19/32, tp_dst=37:37, nw_proto=6, dl_dst=fa:16:3e:c5:19:6
+nw_src=124.32.225.241/32, nw_dst=172.180.15.232/32, tp_dst=3015:3015, nw_proto=6, eth_type=0x5c63, dl_dst=fa:16:3e:2e:9d:a0
+nw_src=124.32.225.241/32, nw_dst=172.180.15.232/32, tp_dst=5050:5050, nw_proto=6, dl_vlan=2241, dl_dst=fa:16:3e:57:c1:90
+nw_src=124.32.225.241/32, nw_dst=172.180.15.232/32, tp_dst=1701:1701, nw_proto=6, dl_src=fa:16:3e:a0:e4:6f, dl_dst=fa:16:3e:c6:d8:7a
+nw_src=124.32.225.241/32, nw_dst=172.180.15.232/32, tp_dst=80:80, nw_proto=6, dl_vlan=1313, dl_dst=fa:16:3e:83:cf:2a
+nw_src=124.39.193.135/32, nw_dst=172.180.15.232/32, tp_dst=2000:2000, nw_proto=6, dl_vlan=1918, eth_type=0xdd0d, dl_dst=fa:16:3e:d4:88:c4
+nw_src=124.39.193.135/32, nw_dst=172.180.15.232/32, tp_dst=5050:5050, nw_proto=6
+nw_src=124.39.193.135/32, nw_dst=172.180.15.232/32, tp_dst=123:123, nw_proto=6, dl_src=fa:16:3e:e5:c:8b, dl_dst=fa:16:3e:f3:56:91
+nw_src=124.39.193.135/32, nw_dst=172.180.15.7/32, tp_dst=4321:4321, nw_proto=6, dl_src=fa:16:3e:6d:76:8f, dl_vlan=3771, dl_dst=fa:16:3e:c8:c0:b0
+nw_src=124.39.193.135/32, nw_dst=172.180.15.7/32, tp_dst=9000:9000, nw_proto=6, dl_vlan=823, dl_dst=fa:16:3e:a6:a3:87
+nw_src=124.39.135.58/32, nw_dst=172.180.15.7/32, tp_dst=51790:51790, nw_proto=6, dl_vlan=254
+nw_src=124.39.135.58/32, nw_dst=172.180.15.7/32, tp_dst=5190:5190, nw_proto=17, eth_type=0x95bc, dl_dst=fa:16:3e:b0:b:31
+nw_src=124.39.135.58/32, nw_dst=172.180.15.7/32, tp_dst=88:88, nw_proto=6, dl_vlan=3080, dl_dst=fa:16:3e:f6:7b:d6
+nw_src=124.39.135.58/32, nw_dst=172.180.15.7/32, tp_dst=20555:20555, nw_proto=6, dl_vlan=565, dl_dst=fa:16:3e:2a:b1:3e
+nw_src=124.39.135.58/32, nw_dst=172.180.15.7/32, tp_dst=80:80, nw_proto=6, dl_vlan=636, dl_dst=fa:16:3e:fe:cb:5e
+nw_src=124.39.135.58/32, nw_dst=172.180.15.7/32, tp_dst=29301:29301, nw_proto=6, dl_src=fa:16:3e:95:c4:d6, dl_vlan=2187, eth_type=0x916a, dl_dst=fa:16:3e:d5:d8:be
+nw_src=124.39.135.58/32, nw_dst=172.180.15.7/32, tp_dst=1812:1812, nw_proto=6, dl_vlan=823, dl_dst=fa:16:3e:3c:68:28
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=143:143, nw_proto=6, dl_vlan=3312, dl_dst=fa:16:3e:b9:f4:78
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:f8:21:a4
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=6010:6010, nw_proto=6, dl_src=fa:16:3e:f2:17:d2
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=2121:2121, nw_proto=17, eth_type=0x89ab
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=80:80, nw_proto=6, eth_type=0xd5ad, dl_dst=fa:16:3e:a6:e3:4d
+nw_src=124.39.135.58/32, nw_dst=172.180.54.33/32, tp_dst=80:80, nw_proto=17, dl_vlan=3543, dl_dst=fa:16:3e:44:e8:41
+nw_src=124.39.135.58/32, nw_dst=172.180.54.33/32, tp_dst=5000:5000, nw_proto=6, dl_vlan=254
+nw_src=124.39.135.58/32, nw_dst=172.180.54.221/32, tp_dst=143:143, nw_proto=6, dl_src=fa:16:3e:69:13:35, eth_type=0x95bc, dl_dst=fa:16:3e:91:2b:c3
+nw_src=38.228.22.100/32, nw_dst=172.180.54.214/32, tp_dst=5015:5015, nw_proto=6, dl_vlan=3761, eth_type=0x5c63, dl_dst=fa:16:3e:11:1d:2d
+nw_src=38.228.9.5/32, nw_dst=172.180.54.214/32, tp_dst=8080:8080, nw_proto=6, dl_dst=fa:16:3e:8d:b:2b
+nw_src=39.144.174.114/32, nw_dst=172.180.54.214/32, tp_dst=80:80, nw_proto=6, dl_dst=fa:16:3e:11:1d:2d
+nw_src=39.159.153.45/32, nw_dst=172.180.50.34/32, tp_dst=25:25, nw_proto=6, dl_src=fa:16:3e:88:92:1e, dl_dst=fa:16:3e:1a:d6:5
+nw_src=39.171.18.39/32, nw_dst=172.180.50.34/32, tp_dst=29301:29301, nw_proto=17
+nw_src=39.171.14.241/32, nw_dst=172.180.50.34/32, tp_dst=4010:4010, nw_proto=6, dl_vlan=2932, dl_dst=fa:16:3e:6a:43:4e
+nw_src=39.167.51.149/32, nw_dst=172.180.50.34/32, tp_dst=443:443, nw_proto=6, dl_src=fa:16:3e:43:20:e0, eth_type=0x95bc
+nw_src=39.167.220.167/32, nw_dst=172.180.50.34/32, tp_dst=25:25, nw_proto=17, eth_type=0x5c63, dl_dst=fa:16:3e:a0:3c:25
+nw_src=39.167.220.167/32, nw_dst=172.180.50.34/32, tp_dst=5540:5540, nw_proto=6, dl_src=fa:16:3e:6c:79:9, dl_vlan=396
+nw_src=39.167.220.167/32, nw_dst=172.180.50.34/32, tp_dst=1701:1701, nw_proto=6, dl_vlan=3005, eth_type=0x89ab, dl_dst=fa:16:3e:d5:d8:be
+nw_src=39.167.220.167/32, nw_dst=172.180.50.34/32, tp_dst=3015:3015, nw_proto=6, eth_type=0xae8f, dl_dst=fa:16:3e:b9:f4:78
+nw_src=39.167.220.166/32, nw_dst=172.180.50.34/32, tp_dst=162:162, nw_proto=6, dl_vlan=1369, eth_type=0x5c63
+nw_src=39.167.220.166/32, nw_dst=172.180.50.34/32, tp_dst=53:53, nw_proto=6, dl_dst=fa:16:3e:c5:fd:da
+nw_src=39.167.220.166/32, nw_dst=172.180.50.34/32, tp_dst=54488:54488, nw_proto=17, dl_vlan=1369, eth_type=0x89ab, dl_dst=fa:16:3e:e4:41:89
+nw_src=39.167.220.166/32, nw_dst=172.180.50.34/32, tp_dst=514:514, nw_proto=6
+nw_src=42.116.36.186/32, nw_dst=172.180.50.34/32, tp_dst=5540:5540, nw_proto=6, dl_src=fa:16:3e:7f:3a:d8, dl_vlan=3833, dl_dst=fa:16:3e:15:6c:aa
+nw_src=42.116.36.187/32, nw_dst=172.180.50.34/32, tp_dst=5190:5190, nw_proto=17, dl_vlan=3673, dl_dst=fa:16:3e:65:4c:b5
+nw_src=41.106.30.192/32, nw_dst=172.180.50.34/32, tp_dst=37:37, nw_proto=17, dl_vlan=221, eth_type=0xc56, dl_dst=fa:16:3e:90:2d:8a
+nw_src=41.106.30.192/32, nw_dst=172.180.50.34/32, tp_dst=3101:3101, nw_proto=17, dl_dst=fa:16:3e:8f:b9:e9
+nw_src=41.106.30.192/32, nw_dst=172.180.50.34/32, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:f4:7e:76
+nw_src=41.106.30.192/32, nw_dst=172.180.50.34/32, tp_dst=4444:4444, nw_proto=17, dl_dst=fa:16:3e:18:6b:c6
+nw_src=41.106.0.171/32, nw_dst=172.180.50.34/32, tp_dst=8000:8000, nw_proto=6, dl_dst=fa:16:3e:75:4e:55
+nw_src=41.106.0.171/32, nw_dst=172.180.50.34/32, tp_dst=80:80, nw_proto=6, eth_type=0xd5ad, dl_dst=fa:16:3e:2a:49:a4
+nw_src=41.106.0.171/32, nw_dst=172.180.33.65/32, tp_dst=1812:1812, nw_proto=6, dl_dst=fa:16:3e:9e:61:ff
+nw_src=41.106.0.171/32, nw_dst=172.180.33.65/32, tp_dst=162:162, nw_proto=6, dl_dst=fa:16:3e:f3:56:91
+nw_src=47.234.46.33/32, nw_dst=172.180.33.65/32, tp_dst=25:25, nw_proto=17, dl_vlan=136
+nw_src=47.234.46.33/32, nw_dst=172.180.33.65/32, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:3c:70:f4, dl_dst=fa:16:3e:4a:b1:78
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=25:25, nw_proto=17, dl_src=fa:16:3e:a8:4c:d6, eth_type=0xc56, dl_dst=fa:16:3e:44:99:26
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=5730:5730, nw_proto=17, dl_vlan=2382
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=514:514, nw_proto=17, dl_vlan=3635, eth_type=0xc56, dl_dst=fa:16:3e:8c:12:c7
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=5050:5050, nw_proto=17, eth_type=0x89ab, dl_dst=fa:16:3e:f6:7b:d6
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=29301:29301, nw_proto=6, dl_vlan=823, dl_dst=fa:16:3e:68:71:ba
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=23:23, nw_proto=6, dl_dst=fa:16:3e:8:49:4b
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=443:443, nw_proto=6, dl_vlan=1682, dl_dst=fa:16:3e:42:85:3
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:6d:cb:6c
+nw_src=47.200.166.242/32, nw_dst=172.180.33.65/32, tp_dst=5020:5020, nw_proto=6, eth_type=0x5c63
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=123:123, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:a1:79:8d
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=29301:29301, nw_proto=6, dl_vlan=55, eth_type=0xdd0d, dl_dst=fa:16:3e:c5:19:6
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=9993:9993, nw_proto=6, dl_dst=fa:16:3e:19:fe:3
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=5001:5001, nw_proto=6, dl_dst=fa:16:3e:42:85:3
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3300:3300, nw_proto=6, dl_vlan=1740, dl_dst=fa:16:3e:4f:dc:fa
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=6, eth_type=0x7277, dl_dst=fa:16:3e:99:1c:cb
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=25:25, nw_proto=6, dl_dst=fa:16:3e:b1:e6:67
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3206:3206, nw_proto=17, dl_src=fa:16:3e:7d:c9:bb, dl_vlan=97, dl_dst=fa:16:3e:9e:61:ff
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=17, eth_type=0x916a, dl_dst=fa:16:3e:98:6b:de
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3000:3000, nw_proto=6, dl_vlan=852, dl_dst=fa:16:3e:f4:7e:76
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3106:3106, nw_proto=17, dl_src=fa:16:3e:cf:d4:27, dl_vlan=3761, dl_dst=fa:16:3e:3a:28:7a
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=42:42, nw_proto=6, dl_vlan=3395, eth_type=0x5c63, dl_dst=fa:16:3e:8c:7e:f0
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=20555:20555, nw_proto=6, dl_vlan=533, eth_type=0xd5ad, dl_dst=fa:16:3e:f2:4a:ad
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=8080:8080, nw_proto=6, dl_dst=fa:16:3e:88:5e:e
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=20555:20555, nw_proto=17, dl_vlan=3150, eth_type=0xae8f, dl_dst=fa:16:3e:31:13:51
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=53:53, nw_proto=17, dl_vlan=620, eth_type=0x95bc, dl_dst=fa:16:3e:a5:94:4f
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:41:4f:ff
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=5015:5015, nw_proto=6, dl_dst=fa:16:3e:62:91:f5
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=5020:5020, nw_proto=6, dl_vlan=1418, dl_dst=fa:16:3e:65:4c:b5
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3015:3015, nw_proto=6, dl_dst=fa:16:3e:d1:6c:19
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=5100:5100, nw_proto=6, dl_vlan=1566, eth_type=0x7277, dl_dst=fa:16:3e:52:cc:3d
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=139:139, nw_proto=6, dl_src=fa:16:3e:ea:2b:a9, dl_dst=fa:16:3e:12:e3:3e
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3301:3301, nw_proto=17, eth_type=0xdd0d, dl_dst=fa:16:3e:6d:cb:6c
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=162:162, nw_proto=6, dl_vlan=885, dl_dst=fa:16:3e:82:10:cf
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=135:135, nw_proto=6, dl_src=fa:16:3e:88:7c:98, dl_dst=fa:16:3e:67:27:60
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=4106:4106, nw_proto=6, dl_vlan=1418, eth_type=0xc56
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=123:123, nw_proto=17, dl_vlan=685, dl_dst=fa:16:3e:68:71:ba
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=9000:9000, nw_proto=17, dl_vlan=1173, eth_type=0xc56, dl_dst=fa:16:3e:30:4f:eb
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=53:53, nw_proto=6, eth_type=0x89ab
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=69:69, nw_proto=6, dl_vlan=3245, dl_dst=fa:16:3e:16:13:56
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=31337:31337, nw_proto=6, dl_dst=fa:16:3e:44:e8:41
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=7426:7426, nw_proto=6, eth_type=0x7277, dl_dst=fa:16:3e:f:ce:62
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=110:110, nw_proto=17, dl_vlan=917, dl_dst=fa:16:3e:a1:60:68
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=6000:6000, nw_proto=6, dl_dst=fa:16:3e:1a:d6:5
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=7426:7426, nw_proto=17, dl_vlan=1745, eth_type=0x89ab
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=3000:3000, nw_proto=17, dl_dst=fa:16:3e:30:4f:eb
+nw_src=248.71.187.74/31, nw_dst=4.214.217.188/32, tp_dst=5540:5540, nw_proto=6, dl_vlan=2135, dl_dst=fa:16:3e:2b:b8:30
+nw_src=121.6.102.92/31, nw_dst=250.121.0.85/32, tp_dst=5149:5149, nw_proto=17, dl_dst=fa:16:3e:b2:64:8a
+nw_src=120.50.205.168/31, nw_dst=241.234.231.87/32, tp_dst=8080:8080, nw_proto=6, dl_src=fa:16:3e:7f:3a:d8, dl_dst=fa:16:3e:43:74:c4
+nw_src=120.50.209.248/31, nw_dst=242.39.132.115/32, tp_dst=42:42, nw_proto=6, eth_type=0x95bc, dl_dst=fa:16:3e:97:6:a1
+nw_src=120.50.209.254/31, nw_dst=242.39.154.61/32, tp_dst=9993:9993, nw_proto=6, dl_src=fa:16:3e:98:ab:11, dl_vlan=3438, dl_dst=fa:16:3e:1c:c3:65
+nw_src=120.50.209.254/31, nw_dst=242.39.154.61/32, tp_dst=53:53, nw_proto=17, dl_vlan=1727, eth_type=0xc56, dl_dst=fa:16:3e:2c:7b:b6
+nw_src=127.30.193.164/31, nw_dst=242.39.154.5/32, tp_dst=8080:8080, nw_proto=17, dl_vlan=2608, eth_type=0xc56, dl_dst=fa:16:3e:e:d3:68
+nw_src=127.71.212.148/31, nw_dst=242.39.154.5/32, tp_dst=139:139, nw_proto=6, dl_dst=fa:16:3e:b6:75:d9
+nw_src=124.32.27.46/31, nw_dst=172.180.13.20/32, tp_dst=3106:3106, nw_proto=17, dl_src=fa:16:3e:cc:1c:53, dl_vlan=2436
+nw_src=124.39.193.132/31, nw_dst=172.180.15.232/32, tp_dst=123:123, nw_proto=6, dl_src=fa:16:3e:2:c1:89, dl_dst=fa:16:3e:37:d1:3b
+nw_src=124.39.193.132/31, nw_dst=172.180.15.232/32, tp_dst=8000:8000, nw_proto=6, dl_dst=fa:16:3e:7c:88:f1
+nw_src=124.39.135.56/31, nw_dst=172.180.15.7/32, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:76:54:e4
+nw_src=124.39.135.56/31, nw_dst=172.180.15.9/32, tp_dst=5100:5100, nw_proto=6, dl_dst=fa:16:3e:b2:64:8a
+nw_src=124.39.135.56/31, nw_dst=172.180.15.9/32, tp_dst=25:25, nw_proto=17, dl_vlan=2765, dl_dst=fa:16:3e:49:3a:ae
+nw_src=124.39.135.56/31, nw_dst=172.180.55.180/32, tp_dst=54488:54488, nw_proto=6, dl_vlan=2694
+nw_src=124.39.135.56/31, nw_dst=172.180.55.57/32, tp_dst=23:23, nw_proto=6, dl_vlan=2242, dl_dst=fa:16:3e:29:a2:70
+nw_src=124.39.135.56/31, nw_dst=172.180.54.33/32, tp_dst=80:80, nw_proto=17, eth_type=0xd5ad, dl_dst=fa:16:3e:3a:6c:ae
+nw_src=124.39.135.56/31, nw_dst=172.180.54.221/32, tp_dst=514:514, nw_proto=6, dl_vlan=3771, dl_dst=fa:16:3e:fc:e1:14
+nw_src=124.39.135.56/31, nw_dst=172.180.54.221/32, tp_dst=3106:3106, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:13:6d:d
+nw_src=39.148.156.28/31, nw_dst=172.180.54.214/32, tp_dst=514:514, nw_proto=17, dl_vlan=43, dl_dst=fa:16:3e:c3:66:1f
+nw_src=39.167.220.164/31, nw_dst=172.180.50.34/32, tp_dst=7426:7426, nw_proto=17, dl_dst=fa:16:3e:c7:ca:54
+nw_src=39.167.220.164/31, nw_dst=172.180.50.34/32, tp_dst=80:80, nw_proto=6, dl_src=fa:16:3e:fc:92:27, dl_vlan=396, eth_type=0xfc1f, dl_dst=fa:16:3e:b3:c7:39
+nw_src=39.167.220.164/31, nw_dst=172.180.50.34/32, tp_dst=69:69, nw_proto=6, dl_vlan=2436, dl_dst=fa:16:3e:13:6d:d
+nw_src=41.106.30.194/31, nw_dst=172.180.50.34/32, tp_dst=69:69, nw_proto=6, dl_dst=fa:16:3e:44:be:d8
+nw_src=41.106.30.194/31, nw_dst=172.180.50.34/32, tp_dst=7426:7426, nw_proto=6, dl_dst=fa:16:3e:2f:21:45
+nw_src=41.106.0.168/31, nw_dst=172.180.50.34/32, tp_dst=54488:54488, nw_proto=17, dl_src=fa:16:3e:24:41:cc, dl_vlan=55, dl_dst=fa:16:3e:61:24:89
+nw_src=41.106.0.168/31, nw_dst=172.180.33.65/32, tp_dst=5190:5190, nw_proto=6, dl_src=fa:16:3e:ba:ae:30, dl_dst=fa:16:3e:42:20:6d
+nw_src=41.106.0.168/31, nw_dst=172.180.33.65/32, tp_dst=514:514, nw_proto=17
+nw_src=41.106.0.168/31, nw_dst=172.180.33.65/32, tp_dst=1701:1701, nw_proto=6, dl_src=fa:16:3e:6d:39:7a, dl_vlan=1227
+nw_src=41.106.0.168/31, nw_dst=172.180.33.65/32, tp_dst=25:25, nw_proto=17, dl_vlan=1740, eth_type=0x95bc, dl_dst=fa:16:3e:41:4f:ff
+nw_src=47.234.46.34/31, nw_dst=172.180.33.65/32, tp_dst=3015:3015, nw_proto=6, dl_dst=fa:16:3e:b1:e6:67
+nw_src=47.234.46.34/31, nw_dst=172.180.33.65/32, tp_dst=8044:8044, nw_proto=6, dl_vlan=3735, eth_type=0x95bc, dl_dst=fa:16:3e:f2:c:b
+nw_src=47.234.16.190/31, nw_dst=172.180.33.65/32, tp_dst=123:123, nw_proto=17, dl_dst=fa:16:3e:90:2d:8a
+nw_src=47.234.16.190/31, nw_dst=172.180.33.65/32, tp_dst=162:162, nw_proto=6, dl_vlan=2436, dl_dst=fa:16:3e:52:cc:3d
+nw_src=47.234.16.190/31, nw_dst=172.180.33.65/32, tp_dst=4444:4444, nw_proto=17, dl_src=fa:16:3e:ee:9c:77, eth_type=0x5c63, dl_dst=fa:16:3e:cb:8:22
+nw_src=47.234.16.190/31, nw_dst=172.180.33.65/32, tp_dst=3015:3015, nw_proto=6, dl_vlan=136, dl_dst=fa:16:3e:70:9e:5b
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=4444:4444, nw_proto=6, dl_vlan=1716
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=5001:5001, nw_proto=6, eth_type=0xc56
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=123:123, nw_proto=6, dl_vlan=636, eth_type=0xfc1f, dl_dst=fa:16:3e:a3:38:ea
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=123:123, nw_proto=17
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=29301:29301, nw_proto=6, eth_type=0x7277
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=3106:3106, nw_proto=6, dl_vlan=1526, dl_dst=fa:16:3e:3:15:5f
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=9993:9993, nw_proto=17, dl_vlan=896, dl_dst=fa:16:3e:61:ce:62
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=3334:3334, nw_proto=6, dl_src=fa:16:3e:38:7:4f, dl_vlan=3735, dl_dst=fa:16:3e:ab:f1:4f
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=6, dl_vlan=797, eth_type=0x89ab, dl_dst=fa:16:3e:f4:7e:76
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:b2:64:8a
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, tp_dst=9000:9000, nw_proto=6, dl_vlan=2381, dl_dst=fa:16:3e:d6:dd:e3
+nw_src=141.45.174.55/32, nw_dst=4.214.217.190/31, tp_dst=5190:5190, nw_proto=6, eth_type=0xfc1f
+nw_src=136.203.122.104/32, nw_dst=4.214.217.190/31, tp_dst=53:53, nw_proto=6, dl_vlan=2027, dl_dst=fa:16:3e:c8:c0:b0
+nw_src=136.203.122.97/32, nw_dst=4.214.217.190/31, tp_dst=7000:7000, nw_proto=6, eth_type=0xdd0d, dl_dst=fa:16:3e:2:d6:a3
+nw_src=136.193.230.24/32, nw_dst=4.214.217.190/31, tp_dst=3000:3000, nw_proto=6, dl_dst=fa:16:3e:91:2b:c3
+nw_src=120.50.209.250/32, nw_dst=241.232.63.124/31, tp_dst=3300:3300, nw_proto=17, dl_src=fa:16:3e:3e:d7:fb, dl_vlan=1418
+nw_src=127.120.80.215/32, nw_dst=172.180.12.238/31, tp_dst=8080:8080, nw_proto=17, dl_vlan=1228
+nw_src=124.32.225.241/32, nw_dst=172.180.13.16/31, tp_dst=123:123, nw_proto=17, dl_vlan=3204, dl_dst=fa:16:3e:f3:56:91
+nw_src=124.32.225.241/32, nw_dst=172.180.13.16/31, tp_dst=80:80, nw_proto=6, dl_src=fa:16:3e:4c:2a:7f, dl_vlan=500, dl_dst=fa:16:3e:c8:c0:b0
+nw_src=124.39.193.135/32, nw_dst=172.180.15.234/31, tp_dst=80:80, nw_proto=6
+nw_src=124.39.193.135/32, nw_dst=172.180.15.234/31, tp_dst=25:25, nw_proto=6, dl_dst=fa:16:3e:3a:28:7a
+nw_src=124.39.193.135/32, nw_dst=172.180.15.234/31, tp_dst=69:69, nw_proto=17, dl_vlan=2618, dl_dst=fa:16:3e:7d:52:4b
+nw_src=124.39.135.58/32, nw_dst=172.180.15.4/31, tp_dst=5190:5190, nw_proto=17
+nw_src=124.39.135.58/32, nw_dst=172.180.15.10/31, tp_dst=25:25, nw_proto=6, dl_dst=fa:16:3e:97:6:a1
+nw_src=124.39.135.58/32, nw_dst=172.180.15.10/31, tp_dst=25:25, nw_proto=17, eth_type=0x95bc
+nw_src=124.39.135.58/32, nw_dst=172.180.15.10/31, tp_dst=20555:20555, nw_proto=17, eth_type=0x7277
+nw_src=124.39.135.58/32, nw_dst=172.180.15.10/31, tp_dst=3116:3116, nw_proto=6, dl_src=fa:16:3e:68:fa:6e, dl_vlan=3150, eth_type=0x5c63, dl_dst=fa:16:3e:1c:c3:65
+nw_src=124.39.135.58/32, nw_dst=172.180.15.10/31, tp_dst=3301:3301, nw_proto=6, dl_vlan=1573, dl_dst=fa:16:3e:5b:54:4d
+nw_src=124.39.135.58/32, nw_dst=172.180.15.10/31, tp_dst=69:69, nw_proto=6, dl_dst=fa:16:3e:dc:c4:66
+nw_src=124.39.135.58/32, nw_dst=172.180.54.34/31, tp_dst=53:53, nw_proto=17, dl_vlan=2606, eth_type=0xdd0d, dl_dst=fa:16:3e:8f:23:f
+nw_src=124.39.135.58/32, nw_dst=172.180.54.34/31, tp_dst=20555:20555, nw_proto=6, dl_dst=fa:16:3e:c4:29:31
+nw_src=39.167.50.40/32, nw_dst=172.180.50.32/31, tp_dst=25:25, nw_proto=17, dl_vlan=1918, dl_dst=fa:16:3e:7f:82:a4
+nw_src=41.106.30.192/32, nw_dst=172.180.50.32/31, tp_dst=514:514, nw_proto=6
+nw_src=41.106.30.192/32, nw_dst=172.180.50.32/31, tp_dst=80:80, nw_proto=6, dl_dst=fa:16:3e:37:d1:3b
+nw_src=41.106.8.84/32, nw_dst=172.180.50.32/31, tp_dst=29301:29301, nw_proto=6, dl_vlan=2117, dl_dst=fa:16:3e:f7:5:a8
+nw_src=41.106.8.84/32, nw_dst=172.180.50.32/31, tp_dst=110:110, nw_proto=6, dl_vlan=2581, dl_dst=fa:16:3e:a6:e3:4d
+nw_src=41.106.0.171/32, nw_dst=172.180.50.32/31, tp_dst=8199:8199, nw_proto=6, dl_src=fa:16:3e:31:34:9a, dl_dst=fa:16:3e:88:5e:e
+nw_src=41.106.0.171/32, nw_dst=172.180.50.32/31, tp_dst=5000:5000, nw_proto=6, dl_vlan=2187
+nw_src=41.106.0.171/32, nw_dst=172.180.33.66/31, tp_dst=6123:6123, nw_proto=17, dl_vlan=636, dl_dst=fa:16:3e:fc:3e:24
+nw_src=47.234.46.33/32, nw_dst=172.180.33.66/31, tp_dst=25:25, nw_proto=6, dl_vlan=2245, eth_type=0x89ab, dl_dst=fa:16:3e:4a:2a:8c
+nw_src=47.234.16.189/32, nw_dst=172.180.33.66/31, tp_dst=123:123, nw_proto=6, dl_src=fa:16:3e:94:64:2a, dl_dst=fa:16:3e:5f:3f:d7
+nw_src=47.200.166.242/32, nw_dst=172.180.33.66/31, tp_dst=3300:3300, nw_proto=17, dl_vlan=43
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=5190:5190, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:19:ca:84
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=80:80, nw_proto=6, dl_dst=fa:16:3e:56:a4:16
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=2105:2105, nw_proto=6, dl_vlan=254, dl_dst=fa:16:3e:b0:aa:96
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=20300:20300, nw_proto=6, dl_vlan=2620, dl_dst=fa:16:3e:3c:68:28
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:1e:33:97
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=514:514, nw_proto=17, dl_vlan=3486, dl_dst=fa:16:3e:3:4c:fa
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=3101:3101, nw_proto=6, dl_vlan=3395, dl_dst=fa:16:3e:44:be:d8
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=5190:5190, nw_proto=17, dl_vlan=1765
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=3106:3106, nw_proto=17, dl_vlan=728, eth_type=0xdd0d, dl_dst=fa:16:3e:b0:aa:96
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=123:123, nw_proto=17, dl_vlan=2130
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=123:123, nw_proto=6, dl_vlan=2324, eth_type=0xc56, dl_dst=fa:16:3e:57:c1:90
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=3030:3030, nw_proto=6, dl_vlan=3676, dl_dst=fa:16:3e:15:6c:aa
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:99:1c:cb
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=25:25, nw_proto=6, dl_vlan=2466, dl_dst=fa:16:3e:c9:1a:60
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=23:23, nw_proto=6
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=3110:3112, nw_proto=6, dl_src=fa:16:3e:da:3b:61, dl_vlan=3761, dl_dst=fa:16:3e:2a:b1:3e
+nw_src=39.167.220.166/32, nw_dst=172.180.50.34/32, tp_dst=543:545, nw_proto=6, dl_dst=fa:16:3e:36:ec:fa
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=80:82, nw_proto=6, eth_type=0x5c63, dl_dst=fa:16:3e:e6:23:7d
+nw_src=42.116.119.226/32, nw_dst=172.180.50.34/32, tp_dst=2010:2011, nw_proto=17, dl_vlan=3726, eth_type=0x7277, dl_dst=fa:16:3e:ea:a:ec
+nw_src=41.106.0.171/32, nw_dst=172.180.50.34/32, tp_dst=8080:8081, nw_proto=6, dl_src=fa:16:3e:4e:2b:9c, dl_vlan=1125
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=2010:2011, nw_proto=17, dl_src=fa:16:3e:1c:e3:2b
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=20:21, nw_proto=6, dl_vlan=3958, eth_type=0xc56
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=137:138, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:e1:fc:c4
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=2010:2011, nw_proto=6, dl_dst=fa:16:3e:a6:ff:67
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=20:21, nw_proto=6, eth_type=0xfc1f, dl_dst=fa:16:3e:1a:c3:af
+nw_src=133.160.29.12/30, nw_dst=4.214.217.188/32, tp_dst=382:382, nw_proto=6, dl_dst=fa:16:3e:36:ec:fa
+nw_src=124.32.225.244/30, nw_dst=172.180.15.232/32, tp_dst=3106:3106, nw_proto=6, dl_src=fa:16:3e:25:49:f3, dl_dst=fa:16:3e:c9:1a:60
+nw_src=124.39.193.128/30, nw_dst=172.180.15.232/32, tp_dst=3030:3030, nw_proto=6, eth_type=0xd5ad
+nw_src=124.39.193.128/30, nw_dst=172.180.15.232/32, tp_dst=3301:3301, nw_proto=6, dl_vlan=2581, dl_dst=fa:16:3e:97:6:a1
+nw_src=124.39.193.128/30, nw_dst=172.180.15.232/32, tp_dst=5555:5555, nw_proto=6, dl_src=fa:16:3e:a8:4c:d6, dl_vlan=1918
+nw_src=124.39.193.128/30, nw_dst=172.180.15.232/32, tp_dst=53:53, nw_proto=6, dl_vlan=155
+nw_src=124.39.135.60/30, nw_dst=172.180.55.57/32, tp_dst=8080:8080, nw_proto=6, dl_dst=fa:16:3e:59:2c:cb
+nw_src=124.39.135.60/30, nw_dst=172.180.55.57/32, tp_dst=80:80, nw_proto=17, dl_src=fa:16:3e:f4:39:ba, dl_dst=fa:16:3e:a6:e3:4d
+nw_src=39.159.156.76/30, nw_dst=172.180.50.34/32, tp_dst=8080:8080, nw_proto=6, dl_src=fa:16:3e:44:e2:8, eth_type=0xae8f, dl_dst=fa:16:3e:1:c9:9b
+nw_src=42.116.135.228/30, nw_dst=172.180.50.34/32, tp_dst=514:514, nw_proto=17, dl_dst=fa:16:3e:15:6c:aa
+nw_src=47.234.46.36/30, nw_dst=172.180.33.65/32, tp_dst=8000:8000, nw_proto=6, dl_src=fa:16:3e:d1:a9:cb, dl_vlan=2365, dl_dst=fa:16:3e:88:5e:e
+nw_src=47.200.166.244/30, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=6, dl_vlan=3573, dl_dst=fa:16:3e:a2:38:cd
+nw_src=47.200.166.244/30, nw_dst=172.180.45.20/32, tp_dst=31337:31337, nw_proto=6, dl_vlan=3900, eth_type=0x95bc, dl_dst=fa:16:3e:fc:7a:32
+nw_src=47.200.166.244/30, nw_dst=172.180.45.20/32, tp_dst=53:53, nw_proto=17, dl_src=fa:16:3e:3c:70:f4, dl_dst=fa:16:3e:d:36:6b
+nw_src=127.30.193.168/31, nw_dst=242.39.154.5/32, tp_dst=144:145, nw_proto=17, dl_vlan=1937, eth_type=0x5c63, dl_dst=fa:16:3e:6a:8:fb
+nw_src=127.120.81.188/31, nw_dst=172.180.12.238/31, tp_dst=42:42, nw_proto=6, dl_dst=fa:16:3e:83:dc:f2
+nw_src=127.120.235.248/31, nw_dst=172.180.13.22/31, tp_dst=5100:5100, nw_proto=6, dl_vlan=3726, eth_type=0xd5ad, dl_dst=fa:16:3e:3c:68:28
+nw_src=124.32.27.46/31, nw_dst=172.180.13.16/31, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:3a:28:7a
+nw_src=124.32.28.204/31, nw_dst=172.180.13.16/31, tp_dst=8080:8080, nw_proto=6, dl_dst=fa:16:3e:2e:17:d1
+nw_src=124.39.135.56/31, nw_dst=172.180.15.10/31, tp_dst=25026:25026, nw_proto=6, dl_src=fa:16:3e:fc:92:27, dl_dst=fa:16:3e:4f:1c:23
+nw_src=124.39.135.56/31, nw_dst=172.180.15.10/31, tp_dst=514:514, nw_proto=17, dl_vlan=3573, eth_type=0x89ab, dl_dst=fa:16:3e:c7:ca:54
+nw_src=39.159.159.88/31, nw_dst=172.180.50.32/31, tp_dst=25:25, nw_proto=6, dl_vlan=1937, eth_type=0x5c63, dl_dst=fa:16:3e:8f:b9:e9
+nw_src=47.200.166.240/31, nw_dst=172.180.45.22/31, tp_dst=1701:1701, nw_proto=6, eth_type=0x95bc
+nw_src=47.200.166.240/31, nw_dst=172.180.45.22/31, tp_dst=3015:3015, nw_proto=6, dl_vlan=2765, dl_dst=fa:16:3e:aa:c2:7d
+nw_src=47.200.166.240/31, nw_dst=172.180.45.22/31, tp_dst=42:42, nw_proto=6, dl_vlan=263
+nw_src=47.200.166.240/31, nw_dst=172.180.45.22/31, tp_dst=5166:5166, nw_proto=6, dl_vlan=1641
+nw_src=124.39.193.135/32, nw_dst=172.180.15.234/31, tp_dst=3110:3112, nw_proto=6, dl_dst=fa:16:3e:a0:7d:b6
+nw_src=39.167.220.167/32, nw_dst=172.180.50.34/32, tp_dst=4011:4014, nw_proto=6, dl_vlan=1460, eth_type=0x7277
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=2106:2109, nw_proto=6, dl_dst=fa:16:3e:8f:23:f
+nw_src=39.167.220.166/32, nw_dst=172.180.50.32/31, tp_dst=29300:29301, nw_proto=6, dl_vlan=3676, dl_dst=fa:16:3e:af:2c:98
+nw_src=42.116.148.121/32, nw_dst=172.180.50.36/30, tp_dst=3015:3015, nw_proto=17, dl_src=fa:16:3e:27:d7:af, dl_dst=fa:16:3e:96:b6:46
+nw_src=47.234.16.189/32, nw_dst=172.180.33.68/30, tp_dst=514:514, nw_proto=6, dl_vlan=1460, eth_type=0x916a, dl_dst=fa:16:3e:ed:e0:74
+nw_src=47.200.166.242/32, nw_dst=172.180.33.68/30, tp_dst=42:42, nw_proto=17, dl_dst=fa:16:3e:b7:ad:5d
+nw_src=47.200.166.242/32, nw_dst=172.180.45.16/30, tp_dst=5015:5015, nw_proto=6
+nw_src=47.200.166.242/32, nw_dst=172.180.45.16/30, tp_dst=161:161, nw_proto=17, dl_vlan=2694, dl_dst=fa:16:3e:c7:ca:54
+nw_src=47.200.166.242/32, nw_dst=172.180.45.16/30, tp_dst=123:123, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:2e:17:d1
+nw_src=120.50.205.172/30, nw_dst=245.219.206.30/31, tp_dst=123:123, nw_proto=17, dl_src=fa:16:3e:23:3b:64, eth_type=0xae8f, dl_dst=fa:16:3e:65:4c:b5
+nw_src=38.228.9.4/30, nw_dst=172.180.54.212/31, tp_dst=9993:9993, nw_proto=17, dl_src=fa:16:3e:ba:ae:30, dl_vlan=852
+nw_src=47.200.166.244/30, nw_dst=172.180.45.22/31, tp_dst=20555:20555, nw_proto=6, dl_vlan=1867
+nw_src=47.200.166.244/30, nw_dst=172.180.45.22/31, tp_dst=4001:4001, nw_proto=6, dl_vlan=97, dl_dst=fa:16:3e:96:9a:51
+nw_src=120.50.205.160/29, nw_dst=245.219.218.60/32, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:3d:c2:d
+nw_src=120.50.209.240/29, nw_dst=242.39.154.61/32, tp_dst=514:514, nw_proto=17, dl_vlan=1313, dl_dst=fa:16:3e:2e:9d:a0
+nw_src=124.32.225.248/29, nw_dst=172.180.15.232/32, tp_dst=514:514, nw_proto=6, eth_type=0xae8f, dl_dst=fa:16:3e:b0:b:31
+nw_src=124.39.135.48/29, nw_dst=172.180.15.9/32, tp_dst=5190:5190, nw_proto=17, dl_src=fa:16:3e:d5:3d:75, dl_dst=fa:16:3e:41:62:2e
+nw_src=124.39.135.48/29, nw_dst=172.180.15.9/32, tp_dst=42:42, nw_proto=6, dl_vlan=778, dl_dst=fa:16:3e:82:10:cf
+nw_src=124.39.135.48/29, nw_dst=172.180.15.9/32, tp_dst=80:80, nw_proto=6, dl_vlan=1423, dl_dst=fa:16:3e:3:15:5f
+nw_src=124.39.135.48/29, nw_dst=172.180.15.9/32, tp_dst=3106:3106, nw_proto=6, dl_vlan=2117, dl_dst=fa:16:3e:e9:fc:a0
+nw_src=39.159.155.24/29, nw_dst=172.180.50.34/32, tp_dst=2121:2121, nw_proto=6, dl_src=fa:16:3e:3a:88:91, dl_dst=fa:16:3e:96:66:45
+nw_src=47.200.166.248/29, nw_dst=172.180.45.20/32, tp_dst=4106:4106, nw_proto=6
+nw_src=47.200.166.248/29, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=6, dl_dst=fa:16:3e:8c:12:c7
+nw_src=47.200.166.248/29, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=6, dl_src=fa:16:3e:43:20:e0, dl_vlan=885, dl_dst=fa:16:3e:40:8f:33
+nw_src=120.50.205.171/32, nw_dst=245.219.218.147/32, tp_dst=3000:3010, nw_proto=17, eth_type=0x89ab, dl_dst=fa:16:3e:83:f3:53
+nw_src=47.234.46.33/32, nw_dst=172.180.33.65/32, tp_dst=3000:3010, nw_proto=6, dl_vlan=685, dl_dst=fa:16:3e:d4:88:c4
+nw_src=124.39.135.56/31, nw_dst=172.180.15.10/31, tp_dst=20:21, nw_proto=17, dl_src=fa:16:3e:ba:f0:10, eth_type=0x7277, dl_dst=fa:16:3e:8c:12:c7
+nw_src=47.234.46.34/31, nw_dst=172.180.33.66/31, tp_dst=7770:7771, nw_proto=6, dl_vlan=2365, dl_dst=fa:16:3e:c3:66:1f
+nw_src=124.39.135.56/31, nw_dst=172.180.55.60/30, tp_dst=383:383, nw_proto=17, dl_dst=fa:16:3e:b1:c3:53
+nw_src=124.39.135.56/31, nw_dst=172.180.54.36/30, tp_dst=88:88, nw_proto=17, dl_dst=fa:16:3e:1f:9d:49
+nw_src=47.234.16.189/32, nw_dst=172.180.33.72/29, tp_dst=25:25, nw_proto=6, dl_dst=fa:16:3e:9d:42:30
+nw_src=47.200.166.242/32, nw_dst=172.180.45.24/29, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:d0:eb:69
+nw_src=47.200.166.242/32, nw_dst=172.180.45.24/29, tp_dst=80:80, nw_proto=6, dl_src=fa:16:3e:71:98:1a, dl_vlan=240, dl_dst=fa:16:3e:a6:a3:87
+nw_src=120.50.205.172/30, nw_dst=245.219.223.49/32, tp_dst=4011:4014, nw_proto=17, dl_dst=fa:16:3e:9e:52:c
+nw_src=127.69.218.148/31, nw_dst=242.39.154.5/32, tp_dst=4100:4110, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:d9:95:20
+nw_src=127.120.235.248/29, nw_dst=172.180.13.22/31, tp_dst=3200:3200, nw_proto=6, dl_src=fa:16:3e:8b:21:c9, dl_vlan=13, dl_dst=fa:16:3e:c3:66:1f
+nw_src=127.120.212.136/29, nw_dst=172.180.13.22/31, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:e8:b0:15, dl_vlan=896, dl_dst=fa:16:3e:a2:cf:f6
+nw_src=124.32.27.32/29, nw_dst=172.180.13.16/31, tp_dst=514:514, nw_proto=6, dl_vlan=778
+nw_src=124.39.193.136/29, nw_dst=172.180.15.234/31, tp_dst=3350:3350, nw_proto=6, dl_dst=fa:16:3e:e9:fc:a0
+nw_src=124.39.135.48/29, nw_dst=172.180.15.10/31, tp_dst=1701:1701, nw_proto=6, dl_vlan=1682
+nw_src=124.39.135.48/29, nw_dst=172.180.15.10/31, tp_dst=123:123, nw_proto=17, dl_dst=fa:16:3e:52:cc:3d
+nw_src=124.39.135.48/29, nw_dst=172.180.55.182/31, tp_dst=54488:54488, nw_proto=6, dl_vlan=2382, dl_dst=fa:16:3e:c0:26:e9
+nw_src=124.39.135.48/29, nw_dst=172.180.55.58/31, tp_dst=4439:4439, nw_proto=6, dl_vlan=1227, dl_dst=fa:16:3e:d7:89:99
+nw_src=38.228.7.216/29, nw_dst=172.180.54.212/31, tp_dst=80:80, nw_proto=6, dl_vlan=533, dl_dst=fa:16:3e:44:99:26
+nw_src=39.144.74.56/29, nw_dst=172.180.54.212/31, tp_dst=54488:54488, nw_proto=6, dl_src=fa:16:3e:99:4c:37, dl_vlan=1262, eth_type=0xc56, dl_dst=fa:16:3e:e0:1b:1c
+nw_src=39.171.66.0/29, nw_dst=172.180.50.32/31, tp_dst=7426:7426, nw_proto=17, dl_dst=fa:16:3e:9d:42:30
+nw_src=39.167.220.168/29, nw_dst=172.180.50.32/31, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:fc:7a:32
+nw_src=47.200.166.248/29, nw_dst=172.180.45.22/31, tp_dst=7426:7426, nw_proto=6, eth_type=0xae8f, dl_dst=fa:16:3e:97:6:a1
+nw_src=47.200.166.248/29, nw_dst=172.180.45.22/31, tp_dst=5158:5158, nw_proto=6, eth_type=0x5c63, dl_dst=fa:16:3e:2a:ef:21
+nw_src=124.32.225.224/28, nw_dst=172.180.13.19/32, tp_dst=3015:3015, nw_proto=6, dl_vlan=670, dl_dst=fa:16:3e:31:4:45
+nw_src=124.39.135.32/28, nw_dst=172.180.15.9/32, tp_dst=9993:9993, nw_proto=17, dl_vlan=1977, eth_type=0xae8f, dl_dst=fa:16:3e:2e:17:d1
+nw_src=124.39.135.32/28, nw_dst=172.180.15.9/32, tp_dst=3015:3015, nw_proto=6, dl_vlan=3483, dl_dst=fa:16:3e:44:e8:41
+nw_src=124.39.135.32/28, nw_dst=172.180.15.9/32, tp_dst=6555:6555, nw_proto=17, dl_vlan=1194, dl_dst=fa:16:3e:68:71:ba
+nw_src=124.39.135.32/28, nw_dst=172.180.15.9/32, tp_dst=443:443, nw_proto=6, dl_vlan=3438, eth_type=0x89ab, dl_dst=fa:16:3e:25:8c:e
+nw_src=39.171.80.224/28, nw_dst=172.180.50.34/32, tp_dst=80:80, nw_proto=6, dl_vlan=2822, dl_dst=fa:16:3e:a1:57:70
+nw_src=42.116.36.224/28, nw_dst=172.180.50.34/32, tp_dst=143:143, nw_proto=6, dl_dst=fa:16:3e:83:cf:2a
+nw_src=41.106.30.208/28, nw_dst=172.180.50.34/32, tp_dst=29301:29301, nw_proto=17, dl_src=fa:16:3e:5c:87:4, eth_type=0xd5ad, dl_dst=fa:16:3e:9d:42:30
+nw_src=47.234.16.160/28, nw_dst=172.180.33.65/32, tp_dst=123:123, nw_proto=17, dl_vlan=3900, dl_dst=fa:16:3e:96:b6:46
+nw_src=47.234.16.160/28, nw_dst=172.180.33.65/32, tp_dst=42:42, nw_proto=6, dl_vlan=980, eth_type=0xd5ad, dl_dst=fa:16:3e:57:dd:b1
+nw_src=47.234.16.160/28, nw_dst=172.180.33.65/32, tp_dst=161:161, nw_proto=6, dl_dst=fa:16:3e:4f:1c:23
+nw_src=47.200.166.224/28, nw_dst=172.180.33.65/32, tp_dst=20555:20555, nw_proto=17, dl_dst=fa:16:3e:5a:92:37
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=123:123, nw_proto=6, dl_vlan=2916, dl_dst=fa:16:3e:f8:21:a4
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=3456:3456, nw_proto=6, eth_type=0x916a, dl_dst=fa:16:3e:ef:53:69
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=5001:5001, nw_proto=6, dl_vlan=3042, dl_dst=fa:16:3e:b9:f4:78
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=2344:2344, nw_proto=6, dl_vlan=2702
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=6, dl_vlan=2910, eth_type=0xae8f, dl_dst=fa:16:3e:70:9e:5b
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=6020:6020, nw_proto=6
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=17, dl_vlan=518, dl_dst=fa:16:3e:72:b5:fa
+nw_src=124.39.193.128/30, nw_dst=172.180.15.236/30, tp_dst=1701:1701, nw_proto=17
+nw_src=47.200.166.244/30, nw_dst=172.180.45.16/30, tp_dst=514:514, nw_proto=6, dl_src=fa:16:3e:25:19:de, dl_vlan=131, dl_dst=fa:16:3e:43:74:c4
+nw_src=41.106.0.160/29, nw_dst=172.180.33.65/32, tp_dst=8080:8081, nw_proto=6, dl_dst=fa:16:3e:19:fe:3
+nw_src=47.200.166.248/29, nw_dst=172.180.45.20/32, tp_dst=2010:2011, nw_proto=6, dl_vlan=1884, dl_dst=fa:16:3e:d6:18:a4
+nw_src=47.234.46.33/32, nw_dst=172.180.33.80/28, tp_dst=80:80, nw_proto=6, eth_type=0x95bc, dl_dst=fa:16:3e:e6:23:7d
+nw_src=47.234.16.184/30, nw_dst=172.180.33.66/31, tp_dst=3106:3108, nw_proto=6, dl_vlan=3573, eth_type=0xae8f, dl_dst=fa:16:3e:1f:9d:49
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=22014:22029, nw_proto=6, dl_vlan=565, dl_dst=fa:16:3e:4f:dc:fa
+nw_src=136.193.232.160/27, nw_dst=4.214.217.188/32, tp_dst=754:754, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:b3:c7:39
+nw_src=120.50.209.192/27, nw_dst=241.232.168.70/32, tp_dst=3340:3340, nw_proto=6, dl_vlan=0, eth_type=0xfc1f, dl_dst=fa:16:3e:d:36:6b
+nw_src=120.50.209.192/27, nw_dst=242.39.154.61/32, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:c3:27:81
+nw_src=127.30.193.128/27, nw_dst=242.39.154.5/32, tp_dst=8080:8080, nw_proto=6, dl_vlan=3735, dl_dst=fa:16:3e:8:f1:30
+nw_src=127.120.81.160/27, nw_dst=172.180.12.236/32, tp_dst=25:25, nw_proto=6, eth_type=0xfc1f
+nw_src=127.120.80.192/27, nw_dst=172.180.12.236/32, tp_dst=2000:2000, nw_proto=17, dl_dst=fa:16:3e:57:dd:b1
+nw_src=124.39.193.160/27, nw_dst=172.180.15.232/32, tp_dst=514:514, nw_proto=6, eth_type=0x5c63
+nw_src=124.39.135.0/27, nw_dst=172.180.15.7/32, tp_dst=3111:3111, nw_proto=17, eth_type=0x7277, dl_dst=fa:16:3e:ea:a:ec
+nw_src=124.39.135.0/27, nw_dst=172.180.55.57/32, tp_dst=3200:3200, nw_proto=17, dl_vlan=1867
+nw_src=39.167.52.160/27, nw_dst=172.180.50.34/32, tp_dst=514:514, nw_proto=17, dl_vlan=0
+nw_src=39.167.220.128/27, nw_dst=172.180.50.34/32, tp_dst=20555:20555, nw_proto=6, dl_vlan=3005
+nw_src=41.106.0.128/27, nw_dst=172.180.33.65/32, tp_dst=6600:6600, nw_proto=6
+nw_src=47.234.46.0/27, nw_dst=172.180.33.65/32, tp_dst=80:80, nw_proto=6, dl_vlan=1892, dl_dst=fa:16:3e:a6:9d:ae
+nw_src=47.234.46.0/27, nw_dst=172.180.33.65/32, tp_dst=5173:5173, nw_proto=6, dl_src=fa:16:3e:43:20:e0, eth_type=0xfc1f, dl_dst=fa:16:3e:e:d3:68
+nw_src=47.234.16.128/27, nw_dst=172.180.33.65/32, tp_dst=29301:29301, nw_proto=6, dl_dst=fa:16:3e:4c:61:3e
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=69:69, nw_proto=6, dl_vlan=2274, eth_type=0x916a, dl_dst=fa:16:3e:b9:f4:78
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=6, eth_type=0x5c63, dl_dst=fa:16:3e:33:46:f5
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=5190:5190, nw_proto=17, eth_type=0x916a, dl_dst=fa:16:3e:4a:f:11
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=20300:20300, nw_proto=6, dl_src=fa:16:3e:d:37:87, dl_vlan=1765, dl_dst=fa:16:3e:ad:63:64
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=6116:6116, nw_proto=6, dl_vlan=2219, eth_type=0xc56, dl_dst=fa:16:3e:d8:31:9
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=23:23, nw_proto=6, dl_vlan=221, dl_dst=fa:16:3e:ed:e0:74
+nw_src=120.50.209.224/28, nw_dst=242.39.154.6/31, tp_dst=9000:9000, nw_proto=6, dl_vlan=2918, dl_dst=fa:16:3e:fc:7a:32
+nw_src=127.120.212.32/28, nw_dst=172.180.13.22/31, tp_dst=23:23, nw_proto=17, eth_type=0x916a, dl_dst=fa:16:3e:cb:2b:86
+nw_src=124.39.193.144/28, nw_dst=172.180.15.234/31, tp_dst=3350:3350, nw_proto=6, dl_src=fa:16:3e:d5:3d:75, dl_dst=fa:16:3e:14:43:1c
+nw_src=124.39.135.32/28, nw_dst=172.180.15.10/31, tp_dst=3015:3015, nw_proto=6, eth_type=0x7277, dl_dst=fa:16:3e:2:d6:a3
+nw_src=47.234.16.160/28, nw_dst=172.180.33.66/31, tp_dst=5015:5015, nw_proto=6, dl_vlan=685, dl_dst=fa:16:3e:d5:17:62
+nw_src=47.234.16.160/28, nw_dst=172.180.33.66/31, tp_dst=514:514, nw_proto=6, dl_src=fa:16:3e:c7:73:5a, dl_vlan=1573, dl_dst=fa:16:3e:62:7c:22
+nw_src=47.200.166.224/28, nw_dst=172.180.45.22/31, tp_dst=54488:54488, nw_proto=17, eth_type=0x916a, dl_dst=fa:16:3e:c6:d8:7a
+nw_src=47.200.166.224/28, nw_dst=172.180.45.22/31, tp_dst=514:514, nw_proto=6
+nw_src=47.200.166.224/28, nw_dst=172.180.45.22/31, tp_dst=119:119, nw_proto=6, dl_dst=fa:16:3e:d9:95:20
+nw_src=47.200.166.224/28, nw_dst=172.180.45.22/31, tp_dst=4001:4001, nw_proto=6, dl_vlan=2324, dl_dst=fa:16:3e:c0:26:e9
+nw_src=47.200.166.224/28, nw_dst=172.180.45.22/31, tp_dst=25:25, nw_proto=6, dl_src=fa:16:3e:38:7:4f, dl_dst=fa:16:3e:7d:52:4b
+nw_src=47.200.166.224/28, nw_dst=172.180.45.22/31, tp_dst=3101:3101, nw_proto=17, dl_vlan=2242, dl_dst=fa:16:3e:b1:e6:67
+nw_src=47.200.166.224/28, nw_dst=172.180.45.22/31, tp_dst=123:123, nw_proto=6, dl_vlan=3673, dl_dst=fa:16:3e:f2:c:b
+nw_src=124.39.193.136/29, nw_dst=172.180.15.236/30, tp_dst=3000:3000, nw_proto=6, dl_vlan=3958, dl_dst=fa:16:3e:af:2c:98
+nw_src=124.39.135.32/28, nw_dst=172.180.15.7/32, tp_dst=20:21, nw_proto=6, dl_vlan=2027, dl_dst=fa:16:3e:6d:cb:6c
+nw_src=124.39.135.56/31, nw_dst=172.180.15.10/31, tp_dst=5000:5010, nw_proto=6, dl_src=fa:16:3e:d7:1d:93, dl_vlan=3275, eth_type=0xfc1f, dl_dst=fa:16:3e:96:b6:46
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=3110:3112, nw_proto=6, dl_vlan=3573, dl_dst=fa:16:3e:83:dc:f2
+nw_src=246.58.67.96/27, nw_dst=4.214.217.190/31, tp_dst=3200:3200, nw_proto=17, dl_vlan=3769, dl_dst=fa:16:3e:91:2b:c3
+nw_src=120.50.209.192/27, nw_dst=242.39.132.114/31, tp_dst=1701:1701, nw_proto=6, dl_vlan=1228, eth_type=0xae8f, dl_dst=fa:16:3e:4b:25:8e
+nw_src=127.71.212.128/27, nw_dst=242.39.154.6/31, tp_dst=5015:5015, nw_proto=6, dl_vlan=2765, dl_dst=fa:16:3e:9d:42:30
+nw_src=127.120.80.192/27, nw_dst=172.180.12.238/31, tp_dst=25:25, nw_proto=6, dl_src=fa:16:3e:ee:e6:66, dl_vlan=2187, dl_dst=fa:16:3e:f3:c0:da
+nw_src=124.39.193.160/27, nw_dst=172.180.15.234/31, tp_dst=514:514, nw_proto=6, dl_vlan=2324
+nw_src=124.39.193.160/27, nw_dst=172.180.15.4/31, tp_dst=514:514, nw_proto=6, dl_vlan=1511, eth_type=0xd5ad, dl_dst=fa:16:3e:72:4d:fc
+nw_src=124.39.135.0/27, nw_dst=172.180.15.10/31, tp_dst=1701:1701, nw_proto=6, dl_dst=fa:16:3e:c4:29:31
+nw_src=124.39.135.0/27, nw_dst=172.180.15.10/31, tp_dst=8000:8000, nw_proto=6, dl_src=fa:16:3e:f7:f1:b9, eth_type=0xdd0d, dl_dst=fa:16:3e:9e:61:ff
+nw_src=42.116.36.224/27, nw_dst=172.180.50.32/31, tp_dst=5190:5190, nw_proto=6, eth_type=0x89ab
+nw_src=47.234.16.128/27, nw_dst=172.180.33.66/31, tp_dst=514:514, nw_proto=6, eth_type=0xdd0d, dl_dst=fa:16:3e:38:f0:21
+nw_src=47.234.16.128/27, nw_dst=172.180.33.66/31, tp_dst=123:123, nw_proto=6
+nw_src=47.200.166.192/27, nw_dst=172.180.45.22/31, tp_dst=161:161, nw_proto=17, dl_src=fa:16:3e:a9:53:16, dl_vlan=1916, dl_dst=fa:16:3e:9d:42:30
+nw_src=47.200.166.192/27, nw_dst=172.180.45.22/31, tp_dst=162:162, nw_proto=6, dl_vlan=797, dl_dst=fa:16:3e:44:e8:41
+nw_src=121.6.102.64/26, nw_dst=250.121.7.144/32, tp_dst=29301:29301, nw_proto=6, eth_type=0xfc1f, dl_dst=fa:16:3e:a2:cf:f6
+nw_src=127.124.111.192/26, nw_dst=172.180.12.122/32, tp_dst=5015:5015, nw_proto=6, dl_dst=fa:16:3e:fa:68:b9
+nw_src=124.32.29.192/26, nw_dst=172.180.13.19/32, tp_dst=2853:2853, nw_proto=6, dl_dst=fa:16:3e:b3:c7:39
+nw_src=124.32.225.128/26, nw_dst=172.180.13.19/32, tp_dst=3340:3340, nw_proto=6, dl_vlan=498, dl_dst=fa:16:3e:62:7c:22
+nw_src=124.32.225.128/26, nw_dst=172.180.13.19/32, tp_dst=7115:7115, nw_proto=6, dl_vlan=1745, eth_type=0x916a, dl_dst=fa:16:3e:65:4c:b5
+nw_src=124.39.193.192/26, nw_dst=172.180.15.232/32, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:70:9e:5b
+nw_src=124.39.135.64/26, nw_dst=172.180.15.9/32, tp_dst=3008:3008, nw_proto=6, dl_src=fa:16:3e:e5:3e:40, dl_dst=fa:16:3e:60:b5:db
+nw_src=124.39.135.64/26, nw_dst=172.180.15.9/32, tp_dst=80:80, nw_proto=6, dl_vlan=1462, dl_dst=fa:16:3e:b6:75:d9
+nw_src=39.159.159.64/26, nw_dst=172.180.50.34/32, tp_dst=25:25, nw_proto=6, dl_dst=fa:16:3e:e3:2d:ec
+nw_src=39.159.152.128/26, nw_dst=172.180.50.34/32, tp_dst=4106:4106, nw_proto=6, dl_vlan=2468, eth_type=0x916a, dl_dst=fa:16:3e:83:dc:f2
+nw_src=39.171.94.64/26, nw_dst=172.180.50.34/32, tp_dst=3300:3300, nw_proto=6, dl_src=fa:16:3e:98:ab:11, eth_type=0xdd0d, dl_dst=fa:16:3e:82:10:cf
+nw_src=39.167.51.128/26, nw_dst=172.180.50.34/32, tp_dst=2345:2345, nw_proto=6, dl_dst=fa:16:3e:e1:fc:c4
+nw_src=39.167.52.192/26, nw_dst=172.180.50.34/32, tp_dst=3116:3116, nw_proto=17, eth_type=0x5c63, dl_dst=fa:16:3e:68:71:ba
+nw_src=41.106.0.192/26, nw_dst=172.180.50.34/32, tp_dst=143:143, nw_proto=6, dl_dst=fa:16:3e:a2:38:cd
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=17, dl_dst=fa:16:3e:59:2c:cb
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, tp_dst=5190:5190, nw_proto=6, dl_src=fa:16:3e:f2:17:d2, dl_vlan=2467, dl_dst=fa:16:3e:6a:5c:a5
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, tp_dst=7113:7113, nw_proto=6, dl_src=fa:16:3e:89:89:3b
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, tp_dst=69:69, nw_proto=17, eth_type=0xfc1f, dl_dst=fa:16:3e:5a:92:37
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, tp_dst=25:25, nw_proto=6
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, tp_dst=5001:5001, nw_proto=6, dl_vlan=2557, eth_type=0xd5ad, dl_dst=fa:16:3e:f6:7b:d6
+nw_src=127.69.222.64/28, nw_dst=172.180.12.124/30, tp_dst=20555:20555, nw_proto=6, dl_vlan=231, dl_dst=fa:16:3e:56:a4:16
+nw_src=124.39.135.32/28, nw_dst=172.180.15.0/30, tp_dst=53:53, nw_proto=6
+nw_src=124.39.135.32/28, nw_dst=172.180.15.12/30, tp_dst=4106:4106, nw_proto=6, dl_src=fa:16:3e:23:77:e5, dl_dst=fa:16:3e:3d:c2:d
+nw_src=47.234.16.160/28, nw_dst=172.180.33.68/30, tp_dst=123:123, nw_proto=17, dl_dst=fa:16:3e:59:e3:b6
+nw_src=124.32.225.192/27, nw_dst=172.180.15.232/32, tp_dst=11021:11023, nw_proto=6, eth_type=0xd5ad, dl_dst=fa:16:3e:f:f0:bb
+nw_src=41.106.30.224/27, nw_dst=172.180.50.34/32, tp_dst=3110:3112, nw_proto=17, dl_src=fa:16:3e:a7:dc:be, eth_type=0xdd0d, dl_dst=fa:16:3e:52:cc:3d
+nw_src=124.39.193.136/29, nw_dst=172.180.15.232/32, tp_dst=3000:3010, nw_proto=6, dl_vlan=3395
+nw_src=124.39.193.144/28, nw_dst=172.180.15.4/31, tp_dst=11021:11023, nw_proto=6, dl_vlan=3438
+nw_src=124.39.135.58/32, nw_dst=172.180.15.32/27, tp_dst=137:138, nw_proto=6, dl_src=fa:16:3e:67:45:57, dl_dst=fa:16:3e:ca:3a:96
+nw_src=47.234.46.33/32, nw_dst=172.180.33.96/27, tp_dst=20:21, nw_proto=6, eth_type=0xdd0d
+nw_src=124.39.135.0/27, nw_dst=172.180.15.9/32, tp_dst=2010:2011, nw_proto=6, dl_dst=fa:16:3e:2e:17:d1
+nw_src=39.144.160.32/27, nw_dst=172.180.54.214/32, tp_dst=20:21, nw_proto=6, dl_vlan=3080, dl_dst=fa:16:3e:36:ec:fa
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=2200:2299, nw_proto=17, dl_src=fa:16:3e:7a:a5:da
+nw_src=121.6.102.0/25, nw_dst=250.205.134.33/32, tp_dst=88:88, nw_proto=17, dl_vlan=3395, dl_dst=fa:16:3e:fe:b9:d
+nw_src=124.39.193.0/25, nw_dst=172.180.15.232/32, tp_dst=3114:3114, nw_proto=6, dl_src=fa:16:3e:d7:1d:93, dl_vlan=3858
+nw_src=124.39.135.128/25, nw_dst=172.180.15.9/32, tp_dst=25:25, nw_proto=6
+nw_src=124.39.135.128/25, nw_dst=172.180.54.33/32, tp_dst=20300:20300, nw_proto=6, dl_dst=fa:16:3e:40:8f:33
+nw_src=39.159.154.0/25, nw_dst=172.180.50.34/32, tp_dst=139:139, nw_proto=6, dl_dst=fa:16:3e:fe:31:61
+nw_src=41.106.30.0/25, nw_dst=172.180.50.34/32, tp_dst=25:25, nw_proto=6, dl_vlan=3833, dl_dst=fa:16:3e:fc:3e:24
+nw_src=47.234.46.128/25, nw_dst=172.180.33.65/32, tp_dst=5719:5719, nw_proto=6, dl_dst=fa:16:3e:90:2d:8a
+nw_src=47.234.46.128/25, nw_dst=172.180.33.65/32, tp_dst=514:514, nw_proto=17, dl_dst=fa:16:3e:2:d6:a3
+nw_src=47.234.16.0/25, nw_dst=172.180.33.65/32, tp_dst=25:25, nw_proto=17, eth_type=0xc56, dl_dst=fa:16:3e:31:4:45
+nw_src=47.234.16.0/25, nw_dst=172.180.33.65/32, tp_dst=69:69, nw_proto=6, eth_type=0xae8f
+nw_src=47.200.166.0/25, nw_dst=172.180.45.20/32, tp_dst=3301:3301, nw_proto=6, dl_dst=fa:16:3e:2b:b8:30
+nw_src=47.200.166.0/25, nw_dst=172.180.45.20/32, tp_dst=69:69, nw_proto=6, dl_vlan=685, eth_type=0xc56
+nw_src=47.200.166.0/25, nw_dst=172.180.45.20/32, tp_dst=5000:5000, nw_proto=6, dl_src=fa:16:3e:7e:60:85
+nw_src=47.200.166.0/25, nw_dst=172.180.45.20/32, tp_dst=3106:3106, nw_proto=6, dl_src=fa:16:3e:0:f2:82, dl_vlan=883, eth_type=0x89ab, dl_dst=fa:16:3e:cb:2b:86
+nw_src=47.200.166.0/25, nw_dst=172.180.45.20/32, tp_dst=42:42, nw_proto=17, dl_vlan=1918, dl_dst=fa:16:3e:a2:38:cd
+nw_src=47.200.166.0/25, nw_dst=172.180.45.20/32, tp_dst=8081:8081, nw_proto=17, eth_type=0xc56
+nw_src=47.200.166.0/25, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:d5:d8:be
+nw_src=127.69.212.192/26, nw_dst=242.39.154.6/31, tp_dst=3206:3206, nw_proto=17, dl_vlan=3673, dl_dst=fa:16:3e:a1:45:b7
+nw_src=124.39.193.192/26, nw_dst=172.180.15.234/31, tp_dst=1701:1701, nw_proto=6, dl_src=fa:16:3e:3e:73:85, dl_vlan=1228, dl_dst=fa:16:3e:43:3d:ea
+nw_src=124.39.193.192/26, nw_dst=172.180.15.234/31, tp_dst=5005:5005, nw_proto=6, dl_vlan=500
+nw_src=124.39.135.64/26, nw_dst=172.180.15.10/31, tp_dst=53:53, nw_proto=6, dl_src=fa:16:3e:79:1d:7b, dl_dst=fa:16:3e:99:1c:cb
+nw_src=39.159.155.0/26, nw_dst=172.180.50.32/31, tp_dst=80:80, nw_proto=6, dl_dst=fa:16:3e:1a:d6:5
+nw_src=39.167.55.0/26, nw_dst=172.180.50.32/31, tp_dst=1701:1701, nw_proto=17, eth_type=0x916a, dl_dst=fa:16:3e:4f:dc:fa
+nw_src=41.106.8.0/26, nw_dst=172.180.50.32/31, tp_dst=8080:8080, nw_proto=6, dl_src=fa:16:3e:5c:87:4, dl_vlan=1100, dl_dst=fa:16:3e:2:d6:a3
+nw_src=41.106.0.192/26, nw_dst=172.180.33.66/31, tp_dst=80:80, nw_proto=6, dl_vlan=565, eth_type=0xdd0d, dl_dst=fa:16:3e:2e:9d:a0
+nw_src=47.234.16.192/26, nw_dst=172.180.33.66/31, tp_dst=5190:5190, nw_proto=6, dl_vlan=3204, dl_dst=fa:16:3e:62:7c:22
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=514:514, nw_proto=17, dl_vlan=2702, eth_type=0xfc1f, dl_dst=fa:16:3e:6a:8:fb
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=80:80, nw_proto=17, dl_dst=fa:16:3e:6a:8:fb
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=443:443, nw_proto=6, eth_type=0xae8f, dl_dst=fa:16:3e:43:3d:ea
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=139:139, nw_proto=6, dl_dst=fa:16:3e:f8:21:a4
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=25:25, nw_proto=17, dl_vlan=3486, eth_type=0x89ab, dl_dst=fa:16:3e:99:7b:fa
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=8200:8200, nw_proto=6, dl_vlan=3150
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=135:135, nw_proto=6, dl_dst=fa:16:3e:e9:fc:a0
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=3106:3106, nw_proto=6, dl_vlan=1125, dl_dst=fa:16:3e:a1:57:70
+nw_src=124.39.135.0/27, nw_dst=172.180.15.12/30, tp_dst=514:514, nw_proto=6, dl_vlan=1573, dl_dst=fa:16:3e:d0:eb:69
+nw_src=124.39.135.0/27, nw_dst=172.180.55.176/30, tp_dst=9993:9993, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:4f:dc:fa
+nw_src=47.200.166.192/27, nw_dst=172.180.45.16/30, tp_dst=3101:3101, nw_proto=6, dl_src=fa:16:3e:67:45:57, dl_dst=fa:16:3e:6a:8:fb
+nw_src=41.106.8.96/27, nw_dst=172.180.50.32/31, tp_dst=144:145, nw_proto=6, dl_vlan=852, dl_dst=fa:16:3e:c6:d8:7a
+nw_src=249.128.110.128/25, nw_dst=4.214.217.190/31, tp_dst=514:514, nw_proto=6, dl_src=fa:16:3e:f8:f5:8b, dl_vlan=565, dl_dst=fa:16:3e:e4:41:89
+nw_src=121.6.102.0/25, nw_dst=250.211.89.28/31, tp_dst=514:514, nw_proto=17, dl_dst=fa:16:3e:3b:45:44
+nw_src=120.50.209.0/25, nw_dst=242.39.154.62/31, tp_dst=23:23, nw_proto=6, dl_src=fa:16:3e:d5:3d:75, dl_vlan=2918
+nw_src=127.69.209.0/25, nw_dst=242.39.154.6/31, tp_dst=69:69, nw_proto=6, dl_dst=fa:16:3e:a2:cf:f6
+nw_src=127.120.212.0/25, nw_dst=172.180.13.22/31, tp_dst=5050:5050, nw_proto=6, eth_type=0xfc1f, dl_dst=fa:16:3e:27:17:4f
+nw_src=124.39.193.0/25, nw_dst=172.180.15.234/31, tp_dst=3101:3101, nw_proto=6, dl_dst=fa:16:3e:59:2c:cb
+nw_src=39.167.50.128/25, nw_dst=172.180.50.32/31, tp_dst=25:25, nw_proto=6, dl_vlan=500
+nw_src=39.167.55.0/25, nw_dst=172.180.50.32/31, tp_dst=2105:2105, nw_proto=17
+nw_src=39.167.55.0/25, nw_dst=172.180.50.32/31, tp_dst=80:80, nw_proto=6, eth_type=0xdd0d, dl_dst=fa:16:3e:44:78:ad
+nw_src=41.106.8.128/25, nw_dst=172.180.50.32/31, tp_dst=37:37, nw_proto=6, dl_src=fa:16:3e:6d:39:7a, dl_vlan=2468, dl_dst=fa:16:3e:56:16:7a
+nw_src=41.106.0.0/25, nw_dst=172.180.50.32/31, tp_dst=2344:2344, nw_proto=6, dl_dst=fa:16:3e:a1:60:68
+nw_src=47.234.16.0/25, nw_dst=172.180.33.66/31, tp_dst=3101:3101, nw_proto=17, dl_vlan=1179, eth_type=0xfc1f
+nw_src=47.200.166.0/25, nw_dst=172.180.45.22/31, tp_dst=3015:3015, nw_proto=6
+nw_src=47.200.166.0/25, nw_dst=172.180.45.22/31, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:67:45:57, dl_dst=fa:16:3e:f3:c0:da
+nw_src=246.58.68.0/26, nw_dst=4.214.217.190/31, tp_dst=20:21, nw_proto=6, dl_dst=fa:16:3e:a6:e3:4d
+nw_src=41.106.0.192/26, nw_dst=172.180.33.66/31, tp_dst=29300:29301, nw_proto=6, dl_vlan=3312, dl_dst=fa:16:3e:dc:c4:66
+nw_src=141.45.161.64/26, nw_dst=4.214.217.184/30, tp_dst=514:514, nw_proto=6, eth_type=0x5c63, dl_dst=fa:16:3e:aa:c2:7d
+nw_src=120.50.205.0/25, nw_dst=245.219.200.71/32, tp_dst=161:162, nw_proto=6, dl_vlan=2394, dl_dst=fa:16:3e:a5:94:4f
+nw_src=124.39.135.128/25, nw_dst=172.180.15.9/32, tp_dst=137:138, nw_proto=17, dl_vlan=2394, dl_dst=fa:16:3e:1b:5f:81
+nw_src=127.120.212.128/26, nw_dst=172.180.13.22/31, tp_dst=3110:3112, nw_proto=6, dl_vlan=823, dl_dst=fa:16:3e:fe:cb:5e
+nw_src=124.39.192.0/24, nw_dst=172.180.15.232/32, tp_dst=5015:5015, nw_proto=17, eth_type=0x7277, dl_dst=fa:16:3e:78:f1:96
+nw_src=124.39.192.0/24, nw_dst=172.180.15.232/32, tp_dst=162:162, nw_proto=17, eth_type=0x5c63, dl_dst=fa:16:3e:8e:91:1
+nw_src=124.39.134.0/24, nw_dst=172.180.15.9/32, tp_dst=5190:5190, nw_proto=6, dl_dst=fa:16:3e:d0:eb:69
+nw_src=124.39.134.0/24, nw_dst=172.180.15.9/32, tp_dst=143:143, nw_proto=6, dl_dst=fa:16:3e:bb:ed:df
+nw_src=39.159.156.0/24, nw_dst=172.180.50.34/32, tp_dst=1825:1825, nw_proto=6, dl_dst=fa:16:3e:82:10:cf
+nw_src=39.171.112.0/24, nw_dst=172.180.50.34/32, tp_dst=88:88, nw_proto=6, eth_type=0x95bc, dl_dst=fa:16:3e:3c:68:28
+nw_src=42.116.42.0/24, nw_dst=172.180.50.34/32, tp_dst=123:123, nw_proto=6, dl_vlan=1418, dl_dst=fa:16:3e:8d:b:2b
+nw_src=42.116.42.0/24, nw_dst=172.180.50.34/32, tp_dst=5540:5540, nw_proto=17, dl_vlan=1884, dl_dst=fa:16:3e:84:8d:14
+nw_src=41.106.9.0/24, nw_dst=172.180.50.34/32, tp_dst=23:23, nw_proto=6, dl_vlan=0, dl_dst=fa:16:3e:a2:cf:f6
+nw_src=41.106.1.0/24, nw_dst=172.180.33.65/32, tp_dst=161:161, nw_proto=6, eth_type=0xd5ad
+nw_src=47.234.47.0/24, nw_dst=172.180.33.65/32, tp_dst=2344:2344, nw_proto=17
+nw_src=47.234.17.0/24, nw_dst=172.180.33.65/32, tp_dst=80:80, nw_proto=6
+nw_src=47.200.167.0/24, nw_dst=172.180.45.20/32, tp_dst=123:123, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:83:f3:53
+nw_src=47.200.167.0/24, nw_dst=172.180.45.20/32, tp_dst=5190:5190, nw_proto=6, dl_src=fa:16:3e:33:d5:64
+nw_src=47.200.167.0/24, nw_dst=172.180.45.20/32, tp_dst=1701:1701, nw_proto=17, dl_vlan=2062, dl_dst=fa:16:3e:ba:e6:56
+nw_src=47.200.167.0/24, nw_dst=172.180.45.20/32, tp_dst=69:69, nw_proto=17, dl_dst=fa:16:3e:fc:7a:32
+nw_src=47.200.167.0/24, nw_dst=172.180.45.20/32, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:3d:c2:d
+nw_src=47.200.167.0/24, nw_dst=172.180.45.20/32, tp_dst=754:754, nw_proto=17, dl_src=fa:16:3e:23:3b:64, dl_vlan=2365, dl_dst=fa:16:3e:a6:a3:87
+nw_src=124.39.135.0/27, nw_dst=172.180.15.0/30, tp_dst=3106:3108, nw_proto=6, dl_dst=fa:16:3e:ac:28:b2
+nw_src=42.116.91.0/27, nw_dst=172.180.50.32/31, tp_dst=26000:26003, nw_proto=6, dl_dst=fa:16:3e:1f:1a:62
+nw_src=136.193.230.0/23, nw_dst=4.214.217.188/32, tp_dst=20300:20300, nw_proto=6, dl_dst=fa:16:3e:6a:43:4e
+nw_src=120.50.210.0/23, nw_dst=242.39.132.115/32, tp_dst=23:23, nw_proto=17, dl_vlan=1892, dl_dst=fa:16:3e:d5:17:62
+nw_src=120.50.210.0/23, nw_dst=242.39.132.115/32, tp_dst=2344:2344, nw_proto=17, dl_vlan=1716, eth_type=0xc56, dl_dst=fa:16:3e:e1:fc:c4
+nw_src=127.30.192.0/23, nw_dst=242.39.154.5/32, tp_dst=3015:3015, nw_proto=17, dl_vlan=1937, eth_type=0xfc1f
+nw_src=127.30.192.0/23, nw_dst=242.39.154.5/32, tp_dst=123:123, nw_proto=17, dl_vlan=685, dl_dst=fa:16:3e:96:66:45
+nw_src=124.39.132.0/23, nw_dst=172.180.15.7/32, tp_dst=443:443, nw_proto=6, dl_vlan=323, dl_dst=fa:16:3e:6a:5c:a5
+nw_src=124.39.132.0/23, nw_dst=172.180.54.221/32, tp_dst=5000:5000, nw_proto=6, dl_vlan=636, dl_dst=fa:16:3e:8:f1:30
+nw_src=41.106.10.0/23, nw_dst=172.180.50.34/32, tp_dst=139:139, nw_proto=6, dl_dst=fa:16:3e:e4:41:89
+nw_src=47.234.18.0/23, nw_dst=172.180.33.65/32, tp_dst=4439:4439, nw_proto=17, eth_type=0xd5ad, dl_dst=fa:16:3e:43:3d:ea
+nw_src=47.234.18.0/23, nw_dst=172.180.33.65/32, tp_dst=42:42, nw_proto=6, dl_src=fa:16:3e:95:c4:d6, dl_vlan=2569, dl_dst=fa:16:3e:eb:a7:8c
+nw_src=47.200.164.0/23, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=6, dl_vlan=254, dl_dst=fa:16:3e:a6:e3:4d
+nw_src=47.200.164.0/23, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:d7:89:99
+nw_src=47.200.164.0/23, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=17, dl_dst=fa:16:3e:b1:e6:67
+nw_src=47.200.164.0/23, nw_dst=172.180.45.20/32, tp_dst=5190:5190, nw_proto=6
+nw_src=47.200.164.0/23, nw_dst=172.180.45.20/32, tp_dst=7426:7426, nw_proto=6, dl_vlan=2821
+nw_src=121.6.102.64/28, nw_dst=245.219.53.160/27, tp_dst=53:53, nw_proto=6
+nw_src=127.120.219.0/26, nw_dst=172.180.13.20/32, tp_dst=8000:8009, nw_proto=6, dl_src=fa:16:3e:41:63:9d, dl_vlan=4002
+nw_src=124.32.224.0/24, nw_dst=172.180.13.16/31, tp_dst=514:514, nw_proto=17, dl_src=fa:16:3e:7f:9:99, dl_dst=fa:16:3e:1d:40:40
+nw_src=124.39.134.0/24, nw_dst=172.180.15.4/31, tp_dst=3101:3101, nw_proto=6, eth_type=0x95bc, dl_dst=fa:16:3e:8e:91:1
+nw_src=124.39.134.0/24, nw_dst=172.180.15.4/31, tp_dst=69:69, nw_proto=6, dl_vlan=323, dl_dst=fa:16:3e:70:9e:5b
+nw_src=124.39.134.0/24, nw_dst=172.180.15.10/31, tp_dst=2853:2853, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:57:dd:b1
+nw_src=124.39.134.0/24, nw_dst=172.180.54.222/31, tp_dst=20030:20030, nw_proto=6, dl_dst=fa:16:3e:10:c2:52
+nw_src=41.106.1.0/24, nw_dst=172.180.33.66/31, tp_dst=42:42, nw_proto=6, dl_vlan=1716, dl_dst=fa:16:3e:25:8c:e
+nw_src=47.234.47.0/24, nw_dst=172.180.33.66/31, tp_dst=3010:3010, nw_proto=6, dl_dst=fa:16:3e:2a:ef:21
+nw_src=47.234.17.0/24, nw_dst=172.180.33.66/31, tp_dst=514:514, nw_proto=6, dl_src=fa:16:3e:7f:3a:d8, dl_vlan=3005
+nw_src=47.200.167.0/24, nw_dst=172.180.45.22/31, tp_dst=1701:1701, nw_proto=17, eth_type=0x5c63, dl_dst=fa:16:3e:a1:57:70
+nw_src=47.200.167.0/24, nw_dst=172.180.45.22/31, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:a1:79:8d
+nw_src=47.200.167.0/24, nw_dst=172.180.45.22/31, tp_dst=3350:3350, nw_proto=6, dl_vlan=885, eth_type=0x89ab, dl_dst=fa:16:3e:ca:3a:96
+nw_src=124.39.135.64/26, nw_dst=172.180.15.7/32, tp_dst=4100:4110, nw_proto=6, dl_src=fa:16:3e:e4:2c:a3, dl_dst=fa:16:3e:67:27:60
+nw_src=124.39.135.128/25, nw_dst=172.180.15.4/31, tp_dst=29300:29301, nw_proto=6
+nw_src=41.106.0.0/25, nw_dst=172.180.33.66/31, tp_dst=543:545, nw_proto=17, dl_dst=fa:16:3e:1f:1a:62
+nw_src=47.234.17.0/24, nw_dst=172.180.33.65/32, tp_dst=2010:2011, nw_proto=17, dl_dst=fa:16:3e:b1:c3:53
+nw_src=47.200.166.192/27, nw_dst=172.180.45.0/28, tp_dst=25:25, nw_proto=6, dl_dst=fa:16:3e:d5:66:6a
+nw_src=136.193.230.224/27, nw_dst=4.214.217.128/27, tp_dst=20555:20555, nw_proto=17, dl_src=fa:16:3e:44:c2:1d, dl_vlan=1009, dl_dst=fa:16:3e:c7:ca:54
+nw_src=120.50.205.128/27, nw_dst=245.219.223.32/27, tp_dst=9993:9993, nw_proto=6, dl_src=fa:16:3e:7:ad:db, dl_vlan=1125, eth_type=0xfc1f, dl_dst=fa:16:3e:42:85:3
+nw_src=127.120.90.192/27, nw_dst=172.180.12.192/27, tp_dst=9993:9993, nw_proto=17, dl_dst=fa:16:3e:2a:b1:3e
+nw_src=124.39.135.0/27, nw_dst=172.180.15.32/27, tp_dst=20555:20555, nw_proto=6, dl_vlan=2459, dl_dst=fa:16:3e:a3:38:ea
+nw_src=124.39.135.0/27, nw_dst=172.180.54.0/27, tp_dst=2121:2121, nw_proto=17, dl_vlan=2242, dl_dst=fa:16:3e:60:b5:db
+nw_src=47.234.46.0/27, nw_dst=172.180.33.96/27, tp_dst=80:80, nw_proto=6, dl_src=fa:16:3e:27:94:bf, dl_dst=fa:16:3e:d8:31:9
+nw_src=47.234.16.128/27, nw_dst=172.180.33.96/27, tp_dst=119:119, nw_proto=6
+nw_src=47.200.166.192/27, nw_dst=172.180.45.32/27, tp_dst=69:69, nw_proto=6, dl_vlan=3347, dl_dst=fa:16:3e:ac:28:b2
+nw_src=47.200.166.192/27, nw_dst=172.180.45.32/27, tp_dst=2345:2345, nw_proto=17, dl_src=fa:16:3e:fa:4f:5, eth_type=0xdd0d, dl_dst=fa:16:3e:c5:19:6
+nw_src=47.200.166.192/27, nw_dst=172.180.45.32/27, tp_dst=5190:5190, nw_proto=6, dl_dst=fa:16:3e:ab:f1:4f
+nw_src=127.124.109.192/26, nw_dst=172.180.12.160/28, tp_dst=3350:3350, nw_proto=17, dl_vlan=883, eth_type=0xae8f, dl_dst=fa:16:3e:fa:68:b9
+nw_src=124.39.135.64/26, nw_dst=172.180.54.192/28, tp_dst=20555:20555, nw_proto=6, dl_dst=fa:16:3e:b6:57:5b
+nw_src=39.167.220.192/26, nw_dst=172.180.50.48/28, tp_dst=23:23, nw_proto=6, dl_src=fa:16:3e:37:d1:fa, dl_dst=fa:16:3e:ad:63:64
+nw_src=47.200.166.128/26, nw_dst=172.180.45.0/28, tp_dst=9000:9000, nw_proto=6, dl_vlan=3958, eth_type=0xfc1f, dl_dst=fa:16:3e:44:99:26
+nw_src=127.120.212.0/23, nw_dst=172.180.13.22/31, tp_dst=69:69, nw_proto=17, dl_vlan=620, dl_dst=fa:16:3e:b7:ad:5d
+nw_src=124.39.194.0/23, nw_dst=172.180.15.4/31, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:9c:2c:b4, dl_vlan=498, eth_type=0xd5ad, dl_dst=fa:16:3e:a5:94:4f
+nw_src=47.200.164.0/23, nw_dst=172.180.45.22/31, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:44:c2:1d, eth_type=0x916a
+nw_src=127.120.212.32/28, nw_dst=172.180.13.64/26, tp_dst=3350:3350, nw_proto=6, dl_vlan=835, dl_dst=fa:16:3e:d9:95:20
+nw_src=124.32.28.224/28, nw_dst=172.180.13.64/26, tp_dst=53:53, nw_proto=6, dl_vlan=498, eth_type=0xd5ad
+nw_src=47.200.166.224/28, nw_dst=172.180.45.64/26, tp_dst=139:139, nw_proto=6, dl_vlan=2765, dl_dst=fa:16:3e:b6:57:5b
+nw_src=124.32.225.128/26, nw_dst=172.180.13.16/31, tp_dst=3206:3216, nw_proto=17, dl_vlan=3543, dl_dst=fa:16:3e:13:6d:d
+nw_src=124.32.226.0/23, nw_dst=172.180.13.19/32, tp_dst=20:21, nw_proto=6, dl_dst=fa:16:3e:12:e3:3e
+nw_src=124.39.135.128/25, nw_dst=172.180.15.9/32, tp_dst=3206:3216, nw_proto=6, dl_vlan=3396
+nw_src=41.106.8.128/25, nw_dst=172.180.50.32/31, tp_dst=2106:2109, nw_proto=17, dl_src=fa:16:3e:e7:bb:ac, dl_dst=fa:16:3e:62:7c:22
+nw_src=47.200.167.0/24, nw_dst=172.180.33.66/31, tp_dst=137:138, nw_proto=6, dl_src=fa:16:3e:c7:73:5a, dl_vlan=1347
+nw_src=47.200.167.0/24, nw_dst=172.180.45.22/31, tp_dst=20:21, nw_proto=6
+nw_src=47.200.167.0/24, nw_dst=172.180.45.22/31, tp_dst=3100:3101, nw_proto=6, dl_src=fa:16:3e:36:3:67, dl_vlan=1369, dl_dst=fa:16:3e:a6:9d:ae
+nw_src=47.200.166.224/28, nw_dst=172.180.45.32/27, tp_dst=3106:3108, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:9e:52:c
+nw_src=47.200.160.0/22, nw_dst=172.180.45.20/32, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:d8:31:9
+nw_src=47.200.160.0/22, nw_dst=172.180.45.20/32, tp_dst=80:80, nw_proto=6, dl_vlan=2932, dl_dst=fa:16:3e:29:a2:70
+nw_src=47.200.166.248/29, nw_dst=172.180.45.20/32, tp_dst=7050:7300, nw_proto=6, eth_type=0xdd0d, dl_dst=fa:16:3e:fe:b9:d
+nw_src=120.50.209.128/26, nw_dst=241.232.168.64/27, tp_dst=29301:29301, nw_proto=6, dl_src=fa:16:3e:68:5e:55, dl_vlan=1526, eth_type=0x95bc, dl_dst=fa:16:3e:d4:bd:a1
+nw_src=120.50.216.0/21, nw_dst=242.39.132.115/32, tp_dst=42:42, nw_proto=17, dl_vlan=43, dl_dst=fa:16:3e:c3:27:81
+nw_src=127.124.104.0/21, nw_dst=172.180.12.176/32, tp_dst=5000:5000, nw_proto=6
+nw_src=124.39.136.0/21, nw_dst=172.180.15.7/32, tp_dst=5015:5015, nw_proto=17, dl_dst=fa:16:3e:c5:19:6
+nw_src=41.106.8.0/21, nw_dst=172.180.50.34/32, tp_dst=3114:3114, nw_proto=6, dl_vlan=3397
+nw_src=47.200.168.0/21, nw_dst=172.180.45.20/32, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:38:f0:21
+nw_src=124.32.29.160/27, nw_dst=172.180.13.64/26, tp_dst=161:161, nw_proto=6, dl_src=fa:16:3e:5c:77:a3, dl_dst=fa:16:3e:9e:61:ff
+nw_src=41.106.30.224/27, nw_dst=172.180.50.64/26, tp_dst=3106:3106, nw_proto=6, dl_vlan=263, dl_dst=fa:16:3e:19:fe:3
+nw_src=41.106.0.128/27, nw_dst=172.180.33.0/26, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:61:ce:62
+nw_src=47.234.16.128/27, nw_dst=172.180.33.0/26, tp_dst=514:514, nw_proto=17, dl_dst=fa:16:3e:eb:a7:8c
+nw_src=124.39.128.0/22, nw_dst=172.180.15.10/31, tp_dst=514:514, nw_proto=6, dl_vlan=1262, eth_type=0x7277, dl_dst=fa:16:3e:2a:b1:3e
+nw_src=47.234.20.0/22, nw_dst=172.180.33.66/31, tp_dst=514:514, nw_proto=17, eth_type=0xc56, dl_dst=fa:16:3e:2b:b8:30
+nw_src=47.200.160.0/22, nw_dst=172.180.45.22/31, tp_dst=80:80, nw_proto=17, dl_src=fa:16:3e:99:4c:37, dl_dst=fa:16:3e:d4:88:c4
+nw_src=124.39.135.0/27, nw_dst=172.180.55.0/27, tp_dst=7000:7001, nw_proto=6, dl_dst=fa:16:3e:a0:ec:2
+nw_src=41.106.30.128/26, nw_dst=172.180.50.48/28, tp_dst=3110:3112, nw_proto=6, dl_vlan=2459, eth_type=0xae8f, dl_dst=fa:16:3e:6d:cb:6c
+nw_src=41.106.31.0/24, nw_dst=172.180.50.34/32, tp_dst=3000:3010, nw_proto=6, dl_dst=fa:16:3e:33:46:f5
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=33433:33553, nw_proto=6, dl_src=fa:16:3e:3f:8e:5b, eth_type=0x89ab, dl_dst=fa:16:3e:2a:ef:21
+nw_src=47.200.166.244/30, nw_dst=172.180.45.20/32, tp_dst=4120:5120, nw_proto=6, dl_vlan=2654, dl_dst=fa:16:3e:a5:94:4f
+nw_src=133.165.93.0/24, nw_dst=4.214.217.160/28, tp_dst=119:119, nw_proto=6, dl_src=fa:16:3e:6c:79:9, dl_vlan=2916, dl_dst=fa:16:3e:e1:fc:c4
+nw_src=47.200.167.0/24, nw_dst=172.180.45.0/28, tp_dst=5000:5000, nw_proto=6, dl_src=fa:16:3e:5c:87:4
+nw_src=47.200.167.0/24, nw_dst=172.180.45.0/28, tp_dst=3333:3333, nw_proto=17, dl_vlan=2765
+nw_src=121.6.102.64/27, nw_dst=245.219.28.0/25, tp_dst=143:143, nw_proto=6, dl_src=fa:16:3e:d5:65:67, dl_vlan=1765, dl_dst=fa:16:3e:e9:fc:a0
+nw_src=120.50.205.0/25, nw_dst=245.219.28.0/27, tp_dst=53:53, nw_proto=6, dl_src=fa:16:3e:7f:3a:d8, dl_vlan=1369, eth_type=0x7277, dl_dst=fa:16:3e:a1:60:68
+nw_src=124.39.135.128/25, nw_dst=172.180.55.0/27, tp_dst=69:69, nw_proto=6, dl_src=fa:16:3e:fb:9:db, eth_type=0xd5ad, dl_dst=fa:16:3e:49:3a:ae
+nw_src=47.200.166.0/25, nw_dst=172.180.45.32/27, tp_dst=443:443, nw_proto=6, eth_type=0x89ab
+nw_src=120.50.212.0/22, nw_dst=241.232.168.70/31, tp_dst=3106:3108, nw_proto=6, dl_src=fa:16:3e:2b:9:eb, dl_vlan=3673, dl_dst=fa:16:3e:99:7b:fa
+nw_src=120.50.216.0/21, nw_dst=242.39.132.114/31, tp_dst=3106:3106, nw_proto=6, dl_dst=fa:16:3e:1c:c3:65
+nw_src=39.167.216.0/21, nw_dst=172.180.50.32/31, tp_dst=3301:3301, nw_proto=17, eth_type=0xfc1f
+nw_src=124.39.144.0/20, nw_dst=172.180.15.9/32, tp_dst=2345:2345, nw_proto=17, dl_vlan=2581, dl_dst=fa:16:3e:2f:21:45
+nw_src=41.106.16.0/20, nw_dst=172.180.50.34/32, tp_dst=4444:4444, nw_proto=6, dl_src=fa:16:3e:6f:23:72
+nw_src=47.200.176.0/20, nw_dst=172.180.33.65/32, tp_dst=3106:3106, nw_proto=17, dl_src=fa:16:3e:a9:53:16, dl_dst=fa:16:3e:96:b6:46
+nw_src=124.39.135.64/26, nw_dst=172.180.15.32/27, tp_dst=137:138, nw_proto=17, dl_vlan=3618, eth_type=0xfc1f, dl_dst=fa:16:3e:fe:b9:d
+nw_src=124.39.132.0/23, nw_dst=172.180.54.33/32, tp_dst=8000:8009, nw_proto=6, dl_src=fa:16:3e:ea:83:58, dl_vlan=1867, dl_dst=fa:16:3e:f2:c:b
+nw_src=41.106.0.192/26, nw_dst=172.180.33.0/26, tp_dst=51770:51770, nw_proto=17, eth_type=0x7277, dl_dst=fa:16:3e:76:54:e4
+nw_src=141.45.160.0/20, nw_dst=4.214.217.188/32, tp_dst=20:21, nw_proto=17, dl_vlan=813, dl_dst=fa:16:3e:3b:45:44
+nw_src=127.30.192.0/19, nw_dst=242.39.154.5/32, tp_dst=5015:5015, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:36:ec:fa
+nw_src=124.39.224.0/19, nw_dst=172.180.15.232/32, tp_dst=80:80, nw_proto=17, dl_dst=fa:16:3e:57:c1:90
+nw_src=124.39.160.0/19, nw_dst=172.180.15.9/32, tp_dst=3030:3030, nw_proto=17, dl_src=fa:16:3e:4e:2b:9c, eth_type=0x89ab, dl_dst=fa:16:3e:10:c2:52
+nw_src=124.32.225.0/25, nw_dst=172.180.13.64/26, tp_dst=25:25, nw_proto=6, dl_vlan=1480, dl_dst=fa:16:3e:44:e8:41
+nw_src=124.32.226.0/23, nw_dst=172.180.15.240/28, tp_dst=69:69, nw_proto=6, dl_dst=fa:16:3e:c9:ac:6b
+nw_src=124.39.194.0/23, nw_dst=172.180.15.16/28, tp_dst=25:25, nw_proto=6, dl_vlan=1423, eth_type=0xc56, dl_dst=fa:16:3e:3c:53:a7
+nw_src=124.39.132.0/23, nw_dst=172.180.15.16/28, tp_dst=514:514, nw_proto=17, dl_dst=fa:16:3e:a1:60:68
+nw_src=39.167.222.0/23, nw_dst=172.180.50.48/28, tp_dst=54488:54488, nw_proto=6, dl_src=fa:16:3e:e7:bb:ac, dl_vlan=3000, eth_type=0x95bc, dl_dst=fa:16:3e:2a:ef:21
+nw_src=124.39.135.128/25, nw_dst=172.180.15.9/32, tp_dst=33433:33553, nw_proto=6, dl_vlan=3803, dl_dst=fa:16:3e:61:24:89
+nw_src=124.39.144.0/20, nw_dst=172.180.15.10/31, tp_dst=20000:20000, nw_proto=6, dl_vlan=3396, eth_type=0x89ab, dl_dst=fa:16:3e:e9:fc:a0
+nw_src=39.167.221.0/24, nw_dst=172.180.50.34/32, tp_dst=860:909, nw_proto=6, eth_type=0x5c63, dl_dst=fa:16:3e:8f:b9:e9
+nw_src=47.234.46.64/26, nw_dst=172.180.33.128/25, tp_dst=69:69, nw_proto=17, dl_dst=fa:16:3e:44:e8:41
+nw_src=47.234.17.0/24, nw_dst=172.180.33.96/27, tp_dst=20555:20555, nw_proto=17, eth_type=0xc56, dl_dst=fa:16:3e:65:4c:b5
+nw_src=47.200.167.0/24, nw_dst=172.180.45.32/27, tp_dst=3200:3200, nw_proto=17, dl_vlan=672, dl_dst=fa:16:3e:ab:f1:4f
+nw_src=47.200.167.0/24, nw_dst=172.180.45.32/27, tp_dst=5000:5000, nw_proto=17, dl_dst=fa:16:3e:a1:79:8d
+nw_src=47.200.167.0/24, nw_dst=172.180.45.32/27, tp_dst=5190:5190, nw_proto=6, dl_vlan=2468, eth_type=0xd5ad, dl_dst=fa:16:3e:c7:ca:54
+nw_src=47.200.160.0/22, nw_dst=172.180.45.20/32, tp_dst=3000:3010, nw_proto=6, dl_dst=fa:16:3e:7d:52:4b
+nw_src=47.200.166.192/27, nw_dst=172.180.45.0/28, tp_dst=32000:32020, nw_proto=6, eth_type=0x95bc, dl_dst=fa:16:3e:5f:25:66
+nw_src=47.200.166.192/27, nw_dst=172.180.44.0/24, tp_dst=5190:5190, nw_proto=6, dl_vlan=1273, dl_dst=fa:16:3e:9e:61:ff
+nw_src=246.58.80.0/23, nw_dst=4.214.217.128/27, tp_dst=9993:9993, nw_proto=6, dl_vlan=4002
+nw_src=39.171.94.0/23, nw_dst=172.180.50.0/27, tp_dst=443:443, nw_proto=6, dl_dst=fa:16:3e:9:cb:a4
+nw_src=47.234.44.0/23, nw_dst=172.180.33.96/27, tp_dst=443:443, nw_proto=6, dl_vlan=2821, dl_dst=fa:16:3e:1a:d6:5
+nw_src=47.234.18.0/23, nw_dst=172.180.33.96/27, tp_dst=1780:1780, nw_proto=17
+nw_src=127.124.108.0/22, nw_dst=172.180.12.160/28, tp_dst=3030:3030, nw_proto=6, dl_vlan=2450
+nw_src=124.32.128.0/18, nw_dst=172.180.13.19/32, tp_dst=80:80, nw_proto=17, eth_type=0x89ab, dl_dst=fa:16:3e:62:7c:22
+nw_src=124.32.224.0/24, nw_dst=172.180.15.128/26, tp_dst=37:37, nw_proto=6, dl_vlan=3761, dl_dst=fa:16:3e:c0:26:e9
+nw_src=47.234.17.0/24, nw_dst=172.180.33.0/26, tp_dst=3101:3101, nw_proto=6, dl_src=fa:16:3e:36:3:67, dl_dst=fa:16:3e:43:74:c4
+nw_src=47.234.17.0/24, nw_dst=172.180.33.0/26, tp_dst=2853:2853, nw_proto=6, dl_vlan=1179
+nw_src=47.200.167.0/24, nw_dst=172.180.45.64/26, tp_dst=25:25, nw_proto=6, dl_dst=fa:16:3e:1d:40:40
+nw_src=47.200.167.0/24, nw_dst=172.180.45.64/26, tp_dst=3015:3015, nw_proto=6, dl_dst=fa:16:3e:82:10:cf
+nw_src=124.39.128.0/22, nw_dst=172.180.15.10/31, tp_dst=3206:3216, nw_proto=6, dl_src=fa:16:3e:5c:87:4, dl_vlan=636, eth_type=0x89ab, dl_dst=fa:16:3e:4d:74:bd
+nw_src=47.234.46.128/25, nw_dst=172.180.33.66/31, tp_dst=839:909, nw_proto=6
+nw_src=47.200.128.0/19, nw_dst=172.180.45.22/31, tp_dst=3106:3106, nw_proto=6, dl_vlan=2130, dl_dst=fa:16:3e:44:78:ad
+nw_src=246.58.80.102/32, nw_dst=4.214.217.188/32, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:5b:54:4d
+nw_src=246.58.79.46/32, nw_dst=4.214.217.188/32, tp_dst=1024:65535, nw_proto=6, eth_type=0xae8f, dl_dst=fa:16:3e:e6:23:7d
+nw_src=246.58.79.66/32, nw_dst=4.214.217.188/32, tp_dst=1024:65535, nw_proto=17, eth_type=0x95bc, dl_dst=fa:16:3e:4f:dc:fa
+nw_src=120.50.209.252/32, nw_dst=242.39.154.61/32, tp_dst=1024:65535, nw_proto=17, eth_type=0x95bc
+nw_src=127.120.212.142/32, nw_dst=172.180.13.20/32, tp_dst=1024:65535, nw_proto=6, eth_type=0x916a, dl_dst=fa:16:3e:4f:1c:23
+nw_src=124.32.225.241/32, nw_dst=172.180.13.19/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=2581, dl_dst=fa:16:3e:65:4c:b5
+nw_src=124.39.193.135/32, nw_dst=172.180.15.232/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=1370, dl_dst=fa:16:3e:e6:fe:7f
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:aa:62:db, dl_vlan=1511, eth_type=0x7277
+nw_src=124.39.135.58/32, nw_dst=172.180.15.9/32, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:eb:a7:8c
+nw_src=39.144.92.225/32, nw_dst=172.180.54.214/32, tp_dst=1024:65535, nw_proto=17, dl_src=fa:16:3e:5c:1b:d0
+nw_src=39.171.66.215/32, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=729, eth_type=0x916a
+nw_src=39.167.55.253/32, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=1937, eth_type=0x89ab, dl_dst=fa:16:3e:bb:ed:df
+nw_src=39.167.220.166/32, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:d0:eb:69
+nw_src=41.106.30.192/32, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:27:d7:af, dl_vlan=3275, dl_dst=fa:16:3e:72:b5:fa
+nw_src=41.106.0.171/32, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=1176, dl_dst=fa:16:3e:aa:c2:7d
+nw_src=47.234.46.33/32, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:78:f1:96
+nw_src=47.234.16.189/32, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=155, eth_type=0x95bc, dl_dst=fa:16:3e:33:46:f5
+nw_src=47.200.166.242/32, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:b2:64:8a
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=1273, eth_type=0x916a, dl_dst=fa:16:3e:43:74:c4
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=17, dl_src=fa:16:3e:31:34:9a, eth_type=0x95bc, dl_dst=fa:16:3e:f2:4a:ad
+nw_src=120.50.128.0/18, nw_dst=245.219.220.98/31, tp_dst=514:514, nw_proto=6, dl_vlan=883, dl_dst=fa:16:3e:8e:91:1
+nw_src=42.116.36.192/26, nw_dst=172.180.48.0/23, tp_dst=1701:1701, nw_proto=17, dl_dst=fa:16:3e:1f:1a:62
+nw_src=47.234.16.192/26, nw_dst=172.180.34.0/23, tp_dst=1812:1812, nw_proto=6, dl_src=fa:16:3e:ba:f0:10, eth_type=0xdd0d, dl_dst=fa:16:3e:ac:28:b2
+nw_src=42.116.0.0/17, nw_dst=172.180.50.34/32, tp_dst=5190:5190, nw_proto=6, dl_vlan=729, eth_type=0x95bc, dl_dst=fa:16:3e:13:6d:d
+nw_src=47.200.166.192/27, nw_dst=172.180.40.0/22, tp_dst=22:22, nw_proto=6, dl_dst=fa:16:3e:d5:d8:be
+nw_src=47.200.166.192/27, nw_dst=172.180.40.0/22, tp_dst=80:80, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:99:1c:cb
+nw_src=47.200.166.192/27, nw_dst=172.180.40.0/22, tp_dst=3106:3106, nw_proto=6, dl_vlan=1765, eth_type=0x5c63, dl_dst=fa:16:3e:4a:2a:8c
+nw_src=47.200.166.192/27, nw_dst=172.180.40.0/22, tp_dst=443:443, nw_proto=6, dl_src=fa:16:3e:98:ab:11, dl_vlan=3769
+nw_src=47.200.164.0/23, nw_dst=172.180.45.64/26, tp_dst=53:53, nw_proto=6, dl_src=fa:16:3e:95:c4:d6, dl_dst=fa:16:3e:41:62:2e
+nw_src=47.200.164.0/23, nw_dst=172.180.45.64/26, tp_dst=2345:2345, nw_proto=6, dl_vlan=3686, dl_dst=fa:16:3e:d6:dd:e3
+nw_src=136.193.230.192/27, nw_dst=4.214.217.184/30, tp_dst=4120:5120, nw_proto=6, dl_vlan=268, eth_type=0xfc1f, dl_dst=fa:16:3e:fc:45:8c
+nw_src=120.50.0.0/16, nw_dst=242.39.132.115/32, tp_dst=5160:5160, nw_proto=17, dl_vlan=97
+nw_src=124.38.0.0/16, nw_dst=172.180.15.232/32, tp_dst=69:69, nw_proto=6
+nw_src=124.38.0.0/16, nw_dst=172.180.54.221/32, tp_dst=9993:9993, nw_proto=6, dl_vlan=2450, dl_dst=fa:16:3e:c3:66:1f
+nw_src=39.159.0.0/16, nw_dst=172.180.50.34/32, tp_dst=3301:3301, nw_proto=6
+nw_src=47.234.0.0/16, nw_dst=172.180.33.65/32, tp_dst=55666:55666, nw_proto=6, dl_vlan=533, dl_dst=fa:16:3e:8e:91:1
+nw_src=127.30.128.0/17, nw_dst=242.39.154.6/31, tp_dst=53:53, nw_proto=6, dl_vlan=1199, dl_dst=fa:16:3e:b0:b:31
+nw_src=124.39.0.0/17, nw_dst=172.180.15.10/31, tp_dst=3106:3106, nw_proto=6
+nw_src=124.39.0.0/17, nw_dst=172.180.15.10/31, tp_dst=514:514, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:11:1d:2d
+nw_src=124.39.0.0/17, nw_dst=172.180.54.34/31, tp_dst=3015:3015, nw_proto=6, dl_src=fa:16:3e:8a:78:c2, dl_vlan=1892, eth_type=0xd5ad, dl_dst=fa:16:3e:fc:e1:14
+nw_src=47.234.128.0/17, nw_dst=172.180.33.66/31, tp_dst=514:514, nw_proto=6, dl_dst=fa:16:3e:98:6b:de
+nw_src=47.200.0.0/17, nw_dst=172.180.45.22/31, tp_dst=4444:4444, nw_proto=6, eth_type=0x916a, dl_dst=fa:16:3e:42:85:3
+nw_src=47.200.0.0/17, nw_dst=172.180.45.22/31, tp_dst=135:135, nw_proto=6, eth_type=0x7277, dl_dst=fa:16:3e:36:ec:fa
+nw_src=47.200.0.0/17, nw_dst=172.180.45.22/31, tp_dst=80:80, nw_proto=6, dl_src=fa:16:3e:80:20:fc, eth_type=0x95bc, dl_dst=fa:16:3e:cd:3c:41
+nw_src=47.200.0.0/17, nw_dst=172.180.45.22/31, tp_dst=139:139, nw_proto=17
+nw_src=127.71.211.130/31, nw_dst=242.39.154.5/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:eb:a7:8c
+nw_src=124.39.135.56/31, nw_dst=172.180.55.57/32, tp_dst=1024:65535, nw_proto=17, dl_src=fa:16:3e:ee:9c:77, dl_dst=fa:16:3e:f2:c:b
+nw_src=47.200.166.240/31, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:8:f1:30
+nw_src=124.32.225.241/32, nw_dst=172.180.13.16/31, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:7f:3a:d8, dl_dst=fa:16:3e:70:9e:5b
+nw_src=39.167.220.167/32, nw_dst=172.180.50.32/31, tp_dst=1024:65535, nw_proto=6
+nw_src=42.116.148.112/32, nw_dst=172.180.50.32/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=1313, dl_dst=fa:16:3e:7b:6b:61
+nw_src=47.234.46.33/32, nw_dst=172.180.33.66/31, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:98:25:22
+nw_src=47.200.166.242/32, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=820, dl_dst=fa:16:3e:58:3b:98
+nw_src=39.167.55.179/32, nw_dst=172.180.50.34/32, nw_proto=1, dl_vlan=3245, eth_type=0x95bc
+nw_src=136.193.224.0/20, nw_dst=4.214.217.128/27, tp_dst=162:162, nw_proto=6, eth_type=0x5c63, dl_dst=fa:16:3e:99:7b:fa
+nw_src=124.39.144.0/20, nw_dst=172.180.15.32/27, tp_dst=761:761, nw_proto=6, dl_dst=fa:16:3e:a1:57:70
+nw_src=47.200.176.0/20, nw_dst=172.180.45.32/27, tp_dst=749:749, nw_proto=17, dl_dst=fa:16:3e:e6:fe:7f
+nw_src=120.50.209.250/32, nw_dst=242.39.132.114/31, nw_proto=1, dl_src=fa:16:3e:49:4f:fb, dl_vlan=519
+nw_src=127.30.192.0/19, nw_dst=242.39.154.16/28, tp_dst=22:22, nw_proto=6, dl_vlan=3080, dl_dst=fa:16:3e:33:74:f9
+nw_src=124.32.225.242/31, nw_dst=172.180.15.234/31, tp_dst=1024:65535, nw_proto=17, dl_vlan=3726, dl_dst=fa:16:3e:2a:49:a4
+nw_src=47.200.166.240/31, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=17, dl_src=fa:16:3e:1b:16:a6, dl_vlan=1740, dl_dst=fa:16:3e:c0:26:e9
+nw_src=124.36.0.0/15, nw_dst=172.180.15.9/32, tp_dst=9993:9993, nw_proto=6, dl_vlan=1892, eth_type=0x89ab
+nw_src=124.38.0.0/16, nw_dst=172.180.55.57/32, tp_dst=20:21, nw_proto=6, dl_vlan=1199, dl_dst=fa:16:3e:57:c1:90
+nw_src=124.39.135.58/32, nw_dst=172.180.54.208/30, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:25:19:de, eth_type=0xae8f, dl_dst=fa:16:3e:59:2c:cb
+nw_src=47.200.166.242/32, nw_dst=172.180.45.16/30, tp_dst=1024:65535, nw_proto=6, dl_vlan=3483, dl_dst=fa:16:3e:84:8d:14
+nw_src=42.116.0.0/16, nw_dst=172.180.50.32/31, tp_dst=5190:5190, nw_proto=6, eth_type=0x89ab, dl_dst=fa:16:3e:2a:b1:3e
+nw_src=47.234.0.0/16, nw_dst=172.180.33.66/31, tp_dst=80:80, nw_proto=6, dl_vlan=546, dl_dst=fa:16:3e:83:cf:2a
+nw_src=47.200.166.244/30, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=1194, dl_dst=fa:16:3e:d8:c9:16
+nw_src=127.120.64.0/19, nw_dst=172.180.12.192/27, tp_dst=9993:9993, nw_proto=6, dl_vlan=1273
+nw_src=39.159.128.0/19, nw_dst=172.180.50.0/27, tp_dst=2345:2345, nw_proto=17, dl_dst=fa:16:3e:d6:18:a4
+nw_src=47.200.128.0/19, nw_dst=172.180.33.96/27, tp_dst=53:53, nw_proto=17, dl_dst=fa:16:3e:68:71:ba
+nw_src=47.200.128.0/19, nw_dst=172.180.45.32/27, tp_dst=80:80, nw_proto=6, dl_src=fa:16:3e:d1:7a:34
+nw_src=38.228.23.0/24, nw_dst=172.180.54.212/31, tp_dst=4120:5120, nw_proto=17, dl_dst=fa:16:3e:f3:56:91
+nw_src=47.200.167.0/24, nw_dst=172.180.45.22/31, tp_dst=4120:5120, nw_proto=6, dl_vlan=852
+nw_src=47.202.0.0/15, nw_dst=172.180.45.20/32, tp_dst=2010:2011, nw_proto=6, dl_vlan=3483, dl_dst=fa:16:3e:62:91:f5
+nw_src=47.200.166.244/30, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=17, dl_vlan=2027, eth_type=0x95bc
+nw_src=47.200.166.244/30, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:42:20:6d
+nw_src=47.200.176.0/20, nw_dst=172.180.45.64/26, tp_dst=5555:5555, nw_proto=6, dl_src=fa:16:3e:71:98:1a, dl_dst=fa:16:3e:9:92:9d
+nw_src=120.50.209.240/29, nw_dst=242.39.132.114/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=2117, dl_dst=fa:16:3e:f:ce:62
+nw_src=47.200.166.248/29, nw_dst=172.180.33.66/31, tp_dst=1024:65535, nw_proto=6
+nw_src=47.200.166.248/29, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:eb:d6:1
+nw_src=47.200.166.248/29, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:56:16:7a
+nw_src=127.120.221.176/28, nw_dst=172.180.13.20/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:f:f0:bb
+nw_src=42.116.135.144/28, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=17, eth_type=0xc56, dl_dst=fa:16:3e:a6:ff:67
+nw_src=41.106.0.176/28, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=3686, dl_dst=fa:16:3e:59:e3:b6
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=254, eth_type=0x89ab, dl_dst=fa:16:3e:9:cb:a4
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:4a:f:11
+nw_src=124.32.225.242/31, nw_dst=172.176.0.0/14, tp_dst=20300:20300, nw_proto=6, dl_vlan=1423, dl_dst=fa:16:3e:7d:52:4b
+nw_src=41.106.8.86/31, nw_dst=172.176.0.0/14, tp_dst=1701:1701, nw_proto=6, dl_vlan=2822, eth_type=0xc56
+nw_src=47.200.0.0/17, nw_dst=172.180.45.22/31, tp_dst=3000:3010, nw_proto=6, dl_src=fa:16:3e:cc:c2:1c, dl_vlan=1918, eth_type=0xc56, dl_dst=fa:16:3e:4a:b1:78
+nw_src=124.32.225.241/32, nw_dst=172.180.15.192/27, tp_dst=1024:65535, nw_proto=6, dl_vlan=1526, dl_dst=fa:16:3e:86:43:19
+nw_src=47.200.166.242/32, nw_dst=172.180.45.32/27, tp_dst=1024:65535, nw_proto=6, dl_vlan=2553, dl_dst=fa:16:3e:e9:fc:a0
+nw_src=124.32.225.192/27, nw_dst=172.180.15.232/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:14:43:1c
+nw_src=124.39.135.0/27, nw_dst=172.180.15.9/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=0, dl_dst=fa:16:3e:f7:5:a8
+nw_src=41.106.8.96/27, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:e9:c:f2
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:9d:42:30
+nw_src=124.32.0.0/13, nw_dst=172.180.15.4/31, tp_dst=113:113, nw_proto=17, dl_dst=fa:16:3e:fe:b9:d
+nw_src=124.39.135.32/28, nw_dst=172.180.15.9/32, nw_proto=1, dl_vlan=728, dl_dst=fa:16:3e:dc:c4:66
+nw_src=47.234.16.160/28, nw_dst=172.180.33.65/32, nw_proto=1
+nw_src=39.160.0.0/13, nw_dst=172.180.50.34/32, tp_dst=543:545, nw_proto=6, eth_type=0x7277, dl_dst=fa:16:3e:5a:92:37
+nw_src=120.50.209.192/27, nw_dst=242.39.132.115/32, nw_proto=1, dl_src=fa:16:3e:1f:7c:94, dl_vlan=2910, eth_type=0xc56
+nw_src=124.39.193.160/27, nw_dst=172.180.15.232/32, nw_proto=1, dl_vlan=4027, eth_type=0x916a, dl_dst=fa:16:3e:d4:bd:a1
+nw_src=127.30.193.176/28, nw_dst=242.39.154.0/30, tp_dst=1024:65535, nw_proto=6, dl_vlan=3080, eth_type=0x5c63, dl_dst=fa:16:3e:31:13:51
+nw_src=127.120.94.240/28, nw_dst=172.180.12.232/30, tp_dst=1024:65535, nw_proto=17, eth_type=0xc56, dl_dst=fa:16:3e:38:f0:21
+nw_src=124.39.135.64/26, nw_dst=172.180.15.9/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=3816, dl_dst=fa:16:3e:b3:c7:39
+nw_src=41.106.0.192/26, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=17, dl_src=fa:16:3e:5c:1b:d0, dl_dst=fa:16:3e:8c:12:c7
+nw_src=47.234.46.64/26, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:b5:c4:3e, dl_vlan=636, eth_type=0x95bc
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=3676, eth_type=0xdd0d, dl_dst=fa:16:3e:9d:42:30
+nw_src=124.39.135.0/27, nw_dst=172.180.54.222/31, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:1:c9:9b
+nw_src=47.204.0.0/14, nw_dst=172.180.45.24/29, tp_dst=123:123, nw_proto=6, dl_vlan=685, dl_dst=fa:16:3e:27:17:4f
+nw_src=124.32.28.0/25, nw_dst=172.180.13.19/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=97, eth_type=0x7277, dl_dst=fa:16:3e:6a:8:fb
+nw_src=41.106.30.0/25, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=2821, eth_type=0x916a, dl_dst=fa:16:3e:a6:a3:87
+nw_src=124.32.0.0/14, nw_dst=172.180.13.0/28, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:3d:c2:d
+nw_src=38.224.0.0/14, nw_dst=172.180.54.192/28, tp_dst=29301:29301, nw_proto=6, dl_vlan=2219, dl_dst=fa:16:3e:ea:a:ec
+nw_src=124.36.0.0/15, nw_dst=172.180.15.192/27, tp_dst=69:69, nw_proto=6, dl_dst=fa:16:3e:68:71:ba
+nw_src=47.202.0.0/15, nw_dst=172.180.45.32/27, tp_dst=443:443, nw_proto=17, dl_vlan=97, dl_dst=fa:16:3e:c5:19:6
+nw_src=124.39.193.192/26, nw_dst=172.180.15.234/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=1566
+nw_src=39.171.112.192/26, nw_dst=172.180.50.32/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=1418
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:b6:e0:a3, dl_dst=fa:16:3e:fc:7a:32
+nw_src=124.39.135.0/27, nw_dst=172.180.54.216/30, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:c5:fd:da
+nw_src=39.167.220.128/27, nw_dst=172.180.50.36/30, tp_dst=1024:65535, nw_proto=6, dl_vlan=2973, eth_type=0x89ab, dl_dst=fa:16:3e:67:27:60
+nw_src=41.106.0.128/27, nw_dst=172.180.50.36/30, tp_dst=1024:65535, nw_proto=17, dl_vlan=2117, dl_dst=fa:16:3e:99:1c:cb
+nw_src=41.104.0.0/13, nw_dst=172.180.50.34/32, tp_dst=839:848, nw_proto=6, dl_vlan=883
+nw_src=47.200.166.224/28, nw_dst=172.180.45.16/30, nw_proto=1, dl_src=fa:16:3e:d:a9:b3
+nw_src=120.48.0.0/13, nw_dst=245.219.200.64/28, tp_dst=5700:5700, nw_proto=6, dl_vlan=2569, eth_type=0x5c63, dl_dst=fa:16:3e:59:e3:b6
+nw_src=120.50.209.128/26, nw_dst=242.39.132.114/31, nw_proto=47, dl_src=fa:16:3e:71:b2:6f
+nw_src=124.32.0.0/12, nw_dst=172.180.55.184/29, tp_dst=123:123, nw_proto=6, dl_src=fa:16:3e:d9:d1:43, dl_vlan=3312, eth_type=0x7277, dl_dst=fa:16:3e:49:3a:ae
+nw_src=47.192.0.0/12, nw_dst=172.180.45.24/29, tp_dst=514:514, nw_proto=6, dl_vlan=2446, eth_type=0xd5ad, dl_dst=fa:16:3e:d5:17:62
+nw_src=39.167.221.0/24, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:d6:26:dd
+nw_src=47.200.167.0/24, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:d4:bd:a1
+nw_src=41.106.0.0/25, nw_dst=172.180.50.34/32, nw_proto=17, dl_src=fa:16:3e:ee:52:29, dl_dst=fa:16:3e:83:dc:f2
+nw_src=41.106.0.0/25, nw_dst=172.180.33.65/32, nw_proto=1
+nw_src=47.234.16.0/25, nw_dst=172.180.33.66/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=729, dl_dst=fa:16:3e:14:43:1c
+nw_src=120.48.0.0/14, nw_dst=242.39.154.0/26, tp_dst=9993:9993, nw_proto=6, dl_dst=fa:16:3e:d4:bd:a1
+nw_src=124.39.192.0/24, nw_dst=172.180.15.7/32, nw_proto=1, dl_src=fa:16:3e:33:6a:dd, dl_dst=fa:16:3e:c3:66:1f
+nw_src=39.167.50.0/24, nw_dst=172.180.50.34/32, nw_proto=1, dl_vlan=1682, dl_dst=fa:16:3e:43:3d:ea
+nw_src=41.106.1.0/24, nw_dst=172.180.50.34/32, nw_proto=1, dl_vlan=4027, dl_dst=fa:16:3e:d:36:6b
+nw_src=124.39.134.0/24, nw_dst=172.180.15.4/31, tp_dst=1024:65535, nw_proto=17, dl_vlan=500, dl_dst=fa:16:3e:e4:41:89
+nw_src=39.167.52.0/24, nw_dst=172.180.50.32/31, tp_dst=1024:65535, nw_proto=6
+nw_src=47.200.167.0/24, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:88:92:1e, dl_vlan=2365, eth_type=0xae8f, dl_dst=fa:16:3e:d6:dd:e3
+nw_src=124.39.132.0/23, nw_dst=172.180.15.9/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=2241, dl_dst=fa:16:3e:a1:57:70
+nw_src=124.39.132.0/23, nw_dst=172.180.54.33/32, tp_dst=1024:65535, nw_proto=6
+nw_src=41.106.2.0/23, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=797, dl_dst=fa:16:3e:a2:38:cd
+nw_src=47.234.18.0/23, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=17, dl_vlan=13, dl_dst=fa:16:3e:8e:91:1
+nw_src=47.200.164.0/23, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=17, dl_dst=fa:16:3e:72:45:da
+nw_src=124.39.135.58/32, nw_dst=172.180.54.214/32, eth_type=0xdd0d
+nw_src=47.200.166.242/32, nw_dst=172.180.45.20/32, dl_src=fa:16:3e:a8:3f:27, dl_vlan=1199, eth_type=0x95bc, dl_dst=fa:16:3e:66:d9:23
+nw_src=39.171.18.0/25, nw_dst=172.180.50.32/31, nw_proto=1, dl_dst=fa:16:3e:44:78:ad
+nw_src=39.167.220.0/25, nw_dst=172.180.50.32/31, nw_proto=1, dl_dst=fa:16:3e:d4:bd:a1
+nw_src=41.96.0.0/12, nw_dst=172.180.50.48/28, tp_dst=5808:5808, nw_proto=6, dl_src=fa:16:3e:f7:f1:b9
+nw_src=47.224.0.0/12, nw_dst=172.180.33.80/28, tp_dst=5000:5000, nw_proto=17, dl_dst=fa:16:3e:d7:89:99
+nw_src=47.192.0.0/12, nw_dst=172.180.45.0/28, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:a5:94:4f
+nw_src=47.192.0.0/12, nw_dst=172.180.45.0/28, tp_dst=5190:5190, nw_proto=6, eth_type=0xd5ad, dl_dst=fa:16:3e:b9:f4:78
+nw_src=41.104.0.0/13, nw_dst=172.180.50.0/27, tp_dst=25:25, nw_proto=6, dl_src=fa:16:3e:fa:4f:5, dl_vlan=1480, eth_type=0x95bc, dl_dst=fa:16:3e:1a:d6:5
+nw_src=246.58.75.0/24, nw_dst=4.214.217.190/31, nw_proto=1, eth_type=0x5c63
+nw_src=39.167.221.0/24, nw_dst=172.180.50.32/31, nw_proto=1, dl_vlan=3673
+nw_src=120.50.212.0/22, nw_dst=242.39.154.5/32, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:9c:2c:b4, dl_vlan=2187, dl_dst=fa:16:3e:58:3b:98
+nw_src=127.71.208.0/22, nw_dst=242.39.154.5/32, tp_dst=1024:65535, nw_proto=6, eth_type=0x7277, dl_dst=fa:16:3e:59:2c:cb
+nw_src=41.106.4.0/22, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=6, dl_src=fa:16:3e:74:a2:81, eth_type=0x5c63, dl_dst=fa:16:3e:43:3d:ea
+nw_src=124.32.0.0/11, nw_dst=172.180.13.0/28, tp_dst=29301:29301, nw_proto=6
+nw_src=47.192.0.0/11, nw_dst=172.180.45.0/28, tp_dst=5700:5700, nw_proto=6, dl_src=fa:16:3e:d1:a9:cb, dl_vlan=3397, dl_dst=fa:16:3e:4a:f:11
+nw_src=124.32.226.0/23, nw_dst=172.180.15.234/31, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:aa:c2:7d
+nw_src=124.39.132.0/23, nw_dst=172.180.15.9/32, nw_proto=1
+nw_src=38.224.0.0/12, nw_dst=172.180.54.224/27, tp_dst=42:42, nw_proto=6, dl_vlan=2381, eth_type=0xc56, dl_dst=fa:16:3e:b6:75:d9
+nw_src=47.224.0.0/12, nw_dst=172.180.33.96/27, tp_dst=3300:3300, nw_proto=6, eth_type=0xc56, dl_dst=fa:16:3e:61:24:89
+nw_src=47.200.166.240/31, nw_dst=172.180.45.20/32, dl_src=fa:16:3e:af:2c:90, dl_dst=fa:16:3e:1e:33:97
+nw_src=47.192.0.0/11, nw_dst=172.180.45.32/27, tp_dst=5017:5017, nw_proto=17, eth_type=0x7277
+nw_src=47.192.0.0/11, nw_dst=172.180.45.32/27, tp_dst=161:161, nw_proto=17, dl_src=fa:16:3e:9b:1:42, eth_type=0xdd0d, dl_dst=fa:16:3e:40:8f:33
+nw_src=127.69.216.0/21, nw_dst=172.180.12.120/31, tp_dst=1024:65535, nw_proto=17, dl_vlan=1727, dl_dst=fa:16:3e:12:e3:3e
+nw_src=41.96.0.0/12, nw_dst=172.180.50.128/25, tp_dst=42:42, nw_proto=6, dl_src=fa:16:3e:71:b2:6f, dl_dst=fa:16:3e:4a:f:11
+nw_src=47.192.0.0/10, nw_dst=172.180.33.96/27, tp_dst=123:123, nw_proto=17, eth_type=0x95bc, dl_dst=fa:16:3e:2a:b1:3e
+nw_src=47.200.166.224/28, nw_dst=172.180.45.20/32, eth_type=0xfc1f, dl_dst=fa:16:3e:4d:74:bd
+nw_src=120.50.128.0/18, nw_dst=242.39.154.61/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=3042, dl_dst=fa:16:3e:7c:88:f1
+nw_src=124.39.193.144/28, nw_dst=172.180.15.4/31, dl_dst=fa:16:3e:4f:1c:23
+nw_src=124.39.135.32/28, nw_dst=172.180.15.4/31, dl_vlan=1566, dl_dst=fa:16:3e:fa:68:b9
+nw_src=124.39.193.160/27, nw_dst=172.180.15.7/32, dl_vlan=1125, dl_dst=fa:16:3e:75:4e:55
+nw_src=47.200.166.192/27, nw_dst=172.180.45.20/32, dl_vlan=1480, dl_dst=fa:16:3e:59:e3:b6
+nw_src=39.171.64.0/19, nw_dst=172.180.50.32/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=3275
+nw_src=47.200.128.0/19, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=17, dl_vlan=1868, eth_type=0x95bc, dl_dst=fa:16:3e:c8:c0:b0
+nw_src=132.141.81.64/27, nw_dst=4.214.217.190/31, dl_vlan=729, dl_dst=fa:16:3e:c9:1a:60
+nw_src=124.32.225.128/26, nw_dst=172.180.13.19/32, dl_vlan=729, eth_type=0x7277
+nw_src=47.200.166.128/26, nw_dst=172.180.45.20/32, dl_dst=fa:16:3e:d5:17:62
+nw_src=39.171.15.160/28, nw_dst=172.180.50.36/30, dl_vlan=2694, dl_dst=fa:16:3e:3:4c:fa
+nw_src=47.200.192.0/18, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=17, dl_vlan=636, dl_dst=fa:16:3e:1b:5f:81
+nw_src=0.0.0.0/1, nw_dst=172.180.12.122/32, tp_dst=31337:31337, nw_proto=6, dl_dst=fa:16:3e:3c:53:a7
+nw_src=0.0.0.0/1, nw_dst=172.180.15.7/32, tp_dst=2345:2345, nw_proto=6, dl_vlan=1009, dl_dst=fa:16:3e:cd:3c:41
+nw_src=0.0.0.0/1, nw_dst=172.180.55.180/32, tp_dst=2105:2105, nw_proto=6, eth_type=0xc56
+nw_src=0.0.0.0/1, nw_dst=172.180.33.65/32, tp_dst=3456:3456, nw_proto=6, dl_dst=fa:16:3e:9:cb:a4
+nw_src=0.0.0.0/1, nw_dst=172.180.33.65/32, tp_dst=135:135, nw_proto=6, dl_vlan=1460, dl_dst=fa:16:3e:9e:74:40
+nw_src=39.159.153.0/26, nw_dst=172.180.50.32/31, dl_vlan=131, eth_type=0x916a
+nw_src=47.200.166.128/26, nw_dst=172.180.45.22/31, dl_vlan=1641, dl_dst=fa:16:3e:44:5d:2f
+nw_src=42.116.128.0/18, nw_dst=172.180.50.32/31, nw_proto=17, dl_src=fa:16:3e:d1:64:3, dl_vlan=2394, eth_type=0x95bc
+nw_src=47.201.0.0/16, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=17, dl_src=fa:16:3e:5a:e4:e, dl_dst=fa:16:3e:fe:b9:d
+nw_src=124.39.193.0/25, nw_dst=172.180.15.4/31, dl_vlan=3127, dl_dst=fa:16:3e:e6:fe:7f
+nw_dst=4.214.217.188/32, tp_dst=53:53, nw_proto=17, dl_src=fa:16:3e:ba:ae:30, dl_vlan=512, eth_type=0xd5ad, dl_dst=fa:16:3e:67:27:60
+nw_dst=4.214.217.188/32, tp_dst=4001:4001, nw_proto=6, eth_type=0x95bc, dl_dst=fa:16:3e:41:4f:ff
+nw_dst=4.214.217.188/32, tp_dst=754:754, nw_proto=6, dl_src=fa:16:3e:25:d:3, dl_dst=fa:16:3e:12:e3:3e
+nw_dst=4.214.217.188/32, tp_dst=37:37, nw_proto=6, dl_src=fa:16:3e:19:3:d2, dl_vlan=2446, eth_type=0xc56, dl_dst=fa:16:3e:bb:ed:df
+nw_dst=4.214.217.188/32, tp_dst=162:162, nw_proto=6, eth_type=0xdd0d, dl_dst=fa:16:3e:27:17:4f
+nw_dst=4.214.217.188/32, tp_dst=514:514, nw_proto=6, dl_vlan=512, dl_dst=fa:16:3e:c6:7f:23
+nw_dst=4.214.217.188/32, tp_dst=1111:1111, nw_proto=17
+nw_src=124.39.134.0/24, nw_dst=172.180.15.9/32, dl_dst=fa:16:3e:86:43:19
+nw_src=0.0.0.0/1, nw_dst=172.180.50.32/31, tp_dst=20555:20555, nw_proto=6, dl_dst=fa:16:3e:97:6:a1
+nw_src=0.0.0.0/1, nw_dst=172.180.50.32/31, tp_dst=443:443, nw_proto=17, dl_vlan=917
+nw_src=0.0.0.0/1, nw_dst=172.180.45.22/31, tp_dst=3015:3015, nw_proto=17, dl_vlan=3080, eth_type=0xdd0d, dl_dst=fa:16:3e:e9:c:f2
+nw_src=0.0.0.0/1, nw_dst=172.180.45.22/31, tp_dst=25:25, nw_proto=6, dl_vlan=4002, dl_dst=fa:16:3e:7b:6b:61
+nw_src=0.0.0.0/1, nw_dst=172.180.45.22/31, tp_dst=135:135, nw_proto=6, dl_vlan=670, dl_dst=fa:16:3e:fe:31:61
+nw_src=120.50.0.0/15, nw_dst=242.39.154.5/32, nw_proto=1, dl_dst=fa:16:3e:f:ce:62
+nw_src=47.202.0.0/15, nw_dst=172.180.45.20/32, nw_proto=1, dl_dst=fa:16:3e:37:d1:3b
+nw_dst=4.214.217.190/31, tp_dst=3015:3015, nw_proto=6, dl_vlan=3833, eth_type=0xae8f, dl_dst=fa:16:3e:6d:cb:6c
+nw_dst=4.214.217.188/32, tp_dst=137:138, nw_proto=6, dl_vlan=3312, eth_type=0x7277, dl_dst=fa:16:3e:d1:6c:19
+nw_src=39.171.0.0/16, nw_dst=172.180.50.32/31, nw_proto=1, dl_vlan=2557, eth_type=0xfc1f
+nw_src=39.171.94.124/31, tp_dst=80:80, nw_proto=6, dl_src=fa:16:3e:d:a9:b3, dl_vlan=2242, dl_dst=fa:16:3e:aa:c2:7d
+nw_src=47.234.16.190/31, tp_dst=55666:55666, nw_proto=6, dl_vlan=268, dl_dst=fa:16:3e:1e:33:97
+nw_src=47.200.166.240/31, tp_dst=3116:3116, nw_proto=17, dl_src=fa:16:3e:50:74:6d, eth_type=0x89ab, dl_dst=fa:16:3e:4f:dc:fa
+nw_dst=118.103.76.170/31, tp_dst=749:751, nw_proto=6, eth_type=0x916a, dl_dst=fa:16:3e:d4:88:c4
+nw_src=127.124.0.0/14, nw_dst=172.180.12.122/32, nw_proto=1, dl_vlan=3483, dl_dst=fa:16:3e:3c:53:a7
+nw_dst=118.38.54.128/30, tp_dst=80:80, nw_proto=17, dl_dst=fa:16:3e:1a:c3:af
+nw_src=39.166.0.0/15, nw_dst=172.182.0.0/15, tp_dst=80:80, nw_proto=17
+nw_src=47.234.40.0/22, nw_dst=172.180.33.65/32, dl_vlan=3312, dl_dst=fa:16:3e:ba:e6:56
+nw_src=136.192.0.0/14, nw_dst=4.214.217.190/31, nw_proto=1, dl_src=fa:16:3e:24:41:cc, dl_vlan=2702, eth_type=0xc56
+nw_src=120.48.0.0/14, nw_dst=241.232.168.70/31, nw_proto=1, dl_dst=fa:16:3e:36:ec:fa
+nw_src=124.36.0.0/14, nw_dst=172.180.15.10/31, nw_proto=1, dl_vlan=2566
+nw_src=120.50.0.0/17, nw_dst=242.32.0.0/13, tp_dst=11021:11023, nw_proto=6, dl_src=fa:16:3e:5f:cb:1f, eth_type=0xfc1f, dl_dst=fa:16:3e:b9:f4:78
+nw_dst=4.214.217.190/31, tp_dst=4011:4014, nw_proto=6, dl_vlan=2736, dl_dst=fa:16:3e:32:98:71
+nw_src=136.193.224.0/21, nw_dst=4.214.217.190/31, dl_vlan=3080, eth_type=0x7277, dl_dst=fa:16:3e:67:27:60
+nw_src=127.16.0.0/12, nw_dst=242.39.154.5/32, nw_proto=1, dl_vlan=1612, eth_type=0xfc1f, dl_dst=fa:16:3e:ca:3a:96
+nw_src=127.112.0.0/12, nw_dst=172.180.12.176/32, nw_proto=1
+nw_src=39.167.0.0/16, nw_dst=172.160.0.0/12, tp_dst=161:162, nw_proto=17, dl_vlan=2833
+nw_src=47.192.0.0/12, nw_dst=172.180.45.22/31, nw_proto=1, dl_dst=fa:16:3e:ef:53:69
+nw_src=47.200.176.0/20, nw_dst=172.180.45.22/31, dl_dst=fa:16:3e:4a:b1:78
+nw_src=47.200.166.192/27, tp_dst=2314:2314, nw_proto=6, dl_vlan=3127, dl_dst=fa:16:3e:1a:c3:af
+nw_src=47.192.0.0/11, nw_dst=172.180.45.22/31, nw_proto=1, dl_vlan=142, eth_type=0x89ab
+nw_src=120.50.0.0/16, nw_dst=245.128.0.0/9, tp_dst=3456:3456, nw_proto=6, dl_src=fa:16:3e:cc:c2:1c, dl_dst=fa:16:3e:b1:e6:67
+nw_src=47.201.0.0/16, nw_dst=172.0.0.0/9, tp_dst=53:53, nw_proto=6, dl_vlan=2694, eth_type=0x95bc, dl_dst=fa:16:3e:43:3d:ea
+nw_src=124.39.135.128/25, nw_dst=128.0.0.0/1, tp_dst=2010:2011, nw_proto=6, dl_vlan=1233
+nw_src=124.39.0.0/17, nw_dst=172.180.54.214/32, dl_src=fa:16:3e:57:c:dd, eth_type=0xfc1f, dl_dst=fa:16:3e:8c:12:c7
+nw_src=47.234.128.0/17, nw_dst=172.180.33.65/32
+nw_src=39.167.220.0/25, tp_dst=123:123, nw_proto=6, dl_vlan=3245, eth_type=0xc56, dl_dst=fa:16:3e:1a:d6:5
+nw_src=47.234.16.0/25, tp_dst=80:80, nw_proto=6, dl_vlan=323
+nw_src=41.106.1.0/24, nw_dst=128.0.0.0/1, tp_dst=2852:2852, nw_proto=6, eth_type=0x95bc, dl_dst=fa:16:3e:2a:49:a4
+nw_src=47.200.192.0/18, nw_dst=173.0.0.0/8, tp_dst=161:162, nw_proto=6, dl_vlan=3395, dl_dst=fa:16:3e:49:3a:ae
+nw_src=120.50.206.0/23, nw_dst=128.0.0.0/1, tp_dst=25:25, nw_proto=6, dl_src=fa:16:3e:71:12:90, dl_vlan=251, dl_dst=fa:16:3e:fe:cb:5e
+nw_src=120.50.204.0/24, tp_dst=5190:5190, nw_proto=6, dl_vlan=3721, eth_type=0x89ab, dl_dst=fa:16:3e:96:9a:51
+nw_src=120.50.204.0/24, tp_dst=6123:6123, nw_proto=6, dl_src=fa:16:3e:9c:2c:b4, dl_vlan=980, eth_type=0x5c63, dl_dst=fa:16:3e:65:4c:b5
+nw_src=120.50.208.0/24, tp_dst=4321:4321, nw_proto=6, dl_vlan=221, dl_dst=fa:16:3e:42:85:3
+nw_src=124.39.192.0/24, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:82:10:cf
+nw_src=124.39.0.0/17, nw_dst=172.0.0.0/7, tp_dst=37:37, nw_proto=17, dl_vlan=728, eth_type=0x5c63, dl_dst=fa:16:3e:96:9a:51
+nw_src=38.228.0.0/17, nw_dst=172.0.0.0/7, tp_dst=5190:5190, nw_proto=6, dl_src=fa:16:3e:f8:f5:8b, dl_vlan=2467, dl_dst=fa:16:3e:59:2c:cb
+nw_src=38.225.17.0/24, nw_dst=128.0.0.0/1, tp_dst=760:761, nw_proto=17, eth_type=0x5c63
+nw_src=42.116.135.0/24, nw_dst=128.0.0.0/1, tp_dst=80:81, nw_proto=6, dl_dst=fa:16:3e:1f:9d:49
+nw_src=47.200.167.0/24, nw_dst=128.0.0.0/1, tp_dst=20:21, nw_proto=6, dl_vlan=2381, eth_type=0xfc1f, dl_dst=fa:16:3e:4c:61:3e
+nw_src=47.200.0.0/17, nw_dst=172.180.45.22/31, eth_type=0x7277
+nw_src=120.50.212.0/22, nw_dst=128.0.0.0/1, tp_dst=3337:3337, nw_proto=6, dl_dst=fa:16:3e:3b:45:44
+nw_src=120.50.210.0/23, tp_dst=123:123, nw_proto=6, dl_vlan=2694, dl_dst=fa:16:3e:3:15:5f
+nw_src=127.30.192.0/23, tp_dst=80:80, nw_proto=6, dl_vlan=639, dl_dst=fa:16:3e:f3:56:91
+nw_src=41.106.28.0/23, tp_dst=9993:9993, nw_proto=6
+nw_src=47.200.164.0/23, tp_dst=69:69, nw_proto=6, dl_vlan=2466, dl_dst=fa:16:3e:a0:ec:2
+nw_src=124.34.0.0/15, nw_dst=172.180.13.19/32, dl_src=fa:16:3e:7:ad:db, dl_vlan=3395, dl_dst=fa:16:3e:43:3d:ea
+nw_src=47.202.0.0/15, nw_dst=172.180.45.20/32, dl_src=fa:16:3e:ee:25:b1, dl_vlan=3771, dl_dst=fa:16:3e:d6:26:dd
+nw_src=39.171.0.0/16, nw_dst=173.0.0.0/8, tp_dst=543:545, nw_proto=6, dl_vlan=1977
+nw_src=39.171.115.0/24, tp_dst=2010:2011, nw_proto=6, dl_vlan=683, eth_type=0x89ab, dl_dst=fa:16:3e:a3:38:ea
+nw_src=41.106.1.0/24, tp_dst=2010:2011, nw_proto=6, dl_src=fa:16:3e:1f:7c:94, dl_vlan=980, eth_type=0xd5ad, dl_dst=fa:16:3e:c8:c0:b0
+nw_src=47.200.167.0/24, tp_dst=3100:3101, nw_proto=6, dl_dst=fa:16:3e:38:f0:21
+nw_src=47.234.0.0/16, nw_dst=173.0.0.0/8, tp_dst=20:21, nw_proto=6, dl_vlan=2381, eth_type=0x95bc, dl_dst=fa:16:3e:b2:64:8a
+nw_src=47.201.0.0/16, nw_dst=172.180.45.22/31, dl_vlan=1423, dl_dst=fa:16:3e:1e:33:97
+nw_src=47.200.164.0/23, nw_dst=128.0.0.0/1, tp_dst=20:21, nw_proto=17, dl_dst=fa:16:3e:72:45:da
+nw_src=120.50.0.0/15, nw_dst=242.39.132.114/31, dl_dst=fa:16:3e:3a:28:7a
+nw_src=47.202.0.0/15, nw_dst=172.180.45.22/31, dl_dst=fa:16:3e:fc:3e:24
+nw_src=124.39.196.0/22, tp_dst=123:123, nw_proto=6, dl_dst=fa:16:3e:8b:5c:dc
+nw_src=47.234.20.0/22, tp_dst=3106:3106, nw_proto=6, dl_src=fa:16:3e:b5:c4:3e, dl_vlan=251, dl_dst=fa:16:3e:c3:27:81
+nw_src=47.200.160.0/22, tp_dst=161:161, nw_proto=17, dl_vlan=3395, dl_dst=fa:16:3e:1c:c3:65
+nw_src=47.200.160.0/22, tp_dst=123:123, nw_proto=6, dl_vlan=1916
+nw_src=47.200.160.0/22, tp_dst=9000:9000, nw_proto=6, dl_dst=fa:16:3e:25:8c:e
+nw_src=41.106.8.0/21, nw_dst=128.0.0.0/1, tp_dst=1825:1825, nw_proto=6, dl_vlan=2569, dl_dst=fa:16:3e:36:ec:fa
+nw_src=41.106.2.0/23, nw_dst=128.0.0.0/2, tp_dst=3206:3216, nw_proto=6, dl_vlan=883, dl_dst=fa:16:3e:3c:68:28
+nw_src=41.106.2.0/23, tp_dst=2000:2001, nw_proto=6, dl_dst=fa:16:3e:59:2c:cb
+nw_src=47.200.164.0/23, tp_dst=2010:2011, nw_proto=6, dl_vlan=3396
+nw_src=247.74.92.0/22, nw_dst=0.0.0.0/1, tp_dst=4011:4014, nw_proto=6, dl_dst=fa:16:3e:1e:33:97
+nw_src=124.39.200.0/21, tp_dst=514:514, nw_proto=6, dl_src=fa:16:3e:d9:57:5c, dl_dst=fa:16:3e:4d:74:bd
+nw_src=41.106.0.0/21, tp_dst=3101:3101, nw_proto=6, dl_vlan=1199, dl_dst=fa:16:3e:3c:68:28
+nw_src=47.200.168.0/21, tp_dst=514:514, nw_proto=6, eth_type=0xdd0d, dl_dst=fa:16:3e:a2:cf:f6
+nw_src=124.36.0.0/14, nw_dst=173.0.0.0/8, tp_dst=6664:6665, nw_proto=6, dl_vlan=3127, dl_dst=fa:16:3e:15:6c:aa
+nw_src=124.38.0.0/16, nw_dst=172.176.0.0/14, tp_dst=4120:5120, nw_proto=6, dl_dst=fa:16:3e:f:f0:bb
+nw_src=124.32.0.0/12, nw_dst=172.192.0.0/10, tp_dst=137:138, nw_proto=6, dl_vlan=1273, dl_dst=fa:16:3e:d0:eb:69
+nw_src=41.106.12.0/22, tp_dst=20:21, nw_proto=6, dl_vlan=2404
+nw_src=47.204.0.0/14, nw_dst=172.180.45.22/31, dl_vlan=2581, eth_type=0xae8f, dl_dst=fa:16:3e:f3:56:91
+nw_src=47.200.0.0/13, nw_dst=172.180.45.20/32, dl_vlan=2618
+nw_src=42.116.110.0/23, tp_dst=4100:4110, nw_proto=6, dl_vlan=1573, dl_dst=fa:16:3e:e6:23:7d
+nw_src=47.200.164.0/23, tp_dst=3206:3216, nw_proto=6, dl_dst=fa:16:3e:a6:a3:87
+nw_src=47.224.0.0/12, nw_dst=173.0.0.0/8, tp_dst=25:25, nw_proto=17, dl_src=fa:16:3e:89:29:fb, dl_dst=fa:16:3e:60:b5:db
+nw_src=47.200.166.192/27, tp_dst=7050:7300, nw_proto=6, dl_vlan=3080, dl_dst=fa:16:3e:8f:23:f
+nw_src=47.192.0.0/12, nw_dst=172.180.45.20/32, dl_src=fa:16:3e:36:3:67, dl_vlan=2117, eth_type=0x5c63, dl_dst=fa:16:3e:68:71:ba
+nw_src=41.96.0.0/12, nw_dst=172.180.50.32/31, dl_src=fa:16:3e:83:d9:dd, dl_vlan=1918, dl_dst=fa:16:3e:e3:2d:ec
+nw_src=0.0.0.0/1, nw_dst=172.180.15.7/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=1641
+nw_src=0.0.0.0/1, nw_dst=172.180.50.34/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=2062, eth_type=0x7277, dl_dst=fa:16:3e:31:4:45
+nw_src=0.0.0.0/1, nw_dst=172.180.33.65/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=1227
+nw_src=0.0.0.0/1, nw_dst=172.180.45.20/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=168, dl_dst=fa:16:3e:84:8d:14
+nw_src=0.0.0.0/1, nw_dst=172.180.50.32/31, tp_dst=1024:65535, nw_proto=17, dl_vlan=835, dl_dst=fa:16:3e:83:dc:f2
+nw_src=0.0.0.0/1, nw_dst=172.180.45.22/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=852, dl_dst=fa:16:3e:4f:dc:fa
+nw_dst=4.214.217.188/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=3858, dl_dst=fa:16:3e:d8:c9:16
+nw_src=47.200.166.242/32, tp_dst=1024:65535, nw_proto=6, dl_vlan=1566, dl_dst=fa:16:3e:c9:1a:60
+nw_dst=4.210.155.80/31, tp_dst=1024:65535, nw_proto=6, dl_vlan=1423
+nw_dst=4.214.217.190/31, tp_dst=1024:65535, nw_proto=17, dl_src=fa:16:3e:5c:87:4
+nw_src=0.0.0.0/1, nw_dst=172.180.15.0/30, tp_dst=1024:65535, nw_proto=6, dl_vlan=2833, eth_type=0xae8f, dl_dst=fa:16:3e:13:6d:d
+nw_src=0.0.0.0/1, nw_dst=172.180.45.16/30, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:2e:9d:a0
+nw_src=39.159.128.0/17, tp_dst=20:21, nw_proto=6, dl_src=fa:16:3e:b5:c4:3e, dl_vlan=2027, dl_dst=fa:16:3e:3a:28:7a
+nw_dst=4.214.217.188/32, nw_proto=1, dl_vlan=3777, dl_dst=fa:16:3e:8:49:4b
+nw_src=124.39.135.60/30, tp_dst=1024:65535, nw_proto=6, dl_dst=fa:16:3e:44:be:d8
+nw_src=41.106.0.0/16, tp_dst=543:545, nw_proto=17
+nw_dst=4.214.217.190/31, nw_proto=1, dl_dst=fa:16:3e:78:f1:96
+nw_dst=100.151.94.192/28, tp_dst=1024:65535, nw_proto=6, dl_vlan=1423
+nw_dst=4.214.217.128/26, tp_dst=1024:65535, nw_proto=17
+nw_src=39.167.221.0/24, tp_dst=1024:65535, nw_proto=6, dl_vlan=981, dl_dst=fa:16:3e:99:1c:cb
+nw_dst=4.214.216.0/23, tp_dst=1024:65535, nw_proto=17, dl_vlan=498, dl_dst=fa:16:3e:c4:29:31
+nw_src=47.200.0.0/17, tp_dst=4120:5120, nw_proto=17, dl_vlan=3395, dl_dst=fa:16:3e:c6:7f:23
+nw_src=0.0.0.0/1, nw_dst=172.180.46.0/23, nw_proto=1
+nw_src=0.0.0.0/1, nw_dst=172.180.46.0/23, nw_proto=47, dl_vlan=3536
+nw_dst=123.135.35.198/31
+nw_dst=118.38.55.54/31, dl_vlan=3900, dl_dst=fa:16:3e:e3:2d:ec
+nw_dst=4.214.216.0/23, nw_proto=1
+nw_dst=0.0.0.0/1, tp_dst=4106:4106, nw_proto=17, dl_vlan=1036, dl_dst=fa:16:3e:c7:ca:54
+nw_src=47.232.0.0/14, nw_dst=128.0.0.0/1, nw_proto=1, eth_type=0xae8f, dl_dst=fa:16:3e:b3:c7:39
+nw_src=127.112.0.0/12, nw_dst=128.0.0.0/1, nw_proto=1, dl_dst=fa:16:3e:d5:17:62
