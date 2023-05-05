@@ -20,3 +20,33 @@ runing the RLTuple environment:\
 ./main f=acl4_seed_1000_12 a=throughput c=TupleMerge,RLTuple d=yes to=0 n=3 p=acl4_seed_1000_12_traces\
 runing the RLTuple agent:\
 python ./RL/train.py
+
+possible results:\
+algo:TupleMerge
+- Construction time: 3.990000 ms
+- Size(bytes): 71256
+- Tuples: 30
+- Lookup Throughput: 2.948171 Mpps
+- Update Throughput: 0.314561 Mups
+- Access avg_tuple: 10.534410, avg_table: 0.000000, avg_node: 0.000000, avg_rule: 10.006520
+- Access max_tuple: 28, max_table: 0, max_node: 0, max_rule: 119, max_all: 138
+
+algo:RLTuple
+- Size(bytes): 71776
+- Tuples: 10
+- Lookup Throughput: 6.539367 Mpps
+- Update Throughput: 6.139175 Mups
+- Access avg_tuple: 4.506470, avg_table: 4.506470, avg_node: 3.174960, avg_rule: 4.781760
+- Access max_tuple: 10, max_table: 10, max_node: 9, max_rule: 36, max_all: 53
+
+Tuple Space Partitioning Strategy\
+field : 7 || length : 48 || rules : 749 || priority : 943\
+field : 0 || length : 31 || rules : 61 || priority : 937\
+field : 0 1 || length : 24 32 || rules : 32 || priority : 718\
+field : 1 0 || length : 26 16 || rules : 64 || priority : 683\
+field : 0 1 || length : 14 21 || rules : 3 || priority : 297\
+field : 1 0 || length : 30 6 || rules : 7 || priority : 263\
+field : 1 0 || length : 28 6 || rules : 2 || priority : 175\
+field : 0 || length : 2 || rules : 9 || priority : 158\
+field : 4 1 || length : 8 8 || rules : 14 || priority : 138\
+field : 0 || length : 0 || rules : 2 || priority : 6
